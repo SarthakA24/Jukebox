@@ -21,4 +21,9 @@ public class DatabaseService {
     public void connect() throws SQLException {
         connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
     }
+
+    public void printConnectionStatus() {
+        if (connection != null) System.out.println("\u001B[32mDatabase is connected.\u001B[0m");
+        else System.err.println("!!!Database is NOT connected!!!");
+    }
 }
