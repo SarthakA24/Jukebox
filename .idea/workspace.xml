@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added the sql queries for inserting songs to the table">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added Java docs for all methods in PlaylistRepository.java">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +60,7 @@
       <updated>1663673130243</updated>
       <workItem from="1663673132542" duration="3214000" />
       <workItem from="1663676630756" duration="1257000" />
-      <workItem from="1663688629216" duration="4362000" />
+      <workItem from="1663688629216" duration="4843000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1663673455317</created>
@@ -328,7 +328,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663696971785</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="added java docs for all methods in SongRepository">
+      <created>1663697288937</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1663697288937</updated>
+    </task>
+    <task id="LOCAL-00040" summary="added Java docs for all methods in PlaylistRepository.java">
+      <created>1663697470241</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1663697470241</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,8 +360,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="reformatted the code" />
-    <MESSAGE value="added the fields for Playlist class" />
     <MESSAGE value="added the no args and the parametrised constructor" />
     <MESSAGE value="added the no args and the parametrised constructors" />
     <MESSAGE value="added the getter and setter methods" />
@@ -371,7 +383,9 @@
     <MESSAGE value="renamed the file sql_queries.sql to database_queries.sql" />
     <MESSAGE value="added sql queries for creating a database, and used that database to create a table song with the columns as attributes of song" />
     <MESSAGE value="added the sql queries for inserting songs to the table" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the sql queries for inserting songs to the table" />
+    <MESSAGE value="added java docs for all methods in SongRepository" />
+    <MESSAGE value="added Java docs for all methods in PlaylistRepository.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Java docs for all methods in PlaylistRepository.java" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
