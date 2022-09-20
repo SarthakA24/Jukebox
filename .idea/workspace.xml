@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added the private static final fields for database URL, USERNAME and PASSWORD, and added the field for Connection object">
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added JavaDocs for the methods connect() and printConnectionStatus()">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/DatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/DatabaseService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663673130243</updated>
-      <workItem from="1663673132542" duration="2594000" />
+      <workItem from="1663673132542" duration="2917000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1663673455317</created>
@@ -250,7 +250,42 @@
       <option name="project" value="LOCAL" />
       <updated>1663675813088</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="added the getter method for connection">
+      <created>1663675834596</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1663675834596</updated>
+    </task>
+    <task id="LOCAL-00030" summary="added the no args constructor to initialise the connection to null">
+      <created>1663675863516</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1663675863516</updated>
+    </task>
+    <task id="LOCAL-00031" summary="added the method connect() to connect to the database and called the driver manager class to get the connection">
+      <created>1663675947473</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1663675947473</updated>
+    </task>
+    <task id="LOCAL-00032" summary="added the method to print the database connection">
+      <created>1663676027406</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1663676027407</updated>
+    </task>
+    <task id="LOCAL-00033" summary="added JavaDocs for the methods connect() and printConnectionStatus()">
+      <created>1663676127825</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1663676127825</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,11 +303,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added mysql connector dependency" />
-    <MESSAGE value="added the class Song.java" />
-    <MESSAGE value="added the class Playlist.java" />
-    <MESSAGE value="added the classed PlaylistRepository.java and SongRepository.java" />
-    <MESSAGE value="added the classed DatabaseService.java and JukeboxService.java" />
     <MESSAGE value="added the sql file sql_queries.sql" />
     <MESSAGE value="added the fields for Song class" />
     <MESSAGE value="added the no args and a parameterised constructor" />
@@ -293,7 +323,12 @@
     <MESSAGE value="added the method signature for editPlaylistName()" />
     <MESSAGE value="added the method signatures for displayAllSongs(), displayAllSongs(), playSong(), pauseSong(), shufflePlaylist()" />
     <MESSAGE value="added the private static final fields for database URL, USERNAME and PASSWORD, and added the field for Connection object" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the private static final fields for database URL, USERNAME and PASSWORD, and added the field for Connection object" />
+    <MESSAGE value="added the getter method for connection" />
+    <MESSAGE value="added the no args constructor to initialise the connection to null" />
+    <MESSAGE value="added the method connect() to connect to the database and called the driver manager class to get the connection" />
+    <MESSAGE value="added the method to print the database connection" />
+    <MESSAGE value="added JavaDocs for the methods connect() and printConnectionStatus()" />
+    <option name="LAST_COMMIT_MESSAGE" value="added JavaDocs for the methods connect() and printConnectionStatus()" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

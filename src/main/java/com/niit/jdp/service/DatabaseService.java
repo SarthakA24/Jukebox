@@ -10,12 +10,12 @@ public class DatabaseService {
     private static final String PASSWORD = "admin";
     private Connection connection;
 
-    public Connection getConnection() {
-        return connection;
-    }
-
     public DatabaseService() {
         this.connection = null;
+    }
+
+    public Connection getConnection() {
+        return connection;
     }
 
     /**
