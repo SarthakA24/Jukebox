@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="renamed the file sql_queries.sql to database_queries.sql">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added sql queries for creating a database, and used that database to create a table song with the columns as attributes of song">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/sql/database_queries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/database_queries.sql" afterDir="false" />
     </list>
@@ -62,7 +61,7 @@
       <updated>1663673130243</updated>
       <workItem from="1663673132542" duration="3214000" />
       <workItem from="1663676630756" duration="1257000" />
-      <workItem from="1663688629216" duration="796000" />
+      <workItem from="1663688629216" duration="3932000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1663673455317</created>
@@ -316,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663677392067</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="added sql queries for creating a database, and used that database to create a table song with the columns as attributes of song">
+      <created>1663690093895</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1663690093895</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +340,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added the no args and a parameterised constructor" />
     <MESSAGE value="added the toString method" />
     <MESSAGE value="reformatted the code" />
     <MESSAGE value="added the fields for Playlist class" />
@@ -359,7 +364,8 @@
     <MESSAGE value="added JavaDocs for the methods connect() and printConnectionStatus()" />
     <MESSAGE value="refactored the code" />
     <MESSAGE value="renamed the file sql_queries.sql to database_queries.sql" />
-    <option name="LAST_COMMIT_MESSAGE" value="renamed the file sql_queries.sql to database_queries.sql" />
+    <MESSAGE value="added sql queries for creating a database, and used that database to create a table song with the columns as attributes of song" />
+    <option name="LAST_COMMIT_MESSAGE" value="added sql queries for creating a database, and used that database to create a table song with the columns as attributes of song" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
