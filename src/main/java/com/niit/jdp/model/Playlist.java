@@ -2,6 +2,7 @@ package com.niit.jdp.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Playlist {
     private String playlistName;
@@ -30,5 +31,18 @@ public class Playlist {
 
     public void setSongsList(List<Song> songsList) {
         this.songsList = songsList;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Playlist)) return false;
+        Playlist playlist = (Playlist) o;
+        return Objects.equals(getPlaylistName(), playlist.getPlaylistName()) && Objects.equals(getSongsList(), playlist.getSongsList());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getPlaylistName(), getSongsList());
     }
 }
