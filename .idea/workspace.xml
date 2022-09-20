@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="refactored the code">
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="renamed the file sql_queries.sql to database_queries.sql">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/database_queries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/database_queries.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +39,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
@@ -49,21 +52,6 @@
     ]
   }
 }</component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Capstone_Project_Jukebox" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Capstone_Project_Jukebox" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -73,7 +61,8 @@
       <option name="presentableId" value="Default" />
       <updated>1663673130243</updated>
       <workItem from="1663673132542" duration="3214000" />
-      <workItem from="1663676630756" duration="607000" />
+      <workItem from="1663676630756" duration="1257000" />
+      <workItem from="1663688629216" duration="796000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1663673455317</created>
@@ -313,7 +302,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663676159257</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="renamed the file sql_queries.sql to database_queries.sql">
+      <created>1663677367713</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1663677367713</updated>
+    </task>
+    <task id="LOCAL-00036" summary="renamed the file sql_queries.sql to database_queries.sql">
+      <created>1663677392067</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1663677392067</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,7 +334,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added the fields for Song class" />
     <MESSAGE value="added the no args and a parameterised constructor" />
     <MESSAGE value="added the toString method" />
     <MESSAGE value="reformatted the code" />
@@ -356,7 +358,8 @@
     <MESSAGE value="added the method to print the database connection" />
     <MESSAGE value="added JavaDocs for the methods connect() and printConnectionStatus()" />
     <MESSAGE value="refactored the code" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactored the code" />
+    <MESSAGE value="renamed the file sql_queries.sql to database_queries.sql" />
+    <option name="LAST_COMMIT_MESSAGE" value="renamed the file sql_queries.sql to database_queries.sql" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
