@@ -14,4 +14,8 @@ public class PlaylistRepository {
     public boolean removeSongFromPlaylist(Connection connection, int songId) {
         return false;
     }
+
+    public boolean editPlaylistName(Connection connection, String oldPlaylistName, String newPlaylistName) {
+        return false;
+    }
 }
