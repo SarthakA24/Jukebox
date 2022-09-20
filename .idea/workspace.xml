@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added mysql connector dependency">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Song.java" afterDir="false" />
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added the fields for Song class">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Song.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663673130243</updated>
-      <workItem from="1663673132542" duration="534000" />
+      <workItem from="1663673132542" duration="849000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1663673455317</created>
@@ -75,7 +75,49 @@
       <option name="project" value="LOCAL" />
       <updated>1663673599561</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added the class Song.java">
+      <created>1663673755791</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663673755791</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added the class Playlist.java">
+      <created>1663673774377</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663673774377</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added the classed PlaylistRepository.java and SongRepository.java">
+      <created>1663673819866</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663673819866</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added the classed DatabaseService.java and JukeboxService.java">
+      <created>1663673861092</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1663673861092</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added the sql file sql_queries.sql">
+      <created>1663673916539</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1663673916539</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added the fields for Song class">
+      <created>1663674045815</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663674045815</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,7 +138,13 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="changed the maven compiler source and target from 18 to 11" />
     <MESSAGE value="added mysql connector dependency" />
-    <option name="LAST_COMMIT_MESSAGE" value="added mysql connector dependency" />
+    <MESSAGE value="added the class Song.java" />
+    <MESSAGE value="added the class Playlist.java" />
+    <MESSAGE value="added the classed PlaylistRepository.java and SongRepository.java" />
+    <MESSAGE value="added the classed DatabaseService.java and JukeboxService.java" />
+    <MESSAGE value="added the sql file sql_queries.sql" />
+    <MESSAGE value="added the fields for Song class" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the fields for Song class" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
