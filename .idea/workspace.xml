@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added the no args and the parametrised constructors">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Playlist.java" afterDir="false" />
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added the method signature for deleteSongFromCatalog()">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663673130243</updated>
-      <workItem from="1663673132542" duration="1154000" />
+      <workItem from="1663673132542" duration="1497000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1663673455317</created>
@@ -166,7 +166,42 @@
       <option name="project" value="LOCAL" />
       <updated>1663674361273</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="added the getter and setter methods">
+      <created>1663674382769</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1663674382770</updated>
+    </task>
+    <task id="LOCAL-00018" summary="added the equals() and hashCode() methods">
+      <created>1663674405094</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1663674405094</updated>
+    </task>
+    <task id="LOCAL-00019" summary="added the toString() method">
+      <created>1663674430455</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1663674430455</updated>
+    </task>
+    <task id="LOCAL-00020" summary="added the method signature for addSongToCatalog()">
+      <created>1663674610318</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1663674610318</updated>
+    </task>
+    <task id="LOCAL-00021" summary="added the method signature for deleteSongFromCatalog()">
+      <created>1663674663846</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1663674663846</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,15 +229,17 @@
     <MESSAGE value="added the sql file sql_queries.sql" />
     <MESSAGE value="added the fields for Song class" />
     <MESSAGE value="added the no args and a parameterised constructor" />
-    <MESSAGE value="added the getter and setter methods" />
-    <MESSAGE value="added the equals() and hashCode() methods" />
     <MESSAGE value="added the toString method" />
-    <MESSAGE value="added the toString() method" />
     <MESSAGE value="reformatted the code" />
     <MESSAGE value="added the fields for Playlist class" />
     <MESSAGE value="added the no args and the parametrised constructor" />
     <MESSAGE value="added the no args and the parametrised constructors" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the no args and the parametrised constructors" />
+    <MESSAGE value="added the getter and setter methods" />
+    <MESSAGE value="added the equals() and hashCode() methods" />
+    <MESSAGE value="added the toString() method" />
+    <MESSAGE value="added the method signature for addSongToCatalog()" />
+    <MESSAGE value="added the method signature for deleteSongFromCatalog()" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the method signature for deleteSongFromCatalog()" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
