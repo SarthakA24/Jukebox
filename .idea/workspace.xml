@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added the method signature for editPlaylistName()">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" afterDir="false" />
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added the private static final fields for database URL, USERNAME and PASSWORD, and added the field for Connection object">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/DatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/DatabaseService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663673130243</updated>
-      <workItem from="1663673132542" duration="2270000" />
+      <workItem from="1663673132542" duration="2594000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1663673455317</created>
@@ -236,7 +236,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663675154566</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="added the method signatures for displayAllSongs(), displayAllSongs(), playSong(), pauseSong(), shufflePlaylist()">
+      <created>1663675525984</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1663675525984</updated>
+    </task>
+    <task id="LOCAL-00028" summary="added the private static final fields for database URL, USERNAME and PASSWORD, and added the field for Connection object">
+      <created>1663675813088</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1663675813088</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,8 +268,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="initial commit" />
-    <MESSAGE value="changed the maven compiler source and target from 18 to 11" />
     <MESSAGE value="added mysql connector dependency" />
     <MESSAGE value="added the class Song.java" />
     <MESSAGE value="added the class Playlist.java" />
@@ -279,7 +291,9 @@
     <MESSAGE value="added the method signature for createNewPlaylist()" />
     <MESSAGE value="added the method signature for adding and removing song from playlist" />
     <MESSAGE value="added the method signature for editPlaylistName()" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the method signature for editPlaylistName()" />
+    <MESSAGE value="added the method signatures for displayAllSongs(), displayAllSongs(), playSong(), pauseSong(), shufflePlaylist()" />
+    <MESSAGE value="added the private static final fields for database URL, USERNAME and PASSWORD, and added the field for Connection object" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the private static final fields for database URL, USERNAME and PASSWORD, and added the field for Connection object" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
