@@ -8,4 +8,8 @@ public class SongRepository {
     public boolean addSongToCatalog(Connection connection, Song song) {
         return false;
     }
+
+    public boolean deleteSongFromCatalog(Connection connection, int songId) {
+        return false;
+    }
 }
