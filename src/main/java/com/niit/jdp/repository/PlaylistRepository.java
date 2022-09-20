@@ -6,4 +6,12 @@ public class PlaylistRepository {
     public boolean createNewPlaylist(Connection connection, String playlistName) {
         return false;
     }
+
+    public boolean addSongToPlaylist(Connection connection, int songId) {
+        return false;
+    }
+
+    public boolean removeSongFromPlaylist(Connection connection, int songId) {
+        return false;
+    }
 }

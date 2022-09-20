@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added the method signature for deleteSongFromCatalog()">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added the method signature for createNewPlaylist()">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663673130243</updated>
-      <workItem from="1663673132542" duration="1497000" />
+      <workItem from="1663673132542" duration="1855000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1663673455317</created>
@@ -201,7 +201,28 @@
       <option name="project" value="LOCAL" />
       <updated>1663674663846</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="added the method signature for getAllSongs()">
+      <created>1663674724250</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1663674724250</updated>
+    </task>
+    <task id="LOCAL-00023" summary="added the method signatures for searching songs by artist, genre and name">
+      <created>1663674816997</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1663674816997</updated>
+    </task>
+    <task id="LOCAL-00024" summary="added the method signature for createNewPlaylist()">
+      <created>1663674934328</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1663674934329</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +260,10 @@
     <MESSAGE value="added the toString() method" />
     <MESSAGE value="added the method signature for addSongToCatalog()" />
     <MESSAGE value="added the method signature for deleteSongFromCatalog()" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the method signature for deleteSongFromCatalog()" />
+    <MESSAGE value="added the method signature for getAllSongs()" />
+    <MESSAGE value="added the method signatures for searching songs by artist, genre and name" />
+    <MESSAGE value="added the method signature for createNewPlaylist()" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the method signature for createNewPlaylist()" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
