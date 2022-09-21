@@ -57,6 +57,7 @@ public class Main {
                             System.out.println(index + 1 + ". " + playlistsName.get(index));
                         }
                         System.out.println("Please enter the playlist name that you need to play - ");
+                        scanner.nextLine();
                         String selectedPlaylist = scanner.nextLine().toLowerCase();
                         if (playlistsName.contains(selectedPlaylist)) {
                             Playlist playlistByName = playlistRepository.getPlaylistByName(connection, selectedPlaylist);
@@ -69,6 +70,7 @@ public class Main {
             } while (choice != 6);
         } catch (SQLException e) {
             System.err.println(e.getMessage());
+            e.printStackTrace();
         }
     }
 }

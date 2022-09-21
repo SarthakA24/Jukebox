@@ -52,9 +52,12 @@ public class PlaylistRepository {
             preparedStatement.setString(1, playlistName);
             // Execute the query and get the result set
             ResultSet resultSet = preparedStatement.executeQuery();
-            //Set the values to the playlist object
-            playlistByName.setPlaylistName(resultSet.getString("playlist_name"));
-            String songsId = resultSet.getString("songs_id");
+            String songsId = "";
+            while (resultSet.next()) {
+                //Set the values to the playlist object
+                playlistByName.setPlaylistName(resultSet.getString("playlist_name"));
+                songsId = resultSet.getString("songs_id");
+            }
             // Split the songs id string to get the individual song id and iterate over the list to get the song object
             String[] songsIdArray = songsId.split(",");
             for (String songId : songsIdArray) {

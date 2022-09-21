@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.util.Collections;
 import java.util.List;
+import java.util.Scanner;
 
 public class JukeboxService {
     /**
@@ -63,13 +64,13 @@ public class JukeboxService {
             displaySongDetails(song);
             // start the sound file
             clip.start();
+            Scanner scanner = new Scanner(System.in);
+            scanner.nextLine();
             // pause the current thread for the time the song is being played
-            Thread.sleep(clip.getMicrosecondLength() / 1000L);
+            // Thread.sleep(clip.getMicrosecondLength() / 1000L);
         } catch (UnsupportedAudioFileException | IOException | LineUnavailableException exception) {
             System.err.println(exception.getMessage());
             exception.printStackTrace();
-        } catch (InterruptedException e) {
-            System.err.println("Song thread was interrupted");
         }
     }
 
