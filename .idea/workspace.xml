@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added java docs for the methods in JukeboxService.java">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="completed the method addSongToCatalog() to add a song to the database">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +62,7 @@
       <workItem from="1663676630756" duration="1257000" />
       <workItem from="1663688629216" duration="4904000" />
       <workItem from="1663730089870" duration="90000" />
-      <workItem from="1663730536918" duration="568000" />
+      <workItem from="1663730536918" duration="930000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1663673455317</created>
@@ -354,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663697801000</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="completed the method addSongToCatalog() to add a song to the database">
+      <created>1663731267534</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1663731267534</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,7 +376,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added the no args and the parametrised constructors" />
     <MESSAGE value="added the getter and setter methods" />
     <MESSAGE value="added the equals() and hashCode() methods" />
     <MESSAGE value="added the toString() method" />
@@ -397,7 +400,8 @@
     <MESSAGE value="added java docs for all methods in SongRepository" />
     <MESSAGE value="added Java docs for all methods in PlaylistRepository.java" />
     <MESSAGE value="added java docs for the methods in JukeboxService.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="added java docs for the methods in JukeboxService.java" />
+    <MESSAGE value="completed the method addSongToCatalog() to add a song to the database" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed the method addSongToCatalog() to add a song to the database" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

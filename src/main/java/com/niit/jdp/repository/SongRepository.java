@@ -41,8 +41,16 @@ public class SongRepository {
      * @param songId     The id of the song to be removed from the database.
      * @return true if the song is removed successfully, false otherwise.
      */
-    public boolean deleteSongFromCatalog(Connection connection, int songId) {
-        return false;
+    public boolean deleteSongFromCatalog(Connection connection, int songId) throws SQLException {
+        // declare a variable of string datatype to hold the delete query
+        String deleteStatement = "DELETE FROM `jukebox`.`song` WHERE `id` = ?;";
+        // declare an object for PreparedStatement to execute the query
+        try (PreparedStatement preparedStatement = connection.prepareStatement(deleteStatement)) {
+            // set the values for the parameters in the query
+            preparedStatement.setInt(1, songId);
+            // execute the query
+            return preparedStatement.executeUpdate() > 0;
+        }
     }
 
     /**
