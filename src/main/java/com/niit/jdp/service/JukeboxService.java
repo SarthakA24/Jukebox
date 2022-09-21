@@ -6,7 +6,6 @@ import com.niit.jdp.model.Song;
 import javax.sound.sampled.*;
 import java.io.File;
 import java.io.IOException;
-import java.sql.Connection;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
@@ -33,7 +32,7 @@ public class JukeboxService {
      *
      * @param playlist The playlist from which the song is to be played.
      */
-    public void playPlaylist(Connection connection, Playlist playlist) {
+    public void playPlaylist(Playlist playlist) {
         // Call the shufflePlaylist() method to shuffle the songs list
         List<Song> shufflePlaylist = shufflePlaylist(playlist.getSongList());
         // Start a for each loop to iterate though the array and play the songs

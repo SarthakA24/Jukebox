@@ -48,9 +48,8 @@ public class SongRepository {
      * @param songList The list of songs from where to search
      * @param songId   The song id to find
      * @return The song object found based on the id
-     * @throws SQLException
      */
-    public Song getSongById(List<Song> songList, int songId) throws SQLException {
+    public Song getSongById(List<Song> songList, int songId) {
         // Return the song object based on the song id
         return songList.stream().filter(song -> song.getId() == songId).findFirst().orElse(new Song());
     }

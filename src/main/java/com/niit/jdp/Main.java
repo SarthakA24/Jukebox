@@ -60,7 +60,7 @@ public class Main {
                         String selectedPlaylist = scanner.nextLine().toLowerCase();
                         if (playlistsName.contains(selectedPlaylist)) {
                             Playlist playlistByName = playlistRepository.getPlaylistByName(connection, selectedPlaylist);
-                            jukeboxService.playPlaylist(connection, playlistByName);
+                            jukeboxService.playPlaylist(playlistByName);
                         } else {
                             System.err.println("Incorrect playlist name!!");
                         }
