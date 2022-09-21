@@ -80,11 +80,28 @@ public class Main {
                         if (result) {
                             System.out.println("Song added to the playlist successfully!");
                         } else {
-                            System.err.print(songName + " not added to the list!");
+                            System.err.println("Incorrect song name!");
                         }
+                    } else {
+                        System.err.println("Playlist with the name " + playlistName + " does not exist!");
+                    }
+                } else if (choice == 5) {
+                    System.out.println("Enter the playlist name you want to edit - ");
+                    scanner.nextLine();
+                    String oldPlaylistName = scanner.nextLine();
+                    List<String> playlistsName = playlistRepository.getPlaylistsName(connection);
+                    if (playlistsName.contains(oldPlaylistName)) {
+                        System.out.println("Enter the new playlist name - ");
+                        String newPlaylistName = scanner.nextLine();
+                        boolean result = playlistRepository.editPlaylistName(connection, oldPlaylistName, newPlaylistName);
+                        if (result) {
+                            System.out.println("Playlist name updated successfully!");
+                        }
+                    } else {
+                        System.err.println("Playlist with the name " + oldPlaylistName + " does not exist!");
                     }
                 }
-            } while (choice != 5);
+            } while (choice != 6);
         } catch (SQLException e) {
             System.err.println(e.getMessage());
             e.printStackTrace();

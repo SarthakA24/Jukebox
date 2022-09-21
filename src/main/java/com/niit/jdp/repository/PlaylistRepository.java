@@ -46,7 +46,6 @@ public class PlaylistRepository {
         String selectQuery = "SELECT * FROM `jukebox`.`playlist` WHERE (`playlist_name` = ? );";
         // Create a prepared statement object to set the values and execute the query and get the result set
         SongRepository songRepository = new SongRepository();
-        Song song = new Song();
         try (PreparedStatement preparedStatement = connection.prepareStatement(selectQuery)) {
             // Set the values to the query
             preparedStatement.setString(1, playlistName);
