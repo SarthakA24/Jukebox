@@ -21,12 +21,12 @@ public class JukeboxService {
      */
     public void displaySongDetails(Song song) {
         System.out.println("===============================");
-        System.out.println("Playing the Song" + song.getName());
+        System.out.println("Playing the Song - " + song.getName());
         System.out.println("Song Details - ");
         System.out.println("Artist Name - " + song.getArtistName());
         System.out.println("Album Name - " + song.getAlbumName());
         System.out.println("Genre - " + song.getGenre());
-        System.out.println("Song Duration - " + song.getDurationInSeconds() / 60 + " minutes" + song.getDurationInSeconds() % 60 + " seconds");
+        System.out.println("Song Duration - " + song.getDurationInSeconds() / 60 + " minutes " + song.getDurationInSeconds() % 60 + " seconds");
         System.out.println("===============================");
     }
 
