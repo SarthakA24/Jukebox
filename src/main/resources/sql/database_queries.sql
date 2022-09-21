@@ -56,11 +56,4 @@ INSERT INTO `jukebox`.`song` (`name`, `duration_in_seconds`, `url`, `artist_name
 VALUES ('Hymn for the Weekend', '215', 'src/main/resources/songs/Hymn_For_The_Weekend_Remix.wav', 'Coldplay',
         'A Head Full of Dreams', 'Pop');
 
--- Create a table `playlist`
-CREATE TABLE IF NOT EXISTS `jukebox`.`playlist`
-(
-    `playlist_name` VARCHAR(20) NOT NULL,
-    `list_of_songs` VARCHAR(45) NULL,
-    PRIMARY KEY (`playlist_name`)
-);
 
