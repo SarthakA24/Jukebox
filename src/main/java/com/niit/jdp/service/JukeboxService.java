@@ -9,6 +9,8 @@ import java.io.File;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class JukeboxService {
@@ -50,7 +52,6 @@ public class JukeboxService {
 
     /**
      * This method is used to play a song
-     *
      * @param song The song object that needs to be played
      */
     public void playSong(Song song) {
@@ -78,9 +79,16 @@ public class JukeboxService {
     }
 
     /**
-     * This method is used to shuffle the playlist and play the songs of the playlist in a random order
+     * This method is used to shuffle the given playlist by songs id and return the shuffled songs id
+     *
+     * @param songsId Playlist to shuffle
+     * @return shuffledSongsId The shuffled array of songs id playlist
      */
-    public void shufflePlaylist() {
-
+    public String[] shufflePlaylist(String[] songsId) {
+        String[] shuffledSongsId = new String[songsId.length];
+        List<String> shuffledSongsIdList = Arrays.asList(songsId);
+        Collections.shuffle(shuffledSongsIdList);
+        shuffledSongsIdList.toArray(shuffledSongsId);
+        return shuffledSongsId;
     }
 }
