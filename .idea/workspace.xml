@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="completed the method displayMenu()">
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="called the getter method to get the connection object">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,28 +85,7 @@
       <workItem from="1663730089870" duration="90000" />
       <workItem from="1663730536918" duration="1720000" />
       <workItem from="1663732408689" duration="14315000" />
-      <workItem from="1663750842802" duration="4011000" />
-    </task>
-    <task id="LOCAL-00030" summary="added the no args constructor to initialise the connection to null">
-      <created>1663675863516</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1663675863516</updated>
-    </task>
-    <task id="LOCAL-00031" summary="added the method connect() to connect to the database and called the driver manager class to get the connection">
-      <created>1663675947473</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1663675947473</updated>
-    </task>
-    <task id="LOCAL-00032" summary="added the method to print the database connection">
-      <created>1663676027406</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1663676027407</updated>
+      <workItem from="1663750842802" duration="4337000" />
     </task>
     <task id="LOCAL-00033" summary="added JavaDocs for the methods connect() and printConnectionStatus()">
       <created>1663676127825</created>
@@ -430,7 +409,28 @@
       <option name="project" value="LOCAL" />
       <updated>1663755038702</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="created an object for DatabaseService and called the method to connect to the database">
+      <created>1663755090319</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1663755090319</updated>
+    </task>
+    <task id="LOCAL-00080" summary="created an object for DatabaseService and called the method to connect to the database">
+      <created>1663755102455</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1663755102455</updated>
+    </task>
+    <task id="LOCAL-00081" summary="called the getter method to get the connection object">
+      <created>1663755366726</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1663755366726</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -448,8 +448,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="completed the method searchSongsByGenre() to search and get a list of songs by genre" />
-    <MESSAGE value="completed the method searchSongsByName() to search and get the song by song name" />
     <MESSAGE value="replaced equals() with equalsIgnoreCase() in the search methods" />
     <MESSAGE value="added the method signature for getPlaylistsName() method" />
     <MESSAGE value="added the sql query for creating a playlist table" />
@@ -473,7 +471,9 @@
     <MESSAGE value="added a sql file playlist_sql_queries.sql for the sql queries for playlist table" />
     <MESSAGE value="added the method signature for displayMenu() method" />
     <MESSAGE value="completed the method displayMenu()" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed the method displayMenu()" />
+    <MESSAGE value="created an object for DatabaseService and called the method to connect to the database" />
+    <MESSAGE value="called the getter method to get the connection object" />
+    <option name="LAST_COMMIT_MESSAGE" value="called the getter method to get the connection object" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
