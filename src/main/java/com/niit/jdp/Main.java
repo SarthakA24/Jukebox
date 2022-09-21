@@ -29,7 +29,7 @@ public class Main {
             PlaylistRepository playlistRepository = new PlaylistRepository();
             // initialise the scanner
             Scanner scanner = new Scanner(System.in);
-            int choice = 0;
+            int choice;
             do {
                 // display the jukebox menu
                 jukeboxService.displayMenu();
@@ -65,6 +65,19 @@ public class Main {
                         } else {
                             System.err.println("Incorrect playlist name!!");
                         }
+                    }
+                } else if (choice == 4) {
+                    System.out.println("Enter the playlist name - ");
+                    String playlistName = scanner.nextLine();
+                    List<String> playlistsName = playlistRepository.getPlaylistsName(connection);
+                    if (playlistsName.contains(playlistName)) {
+                        System.out.println("Songs in the Jukebox - ");
+                        List<Song> allSongs = songRepository.getAllSongs(connection);
+                        songRepository.displayAllSongs(allSongs);
+                        System.out.println("Enter the song name to add to the playlist - ");
+                        String songName = scanner.nextLine();
+                        Song song = songRepository.searchSongsByName(connection, songName);
+                        playlistRepository.addSongToPlaylist(connection, song, playlistName);
                     }
                 }
             } while (choice != 5);
