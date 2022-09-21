@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="replaced equals() with equalsIgnoreCase() in the search methods">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" afterDir="false" />
-    </list>
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added the method signature for getPlaylistsName() method" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,14 +61,7 @@
       <workItem from="1663688629216" duration="4904000" />
       <workItem from="1663730089870" duration="90000" />
       <workItem from="1663730536918" duration="1720000" />
-      <workItem from="1663732408689" duration="2473000" />
-    </task>
-    <task id="LOCAL-00003" summary="added mysql connector dependency">
-      <created>1663673599561</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1663673599561</updated>
+      <workItem from="1663732408689" duration="2794000" />
     </task>
     <task id="LOCAL-00004" summary="added the class Song.java">
       <created>1663673755791</created>
@@ -409,7 +399,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663734590447</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="added the method signature for getPlaylistsName() method">
+      <created>1663735413040</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1663735413040</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,7 +424,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added the method signature for createNewPlaylist()" />
     <MESSAGE value="added the method signature for adding and removing song from playlist" />
     <MESSAGE value="added the method signature for editPlaylistName()" />
     <MESSAGE value="added the method signatures for displayAllSongs(), displayAllSongs(), playSong(), pauseSong(), shufflePlaylist()" />
@@ -452,7 +448,8 @@
     <MESSAGE value="completed the method searchSongsByGenre() to search and get a list of songs by genre" />
     <MESSAGE value="completed the method searchSongsByName() to search and get the song by song name" />
     <MESSAGE value="replaced equals() with equalsIgnoreCase() in the search methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="replaced equals() with equalsIgnoreCase() in the search methods" />
+    <MESSAGE value="added the method signature for getPlaylistsName() method" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the method signature for getPlaylistsName() method" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

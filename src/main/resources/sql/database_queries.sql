@@ -1,13 +1,13 @@
 -- create a database `jukebox`
 CREATE
-DATABASE IF NOT EXISTS `jukebox`;
+    DATABASE IF NOT EXISTS `jukebox`;
 
 -- use the database `jukebox`
 USE
-`jukebox`;
+    `jukebox`;
 
 -- create a table `song`
-CREATE TABLE `jukebox`.`song`
+CREATE TABLE IF NOT EXISTS `jukebox`.`song`
 (
     `id`                  INT         NOT NULL AUTO_INCREMENT,
     `name`                VARCHAR(90) NOT NULL,
@@ -55,3 +55,12 @@ VALUES ('Bad Liar', '260', 'src/main/resources/songs/Bad Liar.wav', 'Imagine Dra
 INSERT INTO `jukebox`.`song` (`name`, `duration_in_seconds`, `url`, `artist_name`, `album_name`, `genre`)
 VALUES ('Hymn for the Weekend', '215', 'src/main/resources/songs/Hymn_For_The_Weekend_Remix.wav', 'Coldplay',
         'A Head Full of Dreams', 'Pop');
+
+-- Create a table `playlist`
+CREATE TABLE IF NOT EXISTS `jukebox`.`playlist`
+(
+    `playlist_name` VARCHAR(20) NOT NULL,
+    `list_of_songs` VARCHAR(45) NULL,
+    PRIMARY KEY (`playlist_name`)
+);
+
