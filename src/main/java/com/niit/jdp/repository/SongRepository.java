@@ -105,8 +105,11 @@ public class SongRepository {
      * @param genre      The genre of the song.
      * @return The list of songs of the genre.
      */
-    public List<Song> searchSongsByGenre(Connection connection, String genre) {
-        return List.of();
+    public List<Song> searchSongsByGenre(Connection connection, String genre) throws SQLException {
+        // Call the method getAllSongs() to get a list of songs
+        List<Song> songList = getAllSongs(connection);
+        // Filter the songs and add the song with the given genre name to list and return the list
+        return songList.stream().filter(song -> song.getArtistName().equals(genre)).collect(Collectors.toList());
     }
 
     /**
