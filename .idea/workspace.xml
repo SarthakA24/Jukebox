@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added case 1 to display all songs">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Song.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="completed the displayAllSongs() method">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,13 +98,7 @@
       <workItem from="1663732408689" duration="14315000" />
       <workItem from="1663750842802" duration="7360000" />
       <workItem from="1663758668837" duration="255000" />
-    </task>
-    <task id="LOCAL-00035" summary="renamed the file sql_queries.sql to database_queries.sql">
-      <created>1663677367713</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1663677367713</updated>
+      <workItem from="1663759094807" duration="294000" />
     </task>
     <task id="LOCAL-00036" summary="renamed the file sql_queries.sql to database_queries.sql">
       <created>1663677392067</created>
@@ -444,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663755811200</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="completed the displayAllSongs() method">
+      <created>1663759210481</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1663759210482</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -462,7 +461,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added the sql query for creating a playlist table" />
     <MESSAGE value="added the method signature for getPlaylistByName() to get a playlist as per the provided name" />
     <MESSAGE value="added the method signature for getPlaylist() to get a playlist as per the provided name" />
     <MESSAGE value="completed the method getPlaylistsName()" />
@@ -487,7 +485,8 @@
     <MESSAGE value="called the getter method to get the connection object" />
     <MESSAGE value="displayed the jukebox menu and started the switch cases for the input" />
     <MESSAGE value="added case 1 to display all songs" />
-    <option name="LAST_COMMIT_MESSAGE" value="added case 1 to display all songs" />
+    <MESSAGE value="completed the displayAllSongs() method" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed the displayAllSongs() method" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

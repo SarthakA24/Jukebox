@@ -33,10 +33,13 @@ public class Main {
                 // display the jukebox menu
                 jukeboxService.displayMenu();
                 choice = scanner.nextInt();
-                switch (choice) {
-                    case 1:
-                        List<Song> allSongs = songRepository.getAllSongs(connection);
-                        songRepository.displayAllSongs(allSongs);
+                if (choice == 1) {
+                    List<Song> allSongs = songRepository.getAllSongs(connection);
+                    songRepository.displayAllSongs(allSongs);
+                } else if (choice == 2) {
+                    List<String> playlistsName = playlistRepository.getPlaylistsName(connection);
+                    String[] playlistNames = new String[playlistsName.size()];
+                    playlistsName.toArray(playlistNames);
                 }
             } while (choice != 6);
         } catch (SQLException e) {
