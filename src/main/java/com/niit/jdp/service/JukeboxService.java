@@ -3,6 +3,9 @@ package com.niit.jdp.service;
 import com.niit.jdp.model.Playlist;
 import com.niit.jdp.model.Song;
 
+import javax.sound.sampled.*;
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 
 public class JukeboxService {
@@ -38,7 +41,27 @@ public class JukeboxService {
      * @param song The song object that needs to be played
      */
     public void playSong(Song song) {
-
+        // Create a file object that contains the song path
+        File songFile = new File(song.getUrl());
+        try {
+            // Create an object for AudioInputStream class
+            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(songFile);
+            // Get a clip object form audio system
+            Clip clip = AudioSystem.getClip();
+            // use the clip object to open the audio input stream
+            clip.open(audioInputStream);
+            // set a loop for the sound file
+            clip.loop(Clip.LOOP_CONTINUOUSLY);
+            // start the sound file
+            clip.start();
+            // pause the current thread for the time the song is being played
+            Thread.sleep(clip.getMicrosecondLength() / 1000L);
+        } catch (UnsupportedAudioFileException | IOException | LineUnavailableException exception) {
+            System.err.println(exception.getMessage());
+            exception.printStackTrace();
+        } catch (InterruptedException e) {
+            System.err.println("Song thread was interrupted");
+        }
     }
 
     /**
