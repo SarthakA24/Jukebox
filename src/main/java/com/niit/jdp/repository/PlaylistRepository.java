@@ -3,10 +3,7 @@ package com.niit.jdp.repository;
 import com.niit.jdp.model.Playlist;
 import com.niit.jdp.model.Song;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,14 +32,28 @@ public class PlaylistRepository {
     }
 
     /**
-     * This method returns the list
+     * This method returns the Playlist object for the searched playlist name
      *
      * @param connection   The connection to the database
      * @param playlistName The name of playlist to fetch
      * @return The playlist object based on the search
      */
-    public Playlist getPlaylistByName(Connection connection, String playlistName) {
-        return new Playlist();
+    public Playlist getPlaylistByName(Connection connection, String playlistName) throws SQLException {
+        // Create a playlist object
+        Playlist playlistByName = new Playlist();
+        // Create a String query to get the playlist information from the database
+        String selectQuery = "SELECT * FROM `jukebox`.`playlist` WHERE (`playlist_name` = ? );";
+        // Create a prepared statement object to set the values and execute the query and get the result set
+        try (PreparedStatement preparedStatement = connection.prepareStatement(selectQuery)) {
+            preparedStatement.setString(1, playlistName);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                // Iterate over the result set and
+                playlistByName.setPlaylistName(resultSet.getString("playlist_name"));
+                playlistByName.setSongsId(resultSet.getString("list_of_songs"));
+            }
+        }
+        return playlistByName;
     }
 
     /**

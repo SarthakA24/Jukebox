@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="completed the method getPlaylistsName()">
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="completed the method getPlaylistByName()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Playlist.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,42 +65,7 @@
       <workItem from="1663688629216" duration="4904000" />
       <workItem from="1663730089870" duration="90000" />
       <workItem from="1663730536918" duration="1720000" />
-      <workItem from="1663732408689" duration="5340000" />
-    </task>
-    <task id="LOCAL-00008" summary="added the sql file sql_queries.sql">
-      <created>1663673916539</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1663673916539</updated>
-    </task>
-    <task id="LOCAL-00009" summary="added the fields for Song class">
-      <created>1663674045815</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1663674045815</updated>
-    </task>
-    <task id="LOCAL-00010" summary="added the no args and a parameterised constructor">
-      <created>1663674084793</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1663674084793</updated>
-    </task>
-    <task id="LOCAL-00011" summary="added the getter and setter methods">
-      <created>1663674104737</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1663674104737</updated>
-    </task>
-    <task id="LOCAL-00012" summary="added the equals() and hashCode() methods">
-      <created>1663674129156</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1663674129156</updated>
+      <workItem from="1663732408689" duration="6515000" />
     </task>
     <task id="LOCAL-00013" summary="added the toString() method">
       <created>1663674209119</created>
@@ -411,7 +375,42 @@
       <option name="project" value="LOCAL" />
       <updated>1663737492360</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="changed the field for List&lt;Song&gt; with String of songs id and modified the constructors, getter and setters methods, hashCode and equals methods and the toString method">
+      <created>1663738425392</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1663738425392</updated>
+    </task>
+    <task id="LOCAL-00058" summary="completed the method getPlaylistByName()">
+      <created>1663738642376</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1663738642377</updated>
+    </task>
+    <task id="LOCAL-00059" summary="completed the method getPlaylistByName()">
+      <created>1663738675829</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1663738675829</updated>
+    </task>
+    <task id="LOCAL-00060" summary="completed the method getPlaylistByName()">
+      <created>1663738700174</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1663738700174</updated>
+    </task>
+    <task id="LOCAL-00061" summary="completed the method getPlaylistByName()">
+      <created>1663738741010</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1663738741011</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,8 +428,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added the getter method for connection" />
-    <MESSAGE value="added the no args constructor to initialise the connection to null" />
     <MESSAGE value="added the method connect() to connect to the database and called the driver manager class to get the connection" />
     <MESSAGE value="added the method to print the database connection" />
     <MESSAGE value="added JavaDocs for the methods connect() and printConnectionStatus()" />
@@ -454,7 +451,9 @@
     <MESSAGE value="added the method signature for getPlaylistByName() to get a playlist as per the provided name" />
     <MESSAGE value="added the method signature for getPlaylist() to get a playlist as per the provided name" />
     <MESSAGE value="completed the method getPlaylistsName()" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed the method getPlaylistsName()" />
+    <MESSAGE value="changed the field for List&lt;Song&gt; with String of songs id and modified the constructors, getter and setters methods, hashCode and equals methods and the toString method" />
+    <MESSAGE value="completed the method getPlaylistByName()" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed the method getPlaylistByName()" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
