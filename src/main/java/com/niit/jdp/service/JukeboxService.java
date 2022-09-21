@@ -2,13 +2,11 @@ package com.niit.jdp.service;
 
 import com.niit.jdp.model.Playlist;
 import com.niit.jdp.model.Song;
-import com.niit.jdp.repository.SongRepository;
 
 import javax.sound.sampled.*;
 import java.io.File;
 import java.io.IOException;
 import java.sql.Connection;
-import java.sql.SQLException;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -36,21 +34,21 @@ public class JukeboxService {
      * @param playlist The playlist from which the song is to be played.
      */
     public void playPlaylist(Connection connection, Playlist playlist) {
-        try {
-            // Split the songs id string from playlist and store it in an array pass the result to shufflePlaylist()
-            // method to shuffle the array
-            String[] shufflePlaylist = shufflePlaylist(playlist.getSongsId().split(","));
-            SongRepository songRepository = new SongRepository();
-            // Start a for each loop to iterate though the array and play the songs
-            for (String songId : shufflePlaylist) {
-                // Call the getSongById() to get the song object
-                Song songById = songRepository.getSongById(connection, Integer.parseInt(songId));
-                // pass the song object to playSong() method
-                playSong(songById);
-            }
-        } catch (SQLException exception) {
-            System.err.println(exception.getMessage());
-        }
+//        try {
+//            // Split the songs id string from playlist and store it in an array pass the result to shufflePlaylist()
+//            // method to shuffle the array
+//            String[] shufflePlaylist = shufflePlaylist(playlist.getSongsId().split(","));
+//            SongRepository songRepository = new SongRepository();
+//            // Start a for each loop to iterate though the array and play the songs
+//            for (String songId : shufflePlaylist) {
+//                // Call the getSongById() to get the song object
+//                Song songById = songRepository.getSongById(connection, Integer.parseInt(songId));
+//                // pass the song object to playSong() method
+//                playSong(songById);
+//            }
+//        } catch (SQLException exception) {
+//            System.err.println(exception.getMessage());
+//        }
     }
 
     /**

@@ -40,18 +40,18 @@ public class PlaylistRepository {
     public Playlist getPlaylistByName(Connection connection, String playlistName) throws SQLException {
         // Create a playlist object
         Playlist playlistByName = new Playlist();
-        // Create a String query to get the playlist information from the database
-        String selectQuery = "SELECT * FROM `jukebox`.`playlist` WHERE (`playlist_name` = ? );";
-        // Create a prepared statement object to set the values and execute the query and get the result set
-        try (PreparedStatement preparedStatement = connection.prepareStatement(selectQuery)) {
-            preparedStatement.setString(1, playlistName);
-            ResultSet resultSet = preparedStatement.executeQuery();
-            while (resultSet.next()) {
-                // Iterate over the result set and
-                playlistByName.setPlaylistName(resultSet.getString("playlist_name"));
-                playlistByName.setSongsId(resultSet.getString("list_of_songs"));
-            }
-        }
+//        // Create a String query to get the playlist information from the database
+//        String selectQuery = "SELECT * FROM `jukebox`.`playlist` WHERE (`playlist_name` = ? );";
+//        // Create a prepared statement object to set the values and execute the query and get the result set
+//        try (PreparedStatement preparedStatement = connection.prepareStatement(selectQuery)) {
+//            preparedStatement.setString(1, playlistName);
+//            ResultSet resultSet = preparedStatement.executeQuery();
+//            while (resultSet.next()) {
+//                // Iterate over the result set and
+//                playlistByName.setPlaylistName(resultSet.getString("playlist_name"));
+//                // playlistByName.setSongsId(resultSet.getString("list_of_songs"));
+//            }
+//        }
         return playlistByName;
     }
 
@@ -85,7 +85,7 @@ public class PlaylistRepository {
         Playlist playlistByName = getPlaylistByName(connection, playlistName);
         // Create a string of songs id to update in the table
         // First, add the already present songs id to the string and then append the song id to be added
-        String songIdToUpdate = playlistByName.getSongsId() + "," + songId;
+        String songIdToUpdate = playlistByName.getSongList() + "," + songId;
         // Create an update query to update the songs id in the database
         String updateQuery = "UPDATE `jukebox`.`playlist` SET `list_of_songs` = ? WHERE (`playlist_name` = ?);";
         // Create a prepared statement to execute the query

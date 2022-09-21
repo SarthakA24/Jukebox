@@ -1,17 +1,20 @@
 package com.niit.jdp.model;
 
+import java.util.List;
 import java.util.Objects;
 
 public class Playlist {
+    private int id;
     private String playlistName;
-    private String songsId;
+    private List<Song> songList;
 
     public Playlist() {
     }
 
-    public Playlist(String playlistName, String songsId) {
+    public Playlist(int id, String playlistName, List<Song> songList) {
+        this.id = id;
         this.playlistName = playlistName;
-        this.songsId = songsId;
+        this.songList = songList;
     }
 
     public String getPlaylistName() {
@@ -22,12 +25,20 @@ public class Playlist {
         this.playlistName = playlistName;
     }
 
-    public String getSongsId() {
-        return songsId;
+    public List<Song> getSongList() {
+        return songList;
     }
 
-    public void setSongsId(String songsId) {
-        this.songsId = songsId;
+    public void setSongList(List<Song> songList) {
+        this.songList = songList;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     @Override
@@ -35,16 +46,20 @@ public class Playlist {
         if (this == o) return true;
         if (!(o instanceof Playlist)) return false;
         Playlist playlist = (Playlist) o;
-        return Objects.equals(getPlaylistName(), playlist.getPlaylistName()) && Objects.equals(getSongsId(), playlist.getSongsId());
+        return getId() == playlist.getId() && Objects.equals(getPlaylistName(), playlist.getPlaylistName()) && Objects.equals(getSongList(), playlist.getSongList());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getPlaylistName(), getSongsId());
+        return Objects.hash(getId(), getPlaylistName(), getSongList());
     }
 
     @Override
     public String toString() {
-        return "Playlist{" + "playlistName='" + getPlaylistName() + '\'' + ", songsList=" + getSongsId() + '}';
+        return "Playlist{" +
+                "id=" + id +
+                ", playlistName='" + playlistName + '\'' +
+                ", songsId='" + songList + '\'' +
+                '}';
     }
 }
