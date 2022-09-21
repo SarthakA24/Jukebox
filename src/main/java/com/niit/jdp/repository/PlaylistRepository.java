@@ -1,5 +1,6 @@
 package com.niit.jdp.repository;
 
+import com.niit.jdp.model.Playlist;
 import com.niit.jdp.model.Song;
 
 import java.sql.Connection;
@@ -14,6 +15,17 @@ public class PlaylistRepository {
      */
     public String[] getPlaylistsName(Connection connection) {
         return new String[]{};
+    }
+
+    /**
+     * This method returns the list
+     *
+     * @param connection   The connection to the database
+     * @param playlistName The name of playlist to fetch
+     * @return The playlist object based on the search
+     */
+    public Playlist getPlaylistByName(Connection connection, String playlistName) {
+        return new Playlist();
     }
 
     /**
