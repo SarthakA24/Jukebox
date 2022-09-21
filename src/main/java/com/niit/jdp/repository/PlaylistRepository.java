@@ -160,4 +160,10 @@ public class PlaylistRepository {
             return preparedStatement.executeUpdate() > 0;
         }
     }
+
+    public void displayPlaylist(Playlist playlist) {
+        System.out.println("Playlist Name: " + playlist.getPlaylistName());
+        System.out.println("Songs in the playlist: ");
+        new SongRepository().displayAllSongs(playlist.getSongList());
+    }
 }
