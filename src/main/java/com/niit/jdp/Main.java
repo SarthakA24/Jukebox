@@ -67,7 +67,7 @@ public class Main {
                         }
                     }
                 }
-            } while (choice != 6);
+            } while (choice != 5);
         } catch (SQLException e) {
             System.err.println(e.getMessage());
             e.printStackTrace();

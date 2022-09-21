@@ -97,7 +97,6 @@ public class JukeboxService {
         System.out.println("2. Create a Playlist.");
         System.out.println("3. Play your playlists.");
         System.out.println("4. Add songs to a playlist.");
-        System.out.println("5. Play songs from a playlist.");
-        System.out.println("6. Exit the Jukebox.");
+        System.out.println("5. Exit the Jukebox.");
     }
 }
