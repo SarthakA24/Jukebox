@@ -85,6 +85,20 @@ public class SongRepository {
     }
 
     /**
+     * This method returns the song object based on the song id from the database
+     *
+     * @param connection The connection to the database
+     * @param songId     The song id to find
+     * @return The song object found based on the id
+     * @throws SQLException
+     */
+    public Song getSongById(Connection connection, int songId) throws SQLException {
+        // Call the method getAllSongs() to get a list of songs
+        List<Song> songList = getAllSongs(connection);
+        return songList.stream().filter(song -> song.getId() == songId).findFirst().orElse(new Song());
+    }
+
+    /**
      * This method is used to get all the songs of a particular artist as a list from the table in database.
      *
      * @param connection The connection to the database.
