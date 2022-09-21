@@ -15,14 +15,6 @@ import java.util.List;
 
 public class JukeboxService {
     /**
-     * This method is used to display all the songs from the provided list of songs
-     *
-     * @param songsList The list of songs to be displayed.
-     */
-    public void displayAllSongs(List<Song> songsList) {
-    }
-
-    /**
      * This method is used to display details of a particular song
      *
      * @param song The song whose details are to be displayed.

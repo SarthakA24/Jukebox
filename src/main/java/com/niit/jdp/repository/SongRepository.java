@@ -138,4 +138,13 @@ public class SongRepository {
         List<Song> songList = getAllSongs(connection);
         return songList.stream().filter(song -> song.getName().equalsIgnoreCase(songName)).findFirst().orElse(new Song());
     }
+
+    /**
+     * This method is used to display all the songs from the provided list of songs
+     *
+     * @param songsList The list of songs to be displayed.
+     */
+    public void displayAllSongs(List<Song> songsList) {
+    }
+
 }
