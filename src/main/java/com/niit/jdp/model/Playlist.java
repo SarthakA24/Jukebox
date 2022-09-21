@@ -1,20 +1,17 @@
 package com.niit.jdp.model;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 public class Playlist {
     private String playlistName;
-    private List<Song> songsList;
+    private String songsId;
 
     public Playlist() {
-        this.songsList = new ArrayList<>();
     }
 
-    public Playlist(String playlistName, List<Song> songsList) {
+    public Playlist(String playlistName, String songsId) {
         this.playlistName = playlistName;
-        this.songsList = songsList;
+        this.songsId = songsId;
     }
 
     public String getPlaylistName() {
@@ -25,12 +22,12 @@ public class Playlist {
         this.playlistName = playlistName;
     }
 
-    public List<Song> getSongsList() {
-        return songsList;
+    public String getSongsId() {
+        return songsId;
     }
 
-    public void setSongsList(List<Song> songsList) {
-        this.songsList = songsList;
+    public void setSongsId(String songsId) {
+        this.songsId = songsId;
     }
 
     @Override
@@ -38,16 +35,16 @@ public class Playlist {
         if (this == o) return true;
         if (!(o instanceof Playlist)) return false;
         Playlist playlist = (Playlist) o;
-        return Objects.equals(getPlaylistName(), playlist.getPlaylistName()) && Objects.equals(getSongsList(), playlist.getSongsList());
+        return Objects.equals(getPlaylistName(), playlist.getPlaylistName()) && Objects.equals(getSongsId(), playlist.getSongsId());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getPlaylistName(), getSongsList());
+        return Objects.hash(getPlaylistName(), getSongsId());
     }
 
     @Override
     public String toString() {
-        return "Playlist{" + "playlistName='" + getPlaylistName() + '\'' + ", songsList=" + getSongsList() + '}';
+        return "Playlist{" + "playlistName='" + getPlaylistName() + '\'' + ", songsList=" + getSongsId() + '}';
     }
 }
