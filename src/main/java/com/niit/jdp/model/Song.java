@@ -95,14 +95,6 @@ public class Song {
 
     @Override
     public String toString() {
-        return "Song{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", durationInSeconds=" + durationInSeconds +
-                ", url='" + url + '\'' +
-                ", artistName='" + artistName + '\'' +
-                ", albumName='" + albumName + '\'' +
-                ", genre='" + genre + '\'' +
-                '}';
+        return String.format("%1s | %31s | %5s | %15s | %20s", "| " + name, durationInSeconds, artistName, albumName, genre + " |\n");
     }
 }

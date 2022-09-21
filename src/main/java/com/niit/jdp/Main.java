@@ -86,6 +86,26 @@ public class Main {
                         System.err.println("Playlist with the name " + playlistName + " does not exist!");
                     }
                 } else if (choice == 5) {
+                    System.out.println("Enter the playlist name - ");
+                    scanner.nextLine();
+                    String playlistName = scanner.nextLine();
+                    List<String> playlistsName = playlistRepository.getPlaylistsName(connection);
+                    if (playlistsName.contains(playlistName)) {
+                        Playlist playlistByName = playlistRepository.getPlaylistByName(connection, playlistName);
+                        playlistRepository.displayPlaylist(playlistByName);
+                        System.out.println("Enter the name of the song to remove - ");
+                        String songName = scanner.nextLine();
+                        Song songToRemove = songRepository.searchSongsByName(allSongs, songName);
+                        boolean result = playlistRepository.removeSongFromPlaylist(connection, songToRemove, playlistName);
+                        if (result) {
+                            System.out.println("Song removed from the playlist successfully!");
+                        } else {
+                            System.err.println("Incorrect song name!");
+                        }
+                    } else {
+                        System.err.println("Playlist with the name " + playlistName + " does not exist!");
+                    }
+                } else if (choice == 6) {
                     System.out.println("Enter the playlist name you want to edit - ");
                     scanner.nextLine();
                     String oldPlaylistName = scanner.nextLine();
@@ -100,7 +120,7 @@ public class Main {
                     } else {
                         System.err.println("Playlist with the name " + oldPlaylistName + " does not exist!");
                     }
-                } else if (choice == 6) {
+                } else if (choice == 7) {
                     System.out.println("Enter the Genre - ");
                     scanner.nextLine();
                     String genreName = scanner.nextLine();
@@ -110,7 +130,7 @@ public class Main {
                     } else {
                         System.err.println("No songs found with the genre " + genreName);
                     }
-                } else if (choice == 7) {
+                } else if (choice == 8) {
                     System.out.println("Enter the Artist Name - ");
                     scanner.nextLine();
                     String artistName = scanner.nextLine();
@@ -121,7 +141,7 @@ public class Main {
                         System.err.println("No songs found with the genre " + artistName);
                     }
                 }
-            } while (choice != 8);
+            } while (choice != 9);
         } catch (SQLException e) {
             System.err.println(e.getMessage());
             e.printStackTrace();
