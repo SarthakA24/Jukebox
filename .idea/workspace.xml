@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="edited the printConnectionStatus with proper curly brackets">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="completed the method searchSongsByGenre() to search and get a list of songs by genre">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +63,7 @@
       <workItem from="1663688629216" duration="4904000" />
       <workItem from="1663730089870" duration="90000" />
       <workItem from="1663730536918" duration="1720000" />
-      <workItem from="1663732408689" duration="1281000" />
+      <workItem from="1663732408689" duration="1863000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1663673455317</created>
@@ -388,7 +387,28 @@
       <option name="project" value="LOCAL" />
       <updated>1663732799095</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="completed the method searchSongsByArtist() to search and get a list of songs by artist name">
+      <created>1663733962654</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1663733962654</updated>
+    </task>
+    <task id="LOCAL-00048" summary="completed the method searchSongsByArtist() to search and get a list of songs by artist name">
+      <created>1663734052584</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1663734052584</updated>
+    </task>
+    <task id="LOCAL-00049" summary="completed the method searchSongsByGenre() to search and get a list of songs by genre">
+      <created>1663734185062</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1663734185062</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,8 +426,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added the method signature for addSongToCatalog()" />
-    <MESSAGE value="added the method signature for deleteSongFromCatalog()" />
     <MESSAGE value="added the method signature for getAllSongs()" />
     <MESSAGE value="added the method signatures for searching songs by artist, genre and name" />
     <MESSAGE value="added the method signature for createNewPlaylist()" />
@@ -431,7 +449,9 @@
     <MESSAGE value="completed the method deleteSongFromCatalog() to delete a song from the database" />
     <MESSAGE value="completed the method getAllSongs() to retrieve all the songs from the database" />
     <MESSAGE value="edited the printConnectionStatus with proper curly brackets" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited the printConnectionStatus with proper curly brackets" />
+    <MESSAGE value="completed the method searchSongsByArtist() to search and get a list of songs by artist name" />
+    <MESSAGE value="completed the method searchSongsByGenre() to search and get a list of songs by genre" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed the method searchSongsByGenre() to search and get a list of songs by genre" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

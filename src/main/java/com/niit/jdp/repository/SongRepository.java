@@ -119,7 +119,9 @@ public class SongRepository {
      * @param songName   The name of the song.
      * @return The songs if found with that name, empty song object otherwise.
      */
-    public Song searchSongsByName(Connection connection, String songName) {
-        return new Song();
+    public Song searchSongsByName(Connection connection, String songName) throws SQLException {
+        // Call the method getAllSongs() to get a list of songs
+        List<Song> songList = getAllSongs(connection);
+        return songList.stream().filter(song -> song.getName().equals(songName)).findFirst().orElse(new Song());
     }
 }
