@@ -99,11 +99,12 @@ public class PlaylistRepository {
     /**
      * This method is used to remove a song from a playlist.
      *
-     * @param connection The connection to the database.
-     * @param songId     The id of the song to be removed from the playlist.
+     * @param connection   The connection to the database.
+     * @param songId       The id of the song to be removed from the playlist.
+     * @param playlistName The name of the playlist from which the song needs to be removed
      * @return true if the song is removed successfully, false otherwise.
      */
-    public boolean removeSongFromPlaylist(Connection connection, int songId) {
+    public boolean removeSongFromPlaylist(Connection connection, int songId, String playlistName) {
         return false;
     }
 
