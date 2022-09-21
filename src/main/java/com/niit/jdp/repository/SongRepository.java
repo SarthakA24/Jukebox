@@ -95,7 +95,7 @@ public class SongRepository {
         // Call the method getAllSongs() to get a list of songs
         List<Song> songList = getAllSongs(connection);
         // Filter the songs and add the song with the given artist name to list and return the list
-        return songList.stream().filter(song -> song.getArtistName().equals(artistName)).collect(Collectors.toList());
+        return songList.stream().filter(song -> song.getArtistName().equalsIgnoreCase(artistName)).collect(Collectors.toList());
     }
 
     /**
@@ -109,7 +109,7 @@ public class SongRepository {
         // Call the method getAllSongs() to get a list of songs
         List<Song> songList = getAllSongs(connection);
         // Filter the songs and add the song with the given genre name to list and return the list
-        return songList.stream().filter(song -> song.getArtistName().equals(genre)).collect(Collectors.toList());
+        return songList.stream().filter(song -> song.getArtistName().equalsIgnoreCase(genre)).collect(Collectors.toList());
     }
 
     /**
@@ -122,6 +122,6 @@ public class SongRepository {
     public Song searchSongsByName(Connection connection, String songName) throws SQLException {
         // Call the method getAllSongs() to get a list of songs
         List<Song> songList = getAllSongs(connection);
-        return songList.stream().filter(song -> song.getName().equals(songName)).findFirst().orElse(new Song());
+        return songList.stream().filter(song -> song.getName().equalsIgnoreCase(songName)).findFirst().orElse(new Song());
     }
 }
