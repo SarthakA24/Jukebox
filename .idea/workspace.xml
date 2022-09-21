@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="edited the displayMenu() menu">
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added the if else for choice 4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,21 +103,8 @@
       <workItem from="1663758668837" duration="255000" />
       <workItem from="1663759094807" duration="3753000" />
       <workItem from="1663763129015" duration="4328000" />
-      <workItem from="1663772004680" duration="3522000" />
-    </task>
-    <task id="LOCAL-00048" summary="completed the method searchSongsByArtist() to search and get a list of songs by artist name">
-      <created>1663734052584</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1663734052584</updated>
-    </task>
-    <task id="LOCAL-00049" summary="completed the method searchSongsByGenre() to search and get a list of songs by genre">
-      <created>1663734185062</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1663734185062</updated>
+      <workItem from="1663772004680" duration="3846000" />
+      <workItem from="1663776211572" duration="916000" />
     </task>
     <task id="LOCAL-00050" summary="completed the method searchSongsByName() to search and get the song by song name">
       <created>1663734526879</created>
@@ -446,7 +435,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663773768156</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="added the if else for choice 4">
+      <created>1663776039516</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1663776039516</updated>
+    </task>
+    <task id="LOCAL-00098" summary="added the if else for choice 4">
+      <created>1663776053440</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1663776053440</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -464,7 +467,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="completed the method playPlaylist()" />
     <MESSAGE value="edited the method playPlaylist() to call shuffle playlist method and get the shuffled array" />
     <MESSAGE value="moved the method displayAllSongs() from JukeboxService to SongRepository" />
     <MESSAGE value="completed the method displaySongDetails()" />
@@ -489,7 +491,8 @@
     <MESSAGE value="updated the if else conditions according to changes in the methods" />
     <MESSAGE value="added while loop in result set for getPlaylistByName()" />
     <MESSAGE value="edited the displayMenu() menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited the displayMenu() menu" />
+    <MESSAGE value="added the if else for choice 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the if else for choice 4" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

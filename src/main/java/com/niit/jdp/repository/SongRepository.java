@@ -45,27 +45,24 @@ public class SongRepository {
     /**
      * This method returns the song object based on the song id from the database
      *
-     * @param connection The connection to the database
-     * @param songId     The song id to find
+     * @param songList The list of songs from where to search
+     * @param songId   The song id to find
      * @return The song object found based on the id
      * @throws SQLException
      */
-    public Song getSongById(Connection connection, int songId) throws SQLException {
-        // Call the method getAllSongs() to get a list of songs
-        List<Song> songList = getAllSongs(connection);
+    public Song getSongById(List<Song> songList, int songId) throws SQLException {
+        // Return the song object based on the song id
         return songList.stream().filter(song -> song.getId() == songId).findFirst().orElse(new Song());
     }
 
     /**
      * This method is used to get all the songs of a particular artist as a list from the table in database.
      *
-     * @param connection The connection to the database.
+     * @param songList   The list of songs from where to search
      * @param artistName The name of the artist.
      * @return The list of songs of the artist.
      */
-    public List<Song> searchSongsByArtist(Connection connection, String artistName) throws SQLException {
-        // Call the method getAllSongs() to get a list of songs
-        List<Song> songList = getAllSongs(connection);
+    public List<Song> searchSongsByArtist(List<Song> songList, String artistName) throws SQLException {
         // Filter the songs and add the song with the given artist name to list and return the list
         return songList.stream().filter(song -> song.getArtistName().equalsIgnoreCase(artistName)).collect(Collectors.toList());
     }
@@ -73,13 +70,11 @@ public class SongRepository {
     /**
      * This method is used to get all the songs of a particular genre as a list from the table in database.
      *
-     * @param connection The connection to the database.
-     * @param genre      The genre of the song.
+     * @param songList The list of songs from where to search
+     * @param genre    The genre of the song.
      * @return The list of songs of the genre.
      */
-    public List<Song> searchSongsByGenre(Connection connection, String genre) throws SQLException {
-        // Call the method getAllSongs() to get a list of songs
-        List<Song> songList = getAllSongs(connection);
+    public List<Song> searchSongsByGenre(List<Song> songList, String genre) throws SQLException {
         // Filter the songs and add the song with the given genre name to list and return the list
         return songList.stream().filter(song -> song.getArtistName().equalsIgnoreCase(genre)).collect(Collectors.toList());
     }
@@ -87,13 +82,11 @@ public class SongRepository {
     /**
      * This method is used to search for a specific song from the table in database
      *
-     * @param connection The connection to the database.
-     * @param songName   The name of the song.
+     * @param songList The list of songs from where to search
+     * @param songName The name of the song.
      * @return The songs if found with that name, empty song object otherwise.
      */
-    public Song searchSongsByName(Connection connection, String songName) throws SQLException {
-        // Call the method getAllSongs() to get a list of songs
-        List<Song> songList = getAllSongs(connection);
+    public Song searchSongsByName(List<Song> songList, String songName) throws SQLException {
         return songList.stream().filter(song -> song.getName().equalsIgnoreCase(songName)).findFirst().orElse(new Song());
     }
 

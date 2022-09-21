@@ -60,8 +60,9 @@ public class PlaylistRepository {
             }
             // Split the songs id string to get the individual song id and iterate over the list to get the song object
             String[] songsIdArray = songsId.split(",");
+            List<Song> allSongsList = songRepository.getAllSongs(connection);
             for (String songId : songsIdArray) {
-                songList.add(songRepository.getSongById(connection, Integer.parseInt(songId)));
+                songList.add(songRepository.getSongById(allSongsList, Integer.parseInt(songId)));
                 playlistByName.setSongList(songList);
             }
         }

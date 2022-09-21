@@ -11,6 +11,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.IntStream;
 
 public class Main {
     public static void main(String[] args) {
@@ -34,8 +35,8 @@ public class Main {
                 // display the jukebox menu
                 jukeboxService.displayMenu();
                 choice = scanner.nextInt();
+                List<Song> allSongs = songRepository.getAllSongs(connection);
                 if (choice == 1) {
-                    List<Song> allSongs = songRepository.getAllSongs(connection);
                     songRepository.displayAllSongs(allSongs);
                 } else if (choice == 2) {
                     System.out.println("Enter the playlist name - ");
@@ -53,9 +54,7 @@ public class Main {
                     if (playlistsName.size() == 0) {
                         System.err.println("There are no playlists created!!");
                     } else {
-                        for (int index = 0; index < playlistsName.size(); index++) {
-                            System.out.println(index + 1 + ". " + playlistsName.get(index));
-                        }
+                        IntStream.range(0, playlistsName.size()).mapToObj(index -> index + 1 + ". " + playlistsName.get(index)).forEach(System.out::println);
                         System.out.println("Please enter the playlist name that you need to play - ");
                         scanner.nextLine();
                         String selectedPlaylist = scanner.nextLine().toLowerCase();
@@ -68,16 +67,21 @@ public class Main {
                     }
                 } else if (choice == 4) {
                     System.out.println("Enter the playlist name - ");
+                    scanner.nextLine();
                     String playlistName = scanner.nextLine();
                     List<String> playlistsName = playlistRepository.getPlaylistsName(connection);
                     if (playlistsName.contains(playlistName)) {
                         System.out.println("Songs in the Jukebox - ");
-                        List<Song> allSongs = songRepository.getAllSongs(connection);
                         songRepository.displayAllSongs(allSongs);
                         System.out.println("Enter the song name to add to the playlist - ");
                         String songName = scanner.nextLine();
-                        Song song = songRepository.searchSongsByName(connection, songName);
-                        playlistRepository.addSongToPlaylist(connection, song, playlistName);
+                        Song song = songRepository.searchSongsByName(allSongs, songName);
+                        boolean result = playlistRepository.addSongToPlaylist(connection, song, playlistName);
+                        if (result) {
+                            System.out.println("Song added to the playlist successfully!");
+                        } else {
+                            System.err.print(songName + " not added to the list!");
+                        }
                     }
                 }
             } while (choice != 5);
