@@ -21,3 +21,8 @@ ALTER TABLE `jukebox`.`playlist`
 -- make the playlist id auto increment
 ALTER TABLE `jukebox`.`playlist`
     CHANGE COLUMN `playlist_id` `playlist_id` INT NOT NULL AUTO_INCREMENT;
+
+-- made the playlist name unique
+ALTER TABLE `jukebox`.`playlist`
+    ADD UNIQUE INDEX `playlist_name_UNIQUE` (`playlist_name` ASC) VISIBLE;
+;

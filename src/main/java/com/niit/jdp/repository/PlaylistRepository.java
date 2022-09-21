@@ -25,7 +25,7 @@ public class PlaylistRepository {
             // iterate over the result set and add the playlists names in list
             while (resultSet.next()) {
                 String result = resultSet.getString("playlist_name");
-                playlistNamesList.add(result);
+                playlistNamesList.add(result.toLowerCase());
             }
         }
         return playlistNamesList;
