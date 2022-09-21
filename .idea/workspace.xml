@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="completed the method playSong()">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added the method getSongById()">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,14 +64,7 @@
       <workItem from="1663688629216" duration="4904000" />
       <workItem from="1663730089870" duration="90000" />
       <workItem from="1663730536918" duration="1720000" />
-      <workItem from="1663732408689" duration="12647000" />
-    </task>
-    <task id="LOCAL-00020" summary="added the method signature for addSongToCatalog()">
-      <created>1663674610318</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1663674610318</updated>
+      <workItem from="1663732408689" duration="13138000" />
     </task>
     <task id="LOCAL-00021" summary="added the method signature for deleteSongFromCatalog()">
       <created>1663674663846</created>
@@ -411,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663748022429</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="added the method getSongById()">
+      <created>1663749219584</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1663749219584</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,7 +427,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added the sql queries for inserting songs to the table" />
     <MESSAGE value="added java docs for all methods in SongRepository" />
     <MESSAGE value="added Java docs for all methods in PlaylistRepository.java" />
     <MESSAGE value="added java docs for the methods in JukeboxService.java" />
@@ -454,7 +451,8 @@
     <MESSAGE value="edited the parameters for removeSongFromPlaylist() method and edited the java docs" />
     <MESSAGE value="completed the method editPlaylistName()" />
     <MESSAGE value="completed the method playSong()" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed the method playSong()" />
+    <MESSAGE value="added the method getSongById()" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the method getSongById()" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

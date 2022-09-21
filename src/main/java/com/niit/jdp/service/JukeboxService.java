@@ -2,10 +2,13 @@ package com.niit.jdp.service;
 
 import com.niit.jdp.model.Playlist;
 import com.niit.jdp.model.Song;
+import com.niit.jdp.repository.SongRepository;
 
 import javax.sound.sampled.*;
 import java.io.File;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.List;
 
 public class JukeboxService {
@@ -31,8 +34,18 @@ public class JukeboxService {
      *
      * @param playlist The playlist from which the song is to be played.
      */
-    public void playPlaylist(Playlist playlist) {
-
+    public void playPlaylist(Connection connection, Playlist playlist) {
+        try {
+            // Split the songs id string from playlist and store it in an array
+            String[] songIdString = playlist.getSongsId().split(",");
+            SongRepository songRepository = new SongRepository();
+            for (String songId : songIdString) {
+                Song songById = songRepository.getSongById(connection, Integer.parseInt(songId));
+                playSong(songById);
+            }
+        } catch (SQLException exception) {
+            System.err.println(exception.getMessage());
+        }
     }
 
     /**
