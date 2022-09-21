@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="changed the parameters of search methods in SongRepository and updated the method calls">
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added choice 5 for editing playlist name">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,14 +104,7 @@
       <workItem from="1663759094807" duration="3753000" />
       <workItem from="1663763129015" duration="4328000" />
       <workItem from="1663772004680" duration="3846000" />
-      <workItem from="1663776211572" duration="1462000" />
-    </task>
-    <task id="LOCAL-00051" summary="replaced equals() with equalsIgnoreCase() in the search methods">
-      <created>1663734590446</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1663734590447</updated>
+      <workItem from="1663776211572" duration="2165000" />
     </task>
     <task id="LOCAL-00052" summary="added the method signature for getPlaylistsName() method">
       <created>1663735413040</created>
@@ -448,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663778159430</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="added choice 5 for editing playlist name">
+      <created>1663778588681</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1663778588681</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +467,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="moved the method displayAllSongs() from JukeboxService to SongRepository" />
     <MESSAGE value="completed the method displaySongDetails()" />
     <MESSAGE value="corrected the print statement formatting" />
     <MESSAGE value="added a sql file playlist_sql_queries.sql for the sql queries for playlist table" />
@@ -491,7 +491,8 @@
     <MESSAGE value="edited the displayMenu() menu" />
     <MESSAGE value="added the if else for choice 4" />
     <MESSAGE value="changed the parameters of search methods in SongRepository and updated the method calls" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed the parameters of search methods in SongRepository and updated the method calls" />
+    <MESSAGE value="added choice 5 for editing playlist name" />
+    <option name="LAST_COMMIT_MESSAGE" value="added choice 5 for editing playlist name" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

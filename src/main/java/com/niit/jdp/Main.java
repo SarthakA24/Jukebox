@@ -100,8 +100,28 @@ public class Main {
                     } else {
                         System.err.println("Playlist with the name " + oldPlaylistName + " does not exist!");
                     }
+                } else if (choice == 6) {
+                    System.out.println("Enter the Genre - ");
+                    scanner.nextLine();
+                    String genreName = scanner.nextLine();
+                    List<Song> searchedSongsByGenre = songRepository.searchSongsByGenre(allSongs, genreName);
+                    if (searchedSongsByGenre.size() != 0) {
+                        songRepository.displayAllSongs(searchedSongsByGenre);
+                    } else {
+                        System.err.println("No songs found with the genre " + genreName);
+                    }
+                } else if (choice == 7) {
+                    System.out.println("Enter the Artist Name - ");
+                    scanner.nextLine();
+                    String artistName = scanner.nextLine();
+                    List<Song> searchedSongsByArtist = songRepository.searchSongsByArtist(allSongs, artistName);
+                    if (searchedSongsByArtist.size() != 0) {
+                        songRepository.displayAllSongs(searchedSongsByArtist);
+                    } else {
+                        System.err.println("No songs found with the genre " + artistName);
+                    }
                 }
-            } while (choice != 6);
+            } while (choice != 8);
         } catch (SQLException e) {
             System.err.println(e.getMessage());
             e.printStackTrace();

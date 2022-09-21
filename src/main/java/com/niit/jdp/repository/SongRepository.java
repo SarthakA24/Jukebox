@@ -62,7 +62,7 @@ public class SongRepository {
      * @param artistName The name of the artist.
      * @return The list of songs of the artist.
      */
-    public List<Song> searchSongsByArtist(List<Song> songList, String artistName) throws SQLException {
+    public List<Song> searchSongsByArtist(List<Song> songList, String artistName) {
         // Filter the songs and add the song with the given artist name to list and return the list
         return songList.stream().filter(song -> song.getArtistName().equalsIgnoreCase(artistName)).collect(Collectors.toList());
     }
@@ -74,7 +74,7 @@ public class SongRepository {
      * @param genre    The genre of the song.
      * @return The list of songs of the genre.
      */
-    public List<Song> searchSongsByGenre(List<Song> songList, String genre) throws SQLException {
+    public List<Song> searchSongsByGenre(List<Song> songList, String genre) {
         // Filter the songs and add the song with the given genre name to list and return the list
         return songList.stream().filter(song -> song.getArtistName().equalsIgnoreCase(genre)).collect(Collectors.toList());
     }
@@ -86,7 +86,7 @@ public class SongRepository {
      * @param songName The name of the song.
      * @return The songs if found with that name, empty song object otherwise.
      */
-    public Song searchSongsByName(List<Song> songList, String songName) throws SQLException {
+    public Song searchSongsByName(List<Song> songList, String songName) {
         return songList.stream().filter(song -> song.getName().equalsIgnoreCase(songName)).findFirst().orElse(new Song());
     }
 
