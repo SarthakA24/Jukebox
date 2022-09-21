@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="completed the method playPlaylist()">
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="moved the method displayAllSongs() from JukeboxService to SongRepository">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,24 +34,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "sonarlint"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -65,21 +66,7 @@
       <workItem from="1663730089870" duration="90000" />
       <workItem from="1663730536918" duration="1720000" />
       <workItem from="1663732408689" duration="14315000" />
-      <workItem from="1663750842802" duration="307000" />
-    </task>
-    <task id="LOCAL-00023" summary="added the method signatures for searching songs by artist, genre and name">
-      <created>1663674816997</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1663674816997</updated>
-    </task>
-    <task id="LOCAL-00024" summary="added the method signature for createNewPlaylist()">
-      <created>1663674934328</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1663674934329</updated>
+      <workItem from="1663750842802" duration="1033000" />
     </task>
     <task id="LOCAL-00025" summary="added the method signature for adding and removing song from playlist">
       <created>1663675086973</created>
@@ -410,7 +397,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663749614349</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="edited the method playPlaylist() to call shuffle playlist method and get the shuffled array">
+      <created>1663751220677</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1663751220679</updated>
+    </task>
+    <task id="LOCAL-00073" summary="moved the method displayAllSongs() from JukeboxService to SongRepository">
+      <created>1663751370603</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1663751370603</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,8 +429,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added Java docs for all methods in PlaylistRepository.java" />
-    <MESSAGE value="added java docs for the methods in JukeboxService.java" />
     <MESSAGE value="completed the method addSongToCatalog() to add a song to the database" />
     <MESSAGE value="completed the method deleteSongFromCatalog() to delete a song from the database" />
     <MESSAGE value="completed the method getAllSongs() to retrieve all the songs from the database" />
@@ -453,7 +452,9 @@
     <MESSAGE value="completed the method playSong()" />
     <MESSAGE value="added the method getSongById()" />
     <MESSAGE value="completed the method playPlaylist()" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed the method playPlaylist()" />
+    <MESSAGE value="edited the method playPlaylist() to call shuffle playlist method and get the shuffled array" />
+    <MESSAGE value="moved the method displayAllSongs() from JukeboxService to SongRepository" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved the method displayAllSongs() from JukeboxService to SongRepository" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
