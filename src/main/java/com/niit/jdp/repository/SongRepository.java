@@ -145,6 +145,9 @@ public class SongRepository {
      * @param songsList The list of songs to be displayed.
      */
     public void displayAllSongs(List<Song> songsList) {
+        System.out.println("---------------------------------------------------------------------------------------------");
+        System.out.format("%1s %31s %5s %15s %20s", "| Song Name", "| Song Duration (in Seconds)", "| Artist Name", "| Album Name", "| Genre |\n");
+        System.out.println("---------------------------------------------------------------------------------------------");
+        songsList.forEach(System.out::println);
     }
-
 }

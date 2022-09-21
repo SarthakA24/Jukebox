@@ -95,6 +95,14 @@ public class Song {
 
     @Override
     public String toString() {
-        return "Song{" + "id=" + getId() + ", name='" + getName() + '\'' + ", durationInSeconds=" + getDurationInSeconds() + ", url='" + getUrl() + '\'' + ", artistName='" + getArtistName() + '\'' + ", albumName='" + getAlbumName() + '\'' + ", genre='" + getGenre() + '\'' + '}';
+        return "Song{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", durationInSeconds=" + durationInSeconds +
+                ", url='" + url + '\'' +
+                ", artistName='" + artistName + '\'' +
+                ", albumName='" + albumName + '\'' +
+                ", genre='" + genre + '\'' +
+                '}';
     }
 }
