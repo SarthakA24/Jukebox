@@ -116,7 +116,14 @@ public class PlaylistRepository {
      * @param newPlaylistName The new name of the playlist.
      * @return true if the playlist name is edited successfully, false otherwise.
      */
-    public boolean editPlaylistName(Connection connection, String oldPlaylistName, String newPlaylistName) {
-        return false;
+    public boolean editPlaylistName(Connection connection, String oldPlaylistName, String newPlaylistName) throws SQLException {
+        // Create a update query to update the playlist name
+        String updateQuery = "UPDATE `jukebox`.`playlist` SET `playlist_name` = ? WHERE (`playlist_name` = ?);";
+        // Create a prepared statement to execute the query
+        try (PreparedStatement preparedStatement = connection.prepareStatement(updateQuery)) {
+            preparedStatement.setString(1, newPlaylistName);
+            preparedStatement.setString(2, oldPlaylistName);
+            return preparedStatement.executeUpdate() > 0;
+        }
     }
 }
