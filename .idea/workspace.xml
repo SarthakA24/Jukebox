@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="edited the getPlaylistByName() method">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" afterDir="false" />
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="edited the addSongToPlaylist() method">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,14 +99,7 @@
       <workItem from="1663750842802" duration="7360000" />
       <workItem from="1663758668837" duration="255000" />
       <workItem from="1663759094807" duration="3753000" />
-      <workItem from="1663763129015" duration="2545000" />
-    </task>
-    <task id="LOCAL-00043" summary="completed the method deleteSongFromCatalog() to delete a song from the database">
-      <created>1663731486492</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1663731486492</updated>
+      <workItem from="1663763129015" duration="3387000" />
     </task>
     <task id="LOCAL-00044" summary="completed the method getAllSongs() to retrieve all the songs from the database">
       <created>1663731995254</created>
@@ -444,7 +437,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663769542020</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="edited the addSongToPlaylist() method">
+      <created>1663769932404</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1663769932404</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -462,7 +462,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="completed the method addSongToPlaylist()" />
     <MESSAGE value="edited the parameters for removeSongFromPlaylist() method and edited the java docs" />
     <MESSAGE value="completed the method editPlaylistName()" />
     <MESSAGE value="completed the method playSong()" />
@@ -487,7 +486,8 @@
     <MESSAGE value="migrated the data type for songsId to List of songs and renamed the field to songList" />
     <MESSAGE value="added sql queries to alter the table" />
     <MESSAGE value="edited the getPlaylistByName() method" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited the getPlaylistByName() method" />
+    <MESSAGE value="edited the addSongToPlaylist() method" />
+    <option name="LAST_COMMIT_MESSAGE" value="edited the addSongToPlaylist() method" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
