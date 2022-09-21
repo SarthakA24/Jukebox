@@ -19,3 +19,13 @@ w
 G.idea/sonarlint/issuestore/b/b/bb17f983652a590983a0fef0b9f1bcd60f37b43e,1/e/1e968fc28e0b8cc27783a9426aed197b197eec9b
 w
 G.idea/sonarlint/issuestore/c/a/caf97cd93185367b7e75c6e6ff8a52616822ff4e,7/d/7d7c8a38f7e0c2614294eca23cd3e015dddef2c8
+w
+G.idea/sonarlint/issuestore/1/e/1e968fc28e0b8cc27783a9426aed197b197eec9b,1/5/157c65f9ba11d4ddaea6dd0976d8bd41942b6d62
+w
+G.idea/sonarlint/issuestore/7/d/7d7c8a38f7e0c2614294eca23cd3e015dddef2c8,f/c/fc82b6f6e0b3be0b8c4d189ba89b3ed8140c331f
+w
+G.idea/sonarlint/issuestore/5/b/5b668bfd1f6a9f1ffc159e93a2ffda5bcd200569,f/f/ff621ffcc3154a2eb9b39bdd1a435ae3c9e86f63
+w
+G.idea/sonarlint/issuestore/3/a/3a216162721ba36f05a76762c08a9ab9efe35a93,c/1/c12ac0c295129a457aa6a51b81e2833c7a5da3d9
+w
+G.idea/sonarlint/issuestore/0/c/0ce6648aebbdd40a658103321a323f5002270c63,e/f/ef692907440f8cb23412e8cb579acda31aee6809

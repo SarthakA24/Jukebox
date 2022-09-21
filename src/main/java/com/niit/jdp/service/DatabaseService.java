@@ -31,7 +31,10 @@ public class DatabaseService {
      * This method prints if the database is connected or not
      */
     public void printConnectionStatus() {
-        if (connection != null) System.out.println("\u001B[32mDatabase is connected.\u001B[0m");
-        else System.err.println("!!!Database is NOT connected!!!");
+        if (connection != null) {
+            System.out.println("\u001B[32mDatabase is connected.\u001B[0m");
+        } else {
+            System.err.println("!!!Database is NOT connected!!!");
+        }
     }
 }
