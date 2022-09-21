@@ -5,6 +5,7 @@ import com.niit.jdp.model.Song;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class SongRepository {
     /**
@@ -90,8 +91,11 @@ public class SongRepository {
      * @param artistName The name of the artist.
      * @return The list of songs of the artist.
      */
-    public List<Song> searchSongsByArtist(Connection connection, String artistName) {
-        return List.of();
+    public List<Song> searchSongsByArtist(Connection connection, String artistName) throws SQLException {
+        // Call the method getAllSongs() to get a list of songs
+        List<Song> songList = getAllSongs(connection);
+        // Filter the songs and add the song with the given artist name to list and return the list
+        return songList.stream().filter(song -> song.getArtistName().equals(artistName)).collect(Collectors.toList());
     }
 
     /**
