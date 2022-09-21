@@ -4,6 +4,11 @@ import com.niit.jdp.model.Playlist;
 import com.niit.jdp.model.Song;
 
 import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 public class PlaylistRepository {
 
@@ -13,8 +18,20 @@ public class PlaylistRepository {
      * @param connection The connection to the database
      * @return A string of playlists names
      */
-    public String[] getPlaylistsName(Connection connection) {
-        return new String[]{};
+    public List<String> getPlaylistsName(Connection connection) throws SQLException {
+        List<String> playlistNamesList = new ArrayList<>();
+        // Create a select query to get all the playlists names
+        String selectQuery = "SELECT `playlist_name` FROM `jukebox`.`playlist`;";
+        // Create a statement object to execute the query and get the result set
+        try (Statement statement = connection.createStatement()) {
+            ResultSet resultSet = statement.executeQuery(selectQuery);
+            // iterate over the result set and add the playlists names in list
+            while (resultSet.next()) {
+                String result = resultSet.getString("playlist_name");
+                playlistNamesList.add(result);
+            }
+        }
+        return playlistNamesList;
     }
 
     /**
