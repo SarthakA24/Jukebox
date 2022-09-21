@@ -7,7 +7,7 @@ import java.util.List;
 
 public class JukeboxService {
     /**
-     * This method is used to display all the songs from the database
+     * This method is used to display all the songs from the provided list of songs
      *
      * @param songsList The list of songs to be displayed.
      */
@@ -19,30 +19,25 @@ public class JukeboxService {
      *
      * @param song The song whose details are to be displayed.
      */
-    public void displaySong(Song song) {
+    public void displaySongDetails(Song song) {
 
     }
 
     /**
-     * This method is used to play a song from the playlist
+     * This method is used to play songs from the playlist
      *
      * @param playlist The playlist from which the song is to be played.
      */
-    public void playSong(Playlist playlist) {
+    public void playPlaylist(Playlist playlist) {
 
     }
 
     /**
-     * This method is used to play the current paused song
+     * This method is used to play a song
+     *
+     * @param song The song object that needs to be played
      */
-    public void playSong() {
-
-    }
-
-    /**
-     * This method is used to pause a currently playing song
-     */
-    public void pauseSong() {
+    public void playSong(Song song) {
 
     }
 
