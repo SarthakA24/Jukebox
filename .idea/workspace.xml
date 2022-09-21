@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added a sql file playlist_sql_queries.sql for the sql queries for playlist table">
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added the method signature for displayMenu() method">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,14 +86,7 @@
       <workItem from="1663730089870" duration="90000" />
       <workItem from="1663730536918" duration="1720000" />
       <workItem from="1663732408689" duration="14315000" />
-      <workItem from="1663750842802" duration="3320000" />
-    </task>
-    <task id="LOCAL-00028" summary="added the private static final fields for database URL, USERNAME and PASSWORD, and added the field for Connection object">
-      <created>1663675813088</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1663675813088</updated>
+      <workItem from="1663750842802" duration="3712000" />
     </task>
     <task id="LOCAL-00029" summary="added the getter method for connection">
       <created>1663675834596</created>
@@ -432,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663754024050</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="added the method signature for displayMenu() method">
+      <created>1663754383677</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1663754383677</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,7 +449,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="edited the printConnectionStatus with proper curly brackets" />
     <MESSAGE value="completed the method searchSongsByArtist() to search and get a list of songs by artist name" />
     <MESSAGE value="completed the method searchSongsByGenre() to search and get a list of songs by genre" />
     <MESSAGE value="completed the method searchSongsByName() to search and get the song by song name" />
@@ -475,7 +473,8 @@
     <MESSAGE value="completed the method displaySongDetails()" />
     <MESSAGE value="corrected the print statement formatting" />
     <MESSAGE value="added a sql file playlist_sql_queries.sql for the sql queries for playlist table" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a sql file playlist_sql_queries.sql for the sql queries for playlist table" />
+    <MESSAGE value="added the method signature for displayMenu() method" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the method signature for displayMenu() method" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

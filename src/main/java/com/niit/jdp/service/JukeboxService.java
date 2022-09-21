@@ -102,6 +102,14 @@ public class JukeboxService {
      * This method displays the user menu for the Jukebox
      */
     public void displayMenu() {
-
+        System.out.println("===============================");
+        System.out.println("WELCOME TO THE JUKEBOX");
+        System.out.println("===============================");
+        System.out.println("Please select from the options below - ");
+        System.out.println("1. Display all Songs in the Jukebox.");
+        System.out.println("2. View your playlists.");
+        System.out.println("3. Create a Playlist.");
+        System.out.println("4. Add songs to a playlist.");
+        System.out.println("5. Play songs from a playlist.");
     }
 }
