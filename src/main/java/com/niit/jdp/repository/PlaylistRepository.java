@@ -1,7 +1,6 @@
 package com.niit.jdp.repository;
 
 import com.niit.jdp.model.Playlist;
-import com.niit.jdp.model.Song;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -76,12 +75,25 @@ public class PlaylistRepository {
     /**
      * This method is used to add a song to a playlist.
      *
-     * @param connection The connection to the database.
-     * @param song       The song to be added to the playlist.
+     * @param connection   The connection to the database.
+     * @param songId       The id of the song that needs to be added
+     * @param playlistName The name of the playlist to which the song needs to be added
      * @return true if the song is added successfully, false otherwise.
      */
-    public boolean addSongToPlaylist(Connection connection, Song song) {
-        return false;
+    public boolean addSongToPlaylist(Connection connection, int songId, String playlistName) throws SQLException {
+        // Call the method to get the playlist by name
+        Playlist playlistByName = getPlaylistByName(connection, playlistName);
+        // Create a string of songs id to update in the table
+        // First, add the already present songs id to the string and then append the song id to be added
+        String songIdToUpdate = playlistByName.getSongsId() + "," + songId;
+        // Create a update query to update the songs id in the database
+        String updateQuery = "UPDATE `jukebox`.`playlist` SET `list_of_songs` = ? WHERE (`playlist_name` = ?);";
+        // Create a prepared statement to execute the query
+        try (PreparedStatement preparedStatement = connection.prepareStatement(updateQuery)) {
+            preparedStatement.setString(1, songIdToUpdate);
+            preparedStatement.setString(2, playlistName);
+            return preparedStatement.executeUpdate() > 0;
+        }
     }
 
     /**
