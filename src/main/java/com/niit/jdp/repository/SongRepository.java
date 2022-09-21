@@ -2,9 +2,8 @@ package com.niit.jdp.repository;
 
 import com.niit.jdp.model.Song;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class SongRepository {
@@ -59,8 +58,29 @@ public class SongRepository {
      * @param connection The connection to the database.
      * @return The list of songs.
      */
-    public List<Song> getAllSongs(Connection connection) {
-        return List.of();
+    public List<Song> getAllSongs(Connection connection) throws SQLException {
+        List<Song> songsList = new ArrayList<>();
+        // declare a variable of string datatype to hold the select query
+        String selectStatement = "SELECT * FROM `jukebox`.`song`;";
+        // declare an object for Statement to execute the query and store the result in a result set
+        try (Statement statement = connection.createStatement()) {
+            // execute the query
+            ResultSet resultset = statement.executeQuery(selectStatement);
+            // iterate through the result set and add the songs to the list
+            while (resultset.next()) {
+                Song song = new Song();
+                song.setId(resultset.getInt("id"));
+                song.setName(resultset.getString("name"));
+                song.setDurationInSeconds(resultset.getInt("duration_in_seconds"));
+                song.setUrl(resultset.getString("url"));
+                song.setArtistName(resultset.getString("artist_name"));
+                song.setAlbumName(resultset.getString("album_name"));
+                song.setGenre(resultset.getString("genre"));
+                // add the song to the list
+                songsList.add(song);
+            }
+        }
+        return songsList;
     }
 
     /**
