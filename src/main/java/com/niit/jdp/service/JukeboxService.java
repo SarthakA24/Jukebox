@@ -19,7 +19,7 @@ public class JukeboxService {
      *
      * @param song The song whose details are to be displayed.
      */
-    public void displayAllSongs(Song song) {
+    public void displaySong(Song song) {
 
     }
 

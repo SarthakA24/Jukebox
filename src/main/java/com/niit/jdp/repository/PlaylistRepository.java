@@ -5,6 +5,17 @@ import com.niit.jdp.model.Song;
 import java.sql.Connection;
 
 public class PlaylistRepository {
+
+    /**
+     * This method is used to get the names of all the playlists from the database
+     *
+     * @param connection The connection to the database
+     * @return A string of playlists names
+     */
+    public String[] getPlaylistsName(Connection connection) {
+        return new String[]{};
+    }
+
     /**
      * This method is used to create a new playlist.
      *
