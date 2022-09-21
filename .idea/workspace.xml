@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added choice 5 for editing playlist name">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" afterDir="false" />
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="removed redundant use of variables">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,21 +101,7 @@
       <workItem from="1663759094807" duration="3753000" />
       <workItem from="1663763129015" duration="4328000" />
       <workItem from="1663772004680" duration="3846000" />
-      <workItem from="1663776211572" duration="2165000" />
-    </task>
-    <task id="LOCAL-00052" summary="added the method signature for getPlaylistsName() method">
-      <created>1663735413040</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1663735413040</updated>
-    </task>
-    <task id="LOCAL-00053" summary="added the sql query for creating a playlist table">
-      <created>1663735609526</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1663735609526</updated>
+      <workItem from="1663776211572" duration="2835000" />
     </task>
     <task id="LOCAL-00054" summary="added the method signature for getPlaylist() to get a playlist as per the provided name">
       <created>1663735876099</created>
@@ -449,7 +432,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663778588681</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="added if else cases for searching based on artist and genre">
+      <created>1663779308289</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1663779308289</updated>
+    </task>
+    <task id="LOCAL-00102" summary="removed redundant use of variables">
+      <created>1663779394127</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1663779394127</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,8 +464,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="completed the method displaySongDetails()" />
-    <MESSAGE value="corrected the print statement formatting" />
     <MESSAGE value="added a sql file playlist_sql_queries.sql for the sql queries for playlist table" />
     <MESSAGE value="added the method signature for displayMenu() method" />
     <MESSAGE value="completed the method displayMenu()" />
@@ -492,7 +487,9 @@
     <MESSAGE value="added the if else for choice 4" />
     <MESSAGE value="changed the parameters of search methods in SongRepository and updated the method calls" />
     <MESSAGE value="added choice 5 for editing playlist name" />
-    <option name="LAST_COMMIT_MESSAGE" value="added choice 5 for editing playlist name" />
+    <MESSAGE value="added if else cases for searching based on artist and genre" />
+    <MESSAGE value="removed redundant use of variables" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed redundant use of variables" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

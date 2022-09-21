@@ -117,12 +117,29 @@ public class PlaylistRepository {
      * This method is used to remove a song from a playlist.
      *
      * @param connection   The connection to the database.
-     * @param songId       The id of the song to be removed from the playlist.
+     * @param songToRemove The song to remove from the playlist.
      * @param playlistName The name of the playlist from which the song needs to be removed
      * @return true if the song is removed successfully, false otherwise.
      */
-    public boolean removeSongFromPlaylist(Connection connection, int songId, String playlistName) {
-        return false;
+    public boolean removeSongFromPlaylist(Connection connection, Song songToRemove, String playlistName) throws SQLException {
+        // Call the method to get the playlist by name
+        Playlist playlistByName = getPlaylistByName(connection, playlistName);
+        // Create a string of songs id to update in the table
+        String songIdToUpdate = "";
+        List<Song> songsInList = playlistByName.getSongList();
+        for (Song song : songsInList) {
+            if (song.getId() != songToRemove.getId()) {
+                songIdToUpdate = song.getId() + ",";
+            }
+        }
+        // Create an update query to update the songs id in the database
+        String updateQuery = "UPDATE `jukebox`.`playlist` SET `songs_id` = ? WHERE (`playlist_name` = ?);";
+        // Create a prepared statement to execute the query
+        try (PreparedStatement preparedStatement = connection.prepareStatement(updateQuery)) {
+            preparedStatement.setString(1, songIdToUpdate);
+            preparedStatement.setString(2, playlistName);
+            return preparedStatement.executeUpdate() > 0;
+        }
     }
 
     /**
