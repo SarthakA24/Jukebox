@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="completed the displayAllSongs() method">
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="replaced switch with if conditions">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,14 +100,7 @@
       <workItem from="1663732408689" duration="14315000" />
       <workItem from="1663750842802" duration="7360000" />
       <workItem from="1663758668837" duration="255000" />
-      <workItem from="1663759094807" duration="294000" />
-    </task>
-    <task id="LOCAL-00036" summary="renamed the file sql_queries.sql to database_queries.sql">
-      <created>1663677392067</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1663677392067</updated>
+      <workItem from="1663759094807" duration="2809000" />
     </task>
     <task id="LOCAL-00037" summary="added sql queries for creating a database, and used that database to create a table song with the columns as attributes of song">
       <created>1663690093895</created>
@@ -443,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663759210482</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="replaced switch with if conditions">
+      <created>1663759703875</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1663759703875</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -461,7 +463,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added the method signature for getPlaylistByName() to get a playlist as per the provided name" />
     <MESSAGE value="added the method signature for getPlaylist() to get a playlist as per the provided name" />
     <MESSAGE value="completed the method getPlaylistsName()" />
     <MESSAGE value="changed the field for List&lt;Song&gt; with String of songs id and modified the constructors, getter and setters methods, hashCode and equals methods and the toString method" />
@@ -486,7 +487,8 @@
     <MESSAGE value="displayed the jukebox menu and started the switch cases for the input" />
     <MESSAGE value="added case 1 to display all songs" />
     <MESSAGE value="completed the displayAllSongs() method" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed the displayAllSongs() method" />
+    <MESSAGE value="replaced switch with if conditions" />
+    <option name="LAST_COMMIT_MESSAGE" value="replaced switch with if conditions" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
