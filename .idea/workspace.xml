@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="called the getter method to get the connection object">
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="displayed the jukebox menu and started the switch cases for the input">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,14 +85,7 @@
       <workItem from="1663730089870" duration="90000" />
       <workItem from="1663730536918" duration="1720000" />
       <workItem from="1663732408689" duration="14315000" />
-      <workItem from="1663750842802" duration="4337000" />
-    </task>
-    <task id="LOCAL-00033" summary="added JavaDocs for the methods connect() and printConnectionStatus()">
-      <created>1663676127825</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1663676127825</updated>
+      <workItem from="1663750842802" duration="4666000" />
     </task>
     <task id="LOCAL-00034" summary="refactored the code">
       <created>1663676159257</created>
@@ -430,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663755366726</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="displayed the jukebox menu and started the switch cases for the input">
+      <created>1663755610213</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1663755610213</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -448,7 +448,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="replaced equals() with equalsIgnoreCase() in the search methods" />
     <MESSAGE value="added the method signature for getPlaylistsName() method" />
     <MESSAGE value="added the sql query for creating a playlist table" />
     <MESSAGE value="added the method signature for getPlaylistByName() to get a playlist as per the provided name" />
@@ -473,7 +472,8 @@
     <MESSAGE value="completed the method displayMenu()" />
     <MESSAGE value="created an object for DatabaseService and called the method to connect to the database" />
     <MESSAGE value="called the getter method to get the connection object" />
-    <option name="LAST_COMMIT_MESSAGE" value="called the getter method to get the connection object" />
+    <MESSAGE value="displayed the jukebox menu and started the switch cases for the input" />
+    <option name="LAST_COMMIT_MESSAGE" value="displayed the jukebox menu and started the switch cases for the input" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

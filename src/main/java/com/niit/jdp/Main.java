@@ -1,5 +1,6 @@
 package com.niit.jdp;
 
+import com.niit.jdp.model.Song;
 import com.niit.jdp.repository.PlaylistRepository;
 import com.niit.jdp.repository.SongRepository;
 import com.niit.jdp.service.DatabaseService;
@@ -7,6 +8,7 @@ import com.niit.jdp.service.JukeboxService;
 
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -33,7 +35,8 @@ public class Main {
                 choice = scanner.nextInt();
                 switch (choice) {
                     case 1:
-
+                        List<Song> allSongs = songRepository.getAllSongs(connection);
+                        songRepository.displayAllSongs(allSongs);
                 }
             } while (choice != 6);
         } catch (SQLException e) {
