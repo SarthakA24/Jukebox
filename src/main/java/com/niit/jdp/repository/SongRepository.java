@@ -3,6 +3,8 @@ package com.niit.jdp.repository;
 import com.niit.jdp.model.Song;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.List;
 
 public class SongRepository {
@@ -13,8 +15,23 @@ public class SongRepository {
      * @param song       The song to be added to the database.
      * @return true if the song is added successfully, false otherwise.
      */
-    public boolean addSongToCatalog(Connection connection, Song song) {
-        return false;
+    public boolean addSongToCatalog(Connection connection, Song song) throws SQLException {
+        // declare a variable of string datatype to hold the insert query
+        String insertStatement = "INSERT INTO `jukebox`.`song` " +
+                "(`name`, `duration_in_seconds`, `url`, `artist_name`, `album_name`, `genre`) " +
+                "VALUES (?, ?, ?, ?, ?, ?);";
+        // declare an object for PreparedStatement to execute the query
+        try (PreparedStatement preparedStatement = connection.prepareStatement(insertStatement)) {
+            // set the values for the parameters in the query
+            preparedStatement.setString(1, song.getName());
+            preparedStatement.setInt(2, song.getDurationInSeconds());
+            preparedStatement.setString(3, song.getUrl());
+            preparedStatement.setString(4, song.getArtistName());
+            preparedStatement.setString(5, song.getAlbumName());
+            preparedStatement.setString(6, song.getGenre());
+            // execute the query
+            return preparedStatement.executeUpdate() > 0;
+        }
     }
 
     /**

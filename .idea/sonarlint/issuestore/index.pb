@@ -9,3 +9,13 @@ m.idea/dataSources/d3202bb3-a57e-4221-9a9a-1870044aa0ef/storage_v2/_src_/schema/
 `.idea/dataSources/d3202bb3-a57e-4221-9a9a-1870044aa0ef/storage_v2/_src_/schema/mysql.osA4Bg.meta,c/a/caf97cd93185367b7e75c6e6ff8a52616822ff4e
 Ž
 ^.idea/dataSources/d3202bb3-a57e-4221-9a9a-1870044aa0ef/storage_v2/_src_/schema/sys.zb4BAA.meta,0/6/06c229217715ff6e63cda8323ff0befa97cffdd1
+w
+G.idea/sonarlint/issuestore/0/6/06c229217715ff6e63cda8323ff0befa97cffdd1,5/b/5b668bfd1f6a9f1ffc159e93a2ffda5bcd200569
+w
+G.idea/sonarlint/issuestore/3/7/3755e3330a4127984751060d7e6a4da84523fa62,0/c/0ce6648aebbdd40a658103321a323f5002270c63
+w
+G.idea/sonarlint/issuestore/1/c/1cd0602ee2f8c30b8a6cb47b796ed685e548454c,3/a/3a216162721ba36f05a76762c08a9ab9efe35a93
+w
+G.idea/sonarlint/issuestore/b/b/bb17f983652a590983a0fef0b9f1bcd60f37b43e,1/e/1e968fc28e0b8cc27783a9426aed197b197eec9b
+w
+G.idea/sonarlint/issuestore/c/a/caf97cd93185367b7e75c6e6ff8a52616822ff4e,7/d/7d7c8a38f7e0c2614294eca23cd3e015dddef2c8
