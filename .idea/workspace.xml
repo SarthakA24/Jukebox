@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="removed the add song and remove song from catalog methods">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Playlist.java" afterDir="false" />
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="migrated the data type for songsId to List of songs and renamed the field to songList">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/playlist_sql_queries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/playlist_sql_queries.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,14 +99,7 @@
       <workItem from="1663750842802" duration="7360000" />
       <workItem from="1663758668837" duration="255000" />
       <workItem from="1663759094807" duration="3753000" />
-      <workItem from="1663763129015" duration="633000" />
-    </task>
-    <task id="LOCAL-00040" summary="added Java docs for all methods in PlaylistRepository.java">
-      <created>1663697470241</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1663697470241</updated>
+      <workItem from="1663763129015" duration="959000" />
     </task>
     <task id="LOCAL-00041" summary="added java docs for the methods in JukeboxService.java">
       <created>1663697801000</created>
@@ -445,7 +437,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663762379331</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="migrated the data type for songsId to List of songs and renamed the field to songList">
+      <created>1663768155621</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1663768155621</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -463,7 +462,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="completed the method getPlaylistByName()" />
     <MESSAGE value="edited the java docs for the methods in JukeboxService.java" />
     <MESSAGE value="completed the method createNewPlaylist()" />
     <MESSAGE value="completed the method addSongToPlaylist()" />
@@ -488,7 +486,8 @@
     <MESSAGE value="updated the displayMenu() method" />
     <MESSAGE value="commented the if else in main" />
     <MESSAGE value="removed the add song and remove song from catalog methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed the add song and remove song from catalog methods" />
+    <MESSAGE value="migrated the data type for songsId to List of songs and renamed the field to songList" />
+    <option name="LAST_COMMIT_MESSAGE" value="migrated the data type for songsId to List of songs and renamed the field to songList" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
