@@ -63,8 +63,14 @@ public class PlaylistRepository {
      * @param playlistName The name of the playlist.
      * @return true if the playlist is created successfully, false otherwise.
      */
-    public boolean createNewPlaylist(Connection connection, String playlistName) {
-        return false;
+    public boolean createNewPlaylist(Connection connection, String playlistName) throws SQLException {
+        // Create a string insert query to add a row in the database
+        String insertQuery = "INSERT INTO `jukebox`.`playlist` (`playlist_name`) VALUES (?);";
+        // Create a prepared statement object to set the playlist name and execute the query
+        try (PreparedStatement preparedStatement = connection.prepareStatement(insertQuery)) {
+            preparedStatement.setString(1, playlistName);
+            return preparedStatement.executeUpdate() > 0;
+        }
     }
 
     /**
