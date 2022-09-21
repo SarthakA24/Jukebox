@@ -97,4 +97,11 @@ public class JukeboxService {
         shuffledSongsIdList.toArray(shuffledSongsId);
         return shuffledSongsId;
     }
+
+    /**
+     * This method displays the user menu for the Jukebox
+     */
+    public void displayMenu() {
+
+    }
 }

@@ -86,7 +86,7 @@ public class PlaylistRepository {
         // Create a string of songs id to update in the table
         // First, add the already present songs id to the string and then append the song id to be added
         String songIdToUpdate = playlistByName.getSongsId() + "," + songId;
-        // Create a update query to update the songs id in the database
+        // Create an update query to update the songs id in the database
         String updateQuery = "UPDATE `jukebox`.`playlist` SET `list_of_songs` = ? WHERE (`playlist_name` = ?);";
         // Create a prepared statement to execute the query
         try (PreparedStatement preparedStatement = connection.prepareStatement(updateQuery)) {
@@ -117,7 +117,7 @@ public class PlaylistRepository {
      * @return true if the playlist name is edited successfully, false otherwise.
      */
     public boolean editPlaylistName(Connection connection, String oldPlaylistName, String newPlaylistName) throws SQLException {
-        // Create a update query to update the playlist name
+        // Create an update query to update the playlist name
         String updateQuery = "UPDATE `jukebox`.`playlist` SET `playlist_name` = ? WHERE (`playlist_name` = ?);";
         // Create a prepared statement to execute the query
         try (PreparedStatement preparedStatement = connection.prepareStatement(updateQuery)) {

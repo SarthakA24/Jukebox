@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="corrected the print statement formatting">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/playlist_sql_queries.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added a sql file playlist_sql_queries.sql for the sql queries for playlist table">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/database_queries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/database_queries.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,14 +87,7 @@
       <workItem from="1663730089870" duration="90000" />
       <workItem from="1663730536918" duration="1720000" />
       <workItem from="1663732408689" duration="14315000" />
-      <workItem from="1663750842802" duration="2980000" />
-    </task>
-    <task id="LOCAL-00027" summary="added the method signatures for displayAllSongs(), displayAllSongs(), playSong(), pauseSong(), shufflePlaylist()">
-      <created>1663675525984</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1663675525984</updated>
+      <workItem from="1663750842802" duration="3320000" />
     </task>
     <task id="LOCAL-00028" summary="added the private static final fields for database URL, USERNAME and PASSWORD, and added the field for Connection object">
       <created>1663675813088</created>
@@ -433,7 +425,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663752556687</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="added a sql file playlist_sql_queries.sql for the sql queries for playlist table">
+      <created>1663754024050</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1663754024050</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,7 +450,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="completed the method getAllSongs() to retrieve all the songs from the database" />
     <MESSAGE value="edited the printConnectionStatus with proper curly brackets" />
     <MESSAGE value="completed the method searchSongsByArtist() to search and get a list of songs by artist name" />
     <MESSAGE value="completed the method searchSongsByGenre() to search and get a list of songs by genre" />
@@ -476,7 +474,8 @@
     <MESSAGE value="moved the method displayAllSongs() from JukeboxService to SongRepository" />
     <MESSAGE value="completed the method displaySongDetails()" />
     <MESSAGE value="corrected the print statement formatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="corrected the print statement formatting" />
+    <MESSAGE value="added a sql file playlist_sql_queries.sql for the sql queries for playlist table" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a sql file playlist_sql_queries.sql for the sql queries for playlist table" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
