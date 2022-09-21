@@ -38,11 +38,15 @@ public class JukeboxService {
      */
     public void playPlaylist(Connection connection, Playlist playlist) {
         try {
-            // Split the songs id string from playlist and store it in an array
-            String[] songIdString = playlist.getSongsId().split(",");
+            // Split the songs id string from playlist and store it in an array pass the result to shufflePlaylist()
+            // method to shuffle the array
+            String[] shufflePlaylist = shufflePlaylist(playlist.getSongsId().split(","));
             SongRepository songRepository = new SongRepository();
-            for (String songId : songIdString) {
+            // Start a for each loop to iterate though the array and play the songs
+            for (String songId : shufflePlaylist) {
+                // Call the getSongById() to get the song object
                 Song songById = songRepository.getSongById(connection, Integer.parseInt(songId));
+                // pass the song object to playSong() method
                 playSong(songById);
             }
         } catch (SQLException exception) {
@@ -66,6 +70,8 @@ public class JukeboxService {
             clip.open(audioInputStream);
             // set a loop for the sound file
             clip.loop(Clip.LOOP_CONTINUOUSLY);
+            // Display the song details by calling displaySongDetails() method
+            displaySongDetails(song);
             // start the sound file
             clip.start();
             // pause the current thread for the time the song is being played
