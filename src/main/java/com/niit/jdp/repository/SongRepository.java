@@ -2,57 +2,15 @@ package com.niit.jdp.repository;
 
 import com.niit.jdp.model.Song;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class SongRepository {
-    /**
-     * This method is used to add a new song to the table in database.
-     *
-     * @param connection The connection to the database.
-     * @param song       The song to be added to the database.
-     * @return true if the song is added successfully, false otherwise.
-     */
-    public boolean addSongToCatalog(Connection connection, Song song) throws SQLException {
-        // declare a variable of string datatype to hold the insert query
-        String insertStatement = "INSERT INTO `jukebox`.`song` " +
-                "(`name`, `duration_in_seconds`, `url`, `artist_name`, `album_name`, `genre`) " +
-                "VALUES (?, ?, ?, ?, ?, ?);";
-        // declare an object for PreparedStatement to execute the query
-        try (PreparedStatement preparedStatement = connection.prepareStatement(insertStatement)) {
-            // set the values for the parameters in the query
-            preparedStatement.setString(1, song.getName());
-            preparedStatement.setInt(2, song.getDurationInSeconds());
-            preparedStatement.setString(3, song.getUrl());
-            preparedStatement.setString(4, song.getArtistName());
-            preparedStatement.setString(5, song.getAlbumName());
-            preparedStatement.setString(6, song.getGenre());
-            // execute the query
-            return preparedStatement.executeUpdate() > 0;
-        }
-    }
-
-    /**
-     * This method is used to remove a song from the table in database.
-     *
-     * @param connection The connection to the database.
-     * @param songId     The id of the song to be removed from the database.
-     * @return true if the song is removed successfully, false otherwise.
-     */
-    public boolean deleteSongFromCatalog(Connection connection, int songId) throws SQLException {
-        // declare a variable of string datatype to hold the delete query
-        String deleteStatement = "DELETE FROM `jukebox`.`song` WHERE `id` = ?;";
-        // declare an object for PreparedStatement to execute the query
-        try (PreparedStatement preparedStatement = connection.prepareStatement(deleteStatement)) {
-            // set the values for the parameters in the query
-            preparedStatement.setInt(1, songId);
-            // execute the query
-            return preparedStatement.executeUpdate() > 0;
-        }
-    }
-
     /**
      * This method is used to get all the songs as a list from the table in database.
      *
