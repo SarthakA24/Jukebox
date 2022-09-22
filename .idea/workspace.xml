@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="corrected the logic for pauseResumeSong() method and added a field for microsecondPosition">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added the test case for DatabaseService class">
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jdp/service/DatabaseServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jdp/service/DatabaseServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -39,6 +40,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -54,7 +57,15 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.niit.jdp.service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.DatabaseServiceTest.databaseConnectionSuccess">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.niit.jdp.Main" />
       <module name="capstone-project-jukebox" />
@@ -68,6 +79,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DatabaseServiceTest.databaseConnectionSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="capstone-project-jukebox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niit.jdp.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.niit.jdp.service" />
+      <option name="MAIN_CLASS_NAME" value="com.niit.jdp.service.DatabaseServiceTest" />
+      <option name="METHOD_NAME" value="databaseConnectionSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Scratch" />
       <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
@@ -77,6 +104,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DatabaseServiceTest.databaseConnectionSuccess" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Java Scratch.Scratch" />
       </list>
@@ -103,21 +131,7 @@
       <workItem from="1663772004680" duration="3846000" />
       <workItem from="1663776211572" duration="6896000" />
       <workItem from="1663817822370" duration="1052000" />
-      <workItem from="1663819547494" duration="11549000" />
-    </task>
-    <task id="LOCAL-00064" summary="completed the method createNewPlaylist()">
-      <created>1663742108712</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1663742108712</updated>
-    </task>
-    <task id="LOCAL-00065" summary="completed the method addSongToPlaylist()">
-      <created>1663743526378</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1663743526378</updated>
+      <workItem from="1663819547494" duration="12215000" />
     </task>
     <task id="LOCAL-00066" summary="edited the parameters for removeSongFromPlaylist() method and edited the java docs">
       <created>1663743981282</created>
@@ -448,7 +462,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663830998943</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="added the return type for connect() method and added an if else condition in main for database connection">
+      <created>1663832111237</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1663832111238</updated>
+    </task>
+    <task id="LOCAL-00114" summary="added the test case for DatabaseService class">
+      <created>1663832189223</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1663832189223</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,8 +494,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated the displayMenu() method" />
-    <MESSAGE value="commented the if else in main" />
     <MESSAGE value="removed the add song and remove song from catalog methods" />
     <MESSAGE value="migrated the data type for songsId to List of songs and renamed the field to songList" />
     <MESSAGE value="added sql queries to alter the table" />
@@ -491,7 +517,9 @@
     <MESSAGE value="added junit 5.9.0 dependency" />
     <MESSAGE value="clubbed the resume and pause methods" />
     <MESSAGE value="corrected the logic for pauseResumeSong() method and added a field for microsecondPosition" />
-    <option name="LAST_COMMIT_MESSAGE" value="corrected the logic for pauseResumeSong() method and added a field for microsecondPosition" />
+    <MESSAGE value="added the return type for connect() method and added an if else condition in main for database connection" />
+    <MESSAGE value="added the test case for DatabaseService class" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the test case for DatabaseService class" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
