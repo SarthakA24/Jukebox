@@ -13,20 +13,21 @@ import java.util.Scanner;
 
 public class JukeboxService {
     private long microsecondPosition;
+    private static final String PRINT_LINES = "===============================";
     /**
      * This method is used to display details of a particular song
      *
      * @param song The song whose details are to be displayed.
      */
     public void displaySongDetails(Song song) {
-        System.out.println("===============================");
+        System.out.println(PRINT_LINES);
         System.out.println("Playing the Song - " + song.getName());
         System.out.println("Song Details - ");
         System.out.println("Artist Name - " + song.getArtistName());
         System.out.println("Album Name - " + song.getAlbumName());
         System.out.println("Genre - " + song.getGenre());
         System.out.println("Song Duration - " + song.getDurationInSeconds() / 60 + " minutes " + song.getDurationInSeconds() % 60 + " seconds");
-        System.out.println("===============================");
+        System.out.println(PRINT_LINES);
     }
 
     /**
@@ -88,7 +89,7 @@ public class JukeboxService {
         }
     }
 
-    public boolean pauseResumeSong(Clip clip, boolean isSongPlaying) throws LineUnavailableException, IOException {
+    public boolean pauseResumeSong(Clip clip, boolean isSongPlaying) {
         if (isSongPlaying) {
             this.microsecondPosition = clip.getMicrosecondPosition();
             clip.stop();
@@ -122,9 +123,9 @@ public class JukeboxService {
      * This method displays the user menu for the Jukebox
      */
     public void displayMenu() {
-        System.out.println("===============================");
+        System.out.println(PRINT_LINES);
         System.out.println("WELCOME TO THE JUKEBOX");
-        System.out.println("===============================");
+        System.out.println(PRINT_LINES);
         System.out.println("Please select from the options below - ");
         System.out.println("1. Display all Songs in the Jukebox.");
         System.out.println("2. Create a Playlist.");
