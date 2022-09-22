@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added the pauseSong() and resumeSong() methods and printed a menu while playing the song in if else">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,14 +104,7 @@
       <workItem from="1663772004680" duration="3846000" />
       <workItem from="1663776211572" duration="6896000" />
       <workItem from="1663817822370" duration="1052000" />
-      <workItem from="1663819547494" duration="4106000" />
-    </task>
-    <task id="LOCAL-00060" summary="completed the method getPlaylistByName()">
-      <created>1663738700174</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1663738700174</updated>
+      <workItem from="1663819547494" duration="6553000" />
     </task>
     <task id="LOCAL-00061" summary="completed the method getPlaylistByName()">
       <created>1663738741010</created>
@@ -449,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663822474459</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="added the pauseSong() and resumeSong() methods and printed a menu while playing the song in if else">
+      <created>1663823854717</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1663823854717</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
