@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added test case for searching songs by name with different case">
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jdp/repository/SongRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jdp/repository/SongRepositoryTest.java" afterDir="false" />
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added test case for getAllSongs() method">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/niit/jdp/repository/PlaylistRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,14 +177,7 @@
       <workItem from="1663772004680" duration="3846000" />
       <workItem from="1663776211572" duration="6896000" />
       <workItem from="1663817822370" duration="1052000" />
-      <workItem from="1663819547494" duration="13979000" />
-    </task>
-    <task id="LOCAL-00069" summary="added the method getSongById()">
-      <created>1663749219584</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1663749219584</updated>
+      <workItem from="1663819547494" duration="14467000" />
     </task>
     <task id="LOCAL-00070" summary="completed the method playPlaylist()">
       <created>1663749577307</created>
@@ -522,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663834218340</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="added test case for getAllSongs() method">
+      <created>1663834661058</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1663834661058</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,7 +540,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="edited the getPlaylistByName() method" />
     <MESSAGE value="edited the addSongToPlaylist() method" />
     <MESSAGE value="edited the playPlaylist() method" />
     <MESSAGE value="updated the if else conditions according to changes in the methods" />
@@ -565,7 +564,8 @@
     <MESSAGE value="added test case for checking database connection" />
     <MESSAGE value="completed the test cases for getSongById success and failure" />
     <MESSAGE value="added test case for searching songs by name with different case" />
-    <option name="LAST_COMMIT_MESSAGE" value="added test case for searching songs by name with different case" />
+    <MESSAGE value="added test case for getAllSongs() method" />
+    <option name="LAST_COMMIT_MESSAGE" value="added test case for getAllSongs() method" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
