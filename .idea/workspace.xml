@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added test cases for PlaylistRepository">
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added test case for getPlaylistsName() method with correct and incorrect case">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jdp/repository/PlaylistRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jdp/repository/PlaylistRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,9 +44,9 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "sonarlint"
   },
   "keyToStringList": {
@@ -66,7 +67,22 @@
       <recent name="com.niit.jdp.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PlaylistRepositoryTest.getPlaylistsNameIncorrectCase">
+  <component name="RunManager" selected="JUnit.PlaylistRepositoryTest">
+    <configuration name="PlaylistRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="capstone-project-jukebox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niit.jdp.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.niit.jdp.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.niit.jdp.repository.PlaylistRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PlaylistRepositoryTest.getPlaylistsName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="capstone-project-jukebox" />
       <extension name="coverage">
@@ -130,29 +146,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SongRepositoryTest.searchSongsByNameWithLowercaseName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="capstone-project-jukebox" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.niit.jdp.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.niit.jdp.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.niit.jdp.repository.SongRepositoryTest" />
-      <option name="METHOD_NAME" value="searchSongsByNameWithLowercaseName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PlaylistRepositoryTest.getPlaylistsNameIncorrectCase" />
+        <item itemvalue="JUnit.PlaylistRepositoryTest" />
         <item itemvalue="JUnit.PlaylistRepositoryTest.getPlaylistsName" />
+        <item itemvalue="JUnit.PlaylistRepositoryTest.getPlaylistsNameIncorrectCase" />
         <item itemvalue="JUnit.SongRepositoryTest.getAllSongs" />
         <item itemvalue="JUnit.SongRepositoryTest" />
-        <item itemvalue="JUnit.SongRepositoryTest.searchSongsByNameWithLowercaseName" />
       </list>
     </recent_temporary>
   </component>
@@ -177,14 +177,7 @@
       <workItem from="1663772004680" duration="3846000" />
       <workItem from="1663776211572" duration="6896000" />
       <workItem from="1663817822370" duration="1052000" />
-      <workItem from="1663819547494" duration="14809000" />
-    </task>
-    <task id="LOCAL-00071" summary="completed the method playPlaylist()">
-      <created>1663749614349</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1663749614349</updated>
+      <workItem from="1663819547494" duration="15646000" />
     </task>
     <task id="LOCAL-00072" summary="edited the method playPlaylist() to call shuffle playlist method and get the shuffled array">
       <created>1663751220677</created>
@@ -522,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663834906573</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="added test case for getPlaylistsName() method with correct and incorrect case">
+      <created>1663835496491</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1663835496491</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,7 +540,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="edited the playPlaylist() method" />
     <MESSAGE value="updated the if else conditions according to changes in the methods" />
     <MESSAGE value="added while loop in result set for getPlaylistByName()" />
     <MESSAGE value="edited the displayMenu() menu" />
@@ -565,7 +564,8 @@
     <MESSAGE value="added test case for searching songs by name with different case" />
     <MESSAGE value="added test case for getAllSongs() method" />
     <MESSAGE value="added test cases for PlaylistRepository" />
-    <option name="LAST_COMMIT_MESSAGE" value="added test cases for PlaylistRepository" />
+    <MESSAGE value="added test case for getPlaylistsName() method with correct and incorrect case" />
+    <option name="LAST_COMMIT_MESSAGE" value="added test case for getPlaylistsName() method with correct and incorrect case" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
