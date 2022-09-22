@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="made the SongRepository and PlaylistRepository implement Repository interface and renamed the methods to match the abstract method">
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added the display for shuffled playlist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,29 +36,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;sonarlint&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ],
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;JAVA&quot;
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JAVA"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -172,14 +173,7 @@
       <workItem from="1663817822370" duration="1052000" />
       <workItem from="1663819547494" duration="16280000" />
       <workItem from="1663837030497" duration="333000" />
-      <workItem from="1663837411932" duration="5269000" />
-    </task>
-    <task id="LOCAL-00088" summary="removed the add song and remove song from catalog methods">
-      <created>1663762379331</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1663762379331</updated>
+      <workItem from="1663837411932" duration="6587000" />
     </task>
     <task id="LOCAL-00089" summary="migrated the data type for songsId to List of songs and renamed the field to songList">
       <created>1663768155621</created>
@@ -517,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663841922468</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="added the display for shuffled playlist">
+      <created>1663842864823</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1663842864823</updated>
+    </task>
+    <option name="localTasksCounter" value="138" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -535,7 +536,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added the pauseSong() and resumeSong() methods and printed a menu while playing the song in if else" />
     <MESSAGE value="added junit 5.9.0 dependency" />
     <MESSAGE value="clubbed the resume and pause methods" />
     <MESSAGE value="corrected the logic for pauseResumeSong() method and added a field for microsecondPosition" />
@@ -560,12 +560,13 @@
     <MESSAGE value="combined the catch clauses" />
     <MESSAGE value="added the interface Repository.java" />
     <MESSAGE value="made the SongRepository and PlaylistRepository implement Repository interface and renamed the methods to match the abstract method" />
-    <option name="LAST_COMMIT_MESSAGE" value="made the SongRepository and PlaylistRepository implement Repository interface and renamed the methods to match the abstract method" />
+    <MESSAGE value="added the display for shuffled playlist" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the display for shuffled playlist" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/The_Jukebox$All_in_capstone_project_jukebox.ic" NAME="All in capstone-project-jukebox Coverage Results" MODIFIED="1663836866690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/The_Jukebox$All_in_capstone_project_jukebox.ic" NAME="All in capstone-project-jukebox Coverage Results" MODIFIED="1663843623620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

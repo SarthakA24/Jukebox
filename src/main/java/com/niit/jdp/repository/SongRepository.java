@@ -18,6 +18,7 @@ public class SongRepository implements Repository<Song> {
      * @return The list of songs.
      */
     @Override
+    // This method is used to get all the songs as a list from the table in database.
     public List<Song> getAll(Connection connection) throws SQLException {
         List<Song> songsList = new ArrayList<>();
         // declare a variable of string datatype to hold the select query
@@ -44,11 +45,11 @@ public class SongRepository implements Repository<Song> {
     }
 
     /**
-     * This method returns the song object based on the song id from the database
+     * This method finds the song by the song id in the songs list
      *
-     * @param songList The list of songs from where to search
-     * @param songId   The song id to find
-     * @return The song object found based on the id
+     * @param songList The list of songs that you want to search through
+     * @param songId   The id of the song you want to get
+     * @return The song object found by the song id, empty song object if not found
      */
     public Song getSongById(List<Song> songList, int songId) {
         // Return the song object based on the song id
@@ -60,7 +61,7 @@ public class SongRepository implements Repository<Song> {
      *
      * @param songList   The list of songs from where to search
      * @param artistName The name of the artist.
-     * @return The list of songs of the artist.
+     * @return The list of song found by the artist name, empty list if not found
      */
     public List<Song> searchSongsByArtist(List<Song> songList, String artistName) {
         // Filter the songs and add the song with the given artist name to list and return the list
@@ -72,7 +73,7 @@ public class SongRepository implements Repository<Song> {
      *
      * @param songList The list of songs from where to search
      * @param genre    The genre of the song.
-     * @return The list of songs of the genre.
+     * @return The list of song found by the genre, empty list if not found
      */
     public List<Song> searchSongsByGenre(List<Song> songList, String genre) {
         // Filter the songs and add the song with the given genre name to list and return the list
@@ -84,7 +85,7 @@ public class SongRepository implements Repository<Song> {
      *
      * @param songList The list of songs from where to search
      * @param songName The name of the song.
-     * @return The songs if found with that name, empty song object otherwise.
+     * @return The song object if found with that name, empty song object if not found.
      */
     public Song searchSongsByName(List<Song> songList, String songName) {
         return songList.stream().filter(song -> song.getName().equalsIgnoreCase(songName)).findFirst().orElse(new Song());
