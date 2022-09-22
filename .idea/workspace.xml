@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="completed the test cases for getSongById success and failure">
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added test case for searching songs by name with different case">
       <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jdp/repository/SongRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jdp/repository/SongRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +66,7 @@
       <recent name="com.niit.jdp.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SongRepositoryTest">
+  <component name="RunManager" selected="JUnit.SongRepositoryTest.getAllSongs">
     <configuration name="SongRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="capstone-project-jukebox" />
       <extension name="coverage">
@@ -82,7 +82,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SongRepositoryTest.getSongByIdFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SongRepositoryTest.getAllSongs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="capstone-project-jukebox" />
       <extension name="coverage">
         <pattern>
@@ -92,7 +92,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.niit.jdp.repository" />
       <option name="MAIN_CLASS_NAME" value="com.niit.jdp.repository.SongRepositoryTest" />
-      <option name="METHOD_NAME" value="getSongByIdFailure" />
+      <option name="METHOD_NAME" value="getAllSongs" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SongRepositoryTest.getAllSongs" />
         <item itemvalue="JUnit.SongRepositoryTest" />
         <item itemvalue="JUnit.SongRepositoryTest.searchSongsByNameWithLowercaseName" />
         <item itemvalue="JUnit.SongRepositoryTest.searchSongsByNameWithIncorrectCase" />
         <item itemvalue="JUnit.SongRepositoryTest.searchSongsByNameSuccess" />
-        <item itemvalue="JUnit.SongRepositoryTest.getSongByIdFailure" />
       </list>
     </recent_temporary>
   </component>
@@ -177,14 +177,7 @@
       <workItem from="1663772004680" duration="3846000" />
       <workItem from="1663776211572" duration="6896000" />
       <workItem from="1663817822370" duration="1052000" />
-      <workItem from="1663819547494" duration="13652000" />
-    </task>
-    <task id="LOCAL-00068" summary="completed the method playSong()">
-      <created>1663748022429</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1663748022429</updated>
+      <workItem from="1663819547494" duration="13979000" />
     </task>
     <task id="LOCAL-00069" summary="added the method getSongById()">
       <created>1663749219584</created>
@@ -522,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663833940052</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="added test case for searching songs by name with different case">
+      <created>1663834218340</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1663834218340</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,7 +540,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added sql queries to alter the table" />
     <MESSAGE value="edited the getPlaylistByName() method" />
     <MESSAGE value="edited the addSongToPlaylist() method" />
     <MESSAGE value="edited the playPlaylist() method" />
@@ -565,7 +564,8 @@
     <MESSAGE value="added the test case for DatabaseService class" />
     <MESSAGE value="added test case for checking database connection" />
     <MESSAGE value="completed the test cases for getSongById success and failure" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed the test cases for getSongById success and failure" />
+    <MESSAGE value="added test case for searching songs by name with different case" />
+    <option name="LAST_COMMIT_MESSAGE" value="added test case for searching songs by name with different case" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
