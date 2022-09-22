@@ -73,15 +73,20 @@ public class PlaylistRepository {
      *
      * @param connection   The connection to the database.
      * @param playlistName The name of the playlist.
-     * @return true if the playlist is created successfully, false otherwise.
      */
-    public boolean createNewPlaylist(Connection connection, String playlistName) throws SQLException {
+    public void createNewPlaylist(Connection connection, String playlistName) throws SQLException {
         // Create a string insert query to add a row in the database
         String insertQuery = "INSERT INTO `jukebox`.`playlist` (`playlist_name`) VALUES (?);";
         // Create a prepared statement object to set the playlist name and execute the query
+        boolean isSuccess;
         try (PreparedStatement preparedStatement = connection.prepareStatement(insertQuery)) {
             preparedStatement.setString(1, playlistName);
-            return preparedStatement.executeUpdate() > 0;
+            isSuccess = preparedStatement.executeUpdate() > 0;
+        }
+        if (isSuccess) {
+            System.out.println("Playlist Created Successfully!");
+        } else {
+            System.err.println("Playlist with the name " + playlistName + " already exists!");
         }
     }
 
@@ -91,9 +96,8 @@ public class PlaylistRepository {
      * @param connection   The connection to the database.
      * @param songToAdd    The song to add to the playlist.
      * @param playlistName The name of the playlist to which the song needs to be added
-     * @return true if the song is added successfully, false otherwise.
      */
-    public boolean addSongToPlaylist(Connection connection, Song songToAdd, String playlistName) throws SQLException {
+    public void addSongToPlaylist(Connection connection, Song songToAdd, String playlistName) throws SQLException {
         // Call the method to get the playlist by name
         Playlist playlistByName = getPlaylistByName(connection, playlistName);
         // Create a string of songs id to update in the table
@@ -103,13 +107,19 @@ public class PlaylistRepository {
         for (Song song : songsInList) {
             songIdToUpdate = song.getId() + "," + songToAdd.getId() + ",";
         }
+        boolean isSuccess;
         // Create an update query to update the songs id in the database
         String updateQuery = "UPDATE `jukebox`.`playlist` SET `songs_id` = ? WHERE (`playlist_name` = ?);";
         // Create a prepared statement to execute the query
         try (PreparedStatement preparedStatement = connection.prepareStatement(updateQuery)) {
             preparedStatement.setString(1, songIdToUpdate);
             preparedStatement.setString(2, playlistName);
-            return preparedStatement.executeUpdate() > 0;
+            isSuccess = preparedStatement.executeUpdate() > 0;
+        }
+        if (isSuccess) {
+            System.out.println("Song added to the playlist successfully!");
+        } else {
+            System.err.println("Incorrect song name!");
         }
     }
 
@@ -119,9 +129,8 @@ public class PlaylistRepository {
      * @param connection   The connection to the database.
      * @param songToRemove The song to remove from the playlist.
      * @param playlistName The name of the playlist from which the song needs to be removed
-     * @return true if the song is removed successfully, false otherwise.
      */
-    public boolean removeSongFromPlaylist(Connection connection, Song songToRemove, String playlistName) throws SQLException {
+    public void removeSongFromPlaylist(Connection connection, Song songToRemove, String playlistName) throws SQLException {
         // Call the method to get the playlist by name
         Playlist playlistByName = getPlaylistByName(connection, playlistName);
         // Create a string of songs id to update in the table
@@ -134,11 +143,17 @@ public class PlaylistRepository {
         }
         // Create an update query to update the songs id in the database
         String updateQuery = "UPDATE `jukebox`.`playlist` SET `songs_id` = ? WHERE (`playlist_name` = ?);";
+        boolean isSuccess;
         // Create a prepared statement to execute the query
         try (PreparedStatement preparedStatement = connection.prepareStatement(updateQuery)) {
             preparedStatement.setString(1, songIdToUpdate);
             preparedStatement.setString(2, playlistName);
-            return preparedStatement.executeUpdate() > 0;
+            isSuccess = preparedStatement.executeUpdate() > 0;
+        }
+        if (isSuccess) {
+            System.out.println("Song removed from the playlist successfully!");
+        } else {
+            System.err.println("Incorrect song name!");
         }
     }
 
@@ -148,16 +163,21 @@ public class PlaylistRepository {
      * @param connection      The connection to the database.
      * @param oldPlaylistName The old name of the playlist.
      * @param newPlaylistName The new name of the playlist.
-     * @return true if the playlist name is edited successfully, false otherwise.
      */
-    public boolean editPlaylistName(Connection connection, String oldPlaylistName, String newPlaylistName) throws SQLException {
+    public void editPlaylistName(Connection connection, String oldPlaylistName, String newPlaylistName) throws SQLException {
         // Create an update query to update the playlist name
         String updateQuery = "UPDATE `jukebox`.`playlist` SET `playlist_name` = ? WHERE (`playlist_name` = ?);";
         // Create a prepared statement to execute the query
+        boolean isSuccess;
         try (PreparedStatement preparedStatement = connection.prepareStatement(updateQuery)) {
             preparedStatement.setString(1, newPlaylistName);
             preparedStatement.setString(2, oldPlaylistName);
-            return preparedStatement.executeUpdate() > 0;
+            isSuccess = preparedStatement.executeUpdate() > 0;
+        }
+        if (isSuccess) {
+            System.out.println("Playlist name updated successfully!");
+        } else {
+            System.out.println("Incorrect playlist name entered!!");
         }
     }
 
