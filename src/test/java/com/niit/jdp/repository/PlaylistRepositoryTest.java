@@ -41,6 +41,6 @@ class PlaylistRepositoryTest {
 
     @Test
     void getPlaylistsName() throws SQLException {
-        Assertions.assertNotNull(playlistRepository.getPlaylistsName(connection).get(0));
+        Assertions.assertNotNull(playlistRepository.getAll(connection).get(0));
     }
 }

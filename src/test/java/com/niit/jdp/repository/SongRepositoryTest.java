@@ -42,7 +42,7 @@ class SongRepositoryTest {
 
     @Test
     void getAllSongs() throws SQLException {
-        Assertions.assertEquals("Spectre", songRepository.getAllSongs(connection).get(0).getName());
+        Assertions.assertEquals("Spectre", songRepository.getAll(connection).get(0).getName());
     }
 
     @Test

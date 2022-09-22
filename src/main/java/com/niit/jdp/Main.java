@@ -38,7 +38,7 @@ public class Main {
                     // display the jukebox menu
                     jukeboxService.displayMenu();
                     choice = scanner.nextInt();
-                    List<Song> allSongs = songRepository.getAllSongs(connection);
+                    List<Song> allSongs = songRepository.getAll(connection);
                     switch (choice) {
                         case 1:
                             songRepository.displayAllSongs(allSongs);
@@ -51,7 +51,7 @@ public class Main {
                             break;
                         }
                         case 3: {
-                            List<String> playlistsName = playlistRepository.getPlaylistsName(connection);
+                            List<String> playlistsName = playlistRepository.getAll(connection);
                             System.out.println("Your Playlists are -");
                             IntStream.range(0, playlistsName.size()).mapToObj(index -> index + 1 + ". " + playlistsName.get(index)).forEach(System.out::println);
                             System.out.println("Please enter the playlist name that you need to play - ");
@@ -65,7 +65,7 @@ public class Main {
                             System.out.println("Enter the playlist name in which song is to be added - ");
                             scanner.nextLine();
                             String playlistName = scanner.nextLine();
-                            List<String> playlistsName = playlistRepository.getPlaylistsName(connection);
+                            List<String> playlistsName = playlistRepository.getAll(connection);
                             if (playlistsName.contains(playlistName)) {
                                 System.out.println("Songs in the Jukebox - ");
                                 songRepository.displayAllSongs(allSongs);

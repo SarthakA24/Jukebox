@@ -10,14 +10,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class SongRepository {
+public class SongRepository implements Repository<Song> {
     /**
      * This method is used to get all the songs as a list from the table in database.
      *
      * @param connection The connection to the database.
      * @return The list of songs.
      */
-    public List<Song> getAllSongs(Connection connection) throws SQLException {
+    @Override
+    public List<Song> getAll(Connection connection) throws SQLException {
         List<Song> songsList = new ArrayList<>();
         // declare a variable of string datatype to hold the select query
         String selectStatement = "SELECT * FROM `jukebox`.`song`;";

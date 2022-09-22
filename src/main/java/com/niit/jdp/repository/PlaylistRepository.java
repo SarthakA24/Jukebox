@@ -9,7 +9,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PlaylistRepository {
+public class PlaylistRepository implements Repository<String> {
 
     /**
      * This method is used to get the names of all the playlists from the database
@@ -17,7 +17,8 @@ public class PlaylistRepository {
      * @param connection The connection to the database
      * @return A string of playlists names
      */
-    public List<String> getPlaylistsName(Connection connection) throws SQLException {
+    @Override
+    public List<String> getAll(Connection connection) throws SQLException {
         List<String> playlistNamesList = new ArrayList<>();
         // Create a select query to get all the playlists names
         String selectQuery = "SELECT `playlist_name` FROM `jukebox`.`playlist`;";
@@ -61,7 +62,7 @@ public class PlaylistRepository {
             }
             // Split the songs id string to get the individual song id and iterate over the list to get the song object
             String[] songsIdArray = songsId.split(",");
-            List<Song> allSongsList = songRepository.getAllSongs(connection);
+            List<Song> allSongsList = songRepository.getAll(connection);
             for (String songId : songsIdArray) {
                 songList.add(songRepository.getSongById(allSongsList, Integer.parseInt(songId)));
                 playlistByName.setSongList(songList);
