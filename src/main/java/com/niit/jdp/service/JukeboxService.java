@@ -9,6 +9,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
+import java.util.Scanner;
 
 public class JukeboxService {
     /**
@@ -66,12 +67,51 @@ public class JukeboxService {
             displaySongDetails(song);
             // start the sound file
             clip.start();
-            // pause the current thread for the time the song is being played
-            // Thread.sleep(clip.getMicrosecondLength() / 1000L);
+            boolean isSongPlaying = true;
+            int choice;
+            long microsecondLength = 0;
+            do {
+                displayPlayerMenu();
+                Scanner scanner = new Scanner(System.in);
+                choice = scanner.nextInt();
+                if (choice == 1) {
+                    if (isSongPlaying) {
+                        microsecondLength = pauseSong(clip);
+                        isSongPlaying = false;
+                    } else {
+                        System.err.println("Song is already playing!!");
+                    }
+                } else if (choice == 2) {
+                    if (!isSongPlaying) {
+                        resumeSong(clip, microsecondLength, audioInputStream);
+                        isSongPlaying = true;
+                    } else {
+                        System.err.println("Song is already paused!!");
+                    }
+                } else {
+                    clip.stop();
+                    clip.close();
+                }
+            } while (choice != 3);
         } catch (UnsupportedAudioFileException | IOException | LineUnavailableException exception) {
             System.err.println(exception.getMessage());
             exception.printStackTrace();
         }
+    }
+
+    public long pauseSong(Clip clip) {
+        long microsecondLength = clip.getMicrosecondLength();
+        clip.stop();
+        return microsecondLength;
+    }
+
+    public void resumeSong(Clip clip, long microsecondLength, AudioInputStream audioInputStream) throws LineUnavailableException, IOException {
+        // Close and restart the clip
+        clip.close();
+        clip.open(audioInputStream);
+        clip.loop(Clip.LOOP_CONTINUOUSLY);
+        clip.setMicrosecondPosition(microsecondLength);
+        clip.start();
     }
 
     /**
@@ -83,6 +123,12 @@ public class JukeboxService {
     public List<Song> shufflePlaylist(List<Song> songList) {
         Collections.shuffle(songList);
         return songList;
+    }
+
+    void displayPlayerMenu() {
+        System.out.println("Press 1 to pause the song");
+        System.out.println("Press 2 to resume the song.");
+        System.out.println("Press 3 to go to next song");
     }
 
     /**

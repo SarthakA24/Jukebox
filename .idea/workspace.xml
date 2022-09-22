@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="edited the toString and displayAllSongs() method to print in the desired format">
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added the pauseSong() and resumeSong() methods and printed a menu while playing the song in if else">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,21 +104,7 @@
       <workItem from="1663772004680" duration="3846000" />
       <workItem from="1663776211572" duration="6896000" />
       <workItem from="1663817822370" duration="1052000" />
-      <workItem from="1663819547494" duration="1284000" />
-    </task>
-    <task id="LOCAL-00058" summary="completed the method getPlaylistByName()">
-      <created>1663738642376</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1663738642377</updated>
-    </task>
-    <task id="LOCAL-00059" summary="completed the method getPlaylistByName()">
-      <created>1663738675829</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1663738675829</updated>
+      <workItem from="1663819547494" duration="4106000" />
     </task>
     <task id="LOCAL-00060" summary="completed the method getPlaylistByName()">
       <created>1663738700174</created>
@@ -448,7 +435,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663820606960</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="printed the playlist before playing in the method playPlaylist()">
+      <created>1663820860424</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1663820860424</updated>
+    </task>
+    <task id="LOCAL-00108" summary="added the pauseSong() and resumeSong() methods and printed a menu while playing the song in if else">
+      <created>1663822474458</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1663822474459</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,8 +467,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="called the getter method to get the connection object" />
-    <MESSAGE value="displayed the jukebox menu and started the switch cases for the input" />
     <MESSAGE value="added case 1 to display all songs" />
     <MESSAGE value="completed the displayAllSongs() method" />
     <MESSAGE value="replaced switch with if conditions" />
@@ -491,7 +490,9 @@
     <MESSAGE value="added the method displayPlaylist()" />
     <MESSAGE value="added the if condition for choice 5 to remove a song from playlist" />
     <MESSAGE value="edited the toString and displayAllSongs() method to print in the desired format" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited the toString and displayAllSongs() method to print in the desired format" />
+    <MESSAGE value="printed the playlist before playing in the method playPlaylist()" />
+    <MESSAGE value="added the pauseSong() and resumeSong() methods and printed a menu while playing the song in if else" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the pauseSong() and resumeSong() methods and printed a menu while playing the song in if else" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
