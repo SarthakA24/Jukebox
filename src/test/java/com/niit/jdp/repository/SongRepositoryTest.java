@@ -51,14 +51,12 @@ class SongRepositoryTest {
     }
 
     @Test
-    void searchSongsByArtist() {
+    void searchSongsByNameWithLowercaseName() {
+        Assertions.assertEquals("Faded", songRepository.searchSongsByName(songList, "faded").getName());
     }
 
     @Test
-    void searchSongsByGenre() {
-    }
-
-    @Test
-    void searchSongsByName() {
+    void searchSongsByNameWithIncorrectCase() {
+        Assertions.assertEquals("Faded", songRepository.searchSongsByName(songList, "fAdEd").getName());
     }
 }
