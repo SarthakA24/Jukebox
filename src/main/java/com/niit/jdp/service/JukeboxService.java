@@ -37,18 +37,22 @@ public class JukeboxService {
      * @param playlist The playlist from which the song is to be played.
      */
     public void playPlaylist(Playlist playlist) {
-        List<Song> songList = playlist.getSongList();
-        System.out.println("Songs in the Playlist - " + playlist.getPlaylistName());
-        new SongRepository().displayAllSongs(songList);
-        // Call the shuffledSongsList() method to shuffle the songs list
-        List<Song> shuffledSongsList = shufflePlaylist(songList);
-        System.out.println("Shuffled Playlist - " + playlist.getPlaylistName());
-        new SongRepository().displayAllSongs(songList);
-        // Display the songs in the playlist
-        // Start a for each loop to iterate though the array and play the songs
-        for (Song song : shuffledSongsList) {
-            // pass the song object to playSong() method
-            playSong(song);
+        if (playlist.getSongList() != null) {
+            List<Song> songList = playlist.getSongList();
+            System.out.println("Songs in the Playlist - " + playlist.getPlaylistName());
+            new SongRepository().displayAllSongs(songList);
+            // Call the shuffledSongsList() method to shuffle the songs list
+            List<Song> shuffledSongsList = shufflePlaylist(songList);
+            System.out.println("Shuffled Playlist - " + playlist.getPlaylistName());
+            new SongRepository().displayAllSongs(songList);
+            // Display the songs in the playlist
+            // Start a for each loop to iterate though the array and play the songs
+            for (Song song : shuffledSongsList) {
+                // pass the song object to playSong() method
+                playSong(song);
+            }
+        } else {
+            System.err.println("Playlist is empty!!");
         }
     }
 

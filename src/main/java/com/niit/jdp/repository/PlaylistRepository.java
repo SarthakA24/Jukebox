@@ -60,12 +60,16 @@ public class PlaylistRepository implements Repository<String> {
                 playlistByName.setPlaylistName(resultSet.getString("playlist_name"));
                 songsId = resultSet.getString("songs_id");
             }
-            // Split the songs id string to get the individual song id and iterate over the list to get the song object
-            String[] songsIdArray = songsId.split(",");
-            List<Song> allSongsList = songRepository.getAll(connection);
-            for (String songId : songsIdArray) {
-                songList.add(songRepository.getSongById(allSongsList, Integer.parseInt(songId)));
-                playlistByName.setSongList(songList);
+            if (songsId != null) {
+                // Split the songs id string to get the individual song id and iterate over the list to get the song object
+                String[] songsIdArray = songsId.split(",");
+                List<Song> allSongsList = songRepository.getAll(connection);
+                for (String songId : songsIdArray) {
+                    songList.add(songRepository.getSongById(allSongsList, Integer.parseInt(songId)));
+                    playlistByName.setSongList(songList);
+                }
+            } else {
+                System.err.println("Playlist is empty!!");
             }
         }
         return playlistByName;

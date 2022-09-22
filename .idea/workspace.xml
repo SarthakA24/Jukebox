@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="updated the java docs for JukeboxService.java class">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Playlist.java" afterDir="false" />
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="reformatted the code">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +70,20 @@
       <recent name="com.niit.jdp.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in capstone-project-jukebox">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.niit.jdp.Main" />
+      <module name="capstone-project-jukebox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niit.jdp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in capstone-project-jukebox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="capstone-project-jukebox" />
       <option name="PACKAGE_NAME" value="" />
@@ -123,29 +139,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SongRepositoryTest.getAllSongs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="capstone-project-jukebox" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.niit.jdp.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.niit.jdp.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.niit.jdp.repository.SongRepositoryTest" />
-      <option name="METHOD_NAME" value="getAllSongs" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.All in capstone-project-jukebox" />
         <item itemvalue="JUnit.PlaylistRepositoryTest" />
         <item itemvalue="JUnit.PlaylistRepositoryTest.getPlaylistsName" />
         <item itemvalue="JUnit.PlaylistRepositoryTest.getPlaylistsNameIncorrectCase" />
-        <item itemvalue="JUnit.SongRepositoryTest.getAllSongs" />
       </list>
     </recent_temporary>
   </component>
@@ -173,21 +173,8 @@
       <workItem from="1663819547494" duration="16280000" />
       <workItem from="1663837030497" duration="333000" />
       <workItem from="1663837411932" duration="6624000" />
-      <workItem from="1663845182692" duration="931000" />
-    </task>
-    <task id="LOCAL-00093" summary="edited the playPlaylist() method">
-      <created>1663770779005</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1663770779005</updated>
-    </task>
-    <task id="LOCAL-00094" summary="updated the if else conditions according to changes in the methods">
-      <created>1663771367298</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1663771367298</updated>
+      <workItem from="1663845182692" duration="2684000" />
+      <workItem from="1663852948430" duration="675000" />
     </task>
     <task id="LOCAL-00095" summary="added while loop in result set for getPlaylistByName()">
       <created>1663772821820</created>
@@ -518,7 +505,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663845988177</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="reformatted the code">
+      <created>1663846141900</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1663846141901</updated>
+    </task>
+    <task id="LOCAL-00143" summary="reformatted the code">
+      <created>1663846169363</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1663846169363</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -536,7 +537,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added the return type for connect() method and added an if else condition in main for database connection" />
     <MESSAGE value="added the test case for DatabaseService class" />
     <MESSAGE value="added test case for checking database connection" />
     <MESSAGE value="completed the test cases for getSongById success and failure" />
@@ -561,7 +561,8 @@
     <MESSAGE value="updated the java docs for SongRepository.java class" />
     <MESSAGE value="updated the java docs for PlaylistRepository.java class" />
     <MESSAGE value="updated the java docs for JukeboxService.java class" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated the java docs for JukeboxService.java class" />
+    <MESSAGE value="reformatted the code" />
+    <option name="LAST_COMMIT_MESSAGE" value="reformatted the code" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
