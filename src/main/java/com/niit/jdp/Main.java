@@ -117,6 +117,8 @@ public class Main {
                             Playlist playlistToDisplay = playlistRepository.getPlaylistByName(connection, playlistToView);
                             playlistRepository.displayPlaylist(playlistToDisplay);
                             break;
+                        case 10:
+                            break;
                         default:
                             System.out.println("Invalid Input");
                     }

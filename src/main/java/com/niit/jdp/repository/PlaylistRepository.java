@@ -198,8 +198,10 @@ public class PlaylistRepository implements Repository<String> {
      * @param playlist The playlist list to be printed
      */
     public void displayPlaylist(Playlist playlist) {
-        System.out.println("Playlist Name: " + playlist.getPlaylistName());
-        System.out.println("Songs in the playlist: ");
-        new SongRepository().displayAllSongs(playlist.getSongList());
+        if (playlist.getSongList() != null) {
+            System.out.println("Playlist Name: " + playlist.getPlaylistName());
+            System.out.println("Songs in the playlist: ");
+            new SongRepository().displayAllSongs(playlist.getSongList());
+        }
     }
 }
