@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="clubbed the resume and pause methods">
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="corrected the logic for pauseResumeSong() method and added a field for microsecondPosition">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,14 +103,7 @@
       <workItem from="1663772004680" duration="3846000" />
       <workItem from="1663776211572" duration="6896000" />
       <workItem from="1663817822370" duration="1052000" />
-      <workItem from="1663819547494" duration="10621000" />
-    </task>
-    <task id="LOCAL-00063" summary="edited the java docs for the methods in JukeboxService.java">
-      <created>1663741065391</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1663741065391</updated>
+      <workItem from="1663819547494" duration="11549000" />
     </task>
     <task id="LOCAL-00064" summary="completed the method createNewPlaylist()">
       <created>1663742108712</created>
@@ -449,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663829597623</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="corrected the logic for pauseResumeSong() method and added a field for microsecondPosition">
+      <created>1663830998942</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1663830998943</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,7 +466,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="replaced switch with if conditions" />
     <MESSAGE value="updated the displayMenu() method" />
     <MESSAGE value="commented the if else in main" />
     <MESSAGE value="removed the add song and remove song from catalog methods" />
@@ -492,7 +490,8 @@
     <MESSAGE value="added the pauseSong() and resumeSong() methods and printed a menu while playing the song in if else" />
     <MESSAGE value="added junit 5.9.0 dependency" />
     <MESSAGE value="clubbed the resume and pause methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="clubbed the resume and pause methods" />
+    <MESSAGE value="corrected the logic for pauseResumeSong() method and added a field for microsecondPosition" />
+    <option name="LAST_COMMIT_MESSAGE" value="corrected the logic for pauseResumeSong() method and added a field for microsecondPosition" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

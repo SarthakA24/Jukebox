@@ -23,8 +23,9 @@ public class DatabaseService {
      *
      * @throws SQLException If the database URL or USERNAME or PASSWORD are incorrect
      */
-    public void connect() throws SQLException {
+    public boolean connect() throws SQLException {
         connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
+        return connection != null;
     }
 
     /**
