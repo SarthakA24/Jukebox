@@ -152,6 +152,7 @@ public class JukeboxService {
         System.out.println("6. Edit Playlist name.");
         System.out.println("7. View songs by Genre.");
         System.out.println("8. View songs by Artist.");
-        System.out.println("9. Exit the Jukebox.");
+        System.out.println("9. View songs in playlist.");
+        System.out.println("10. Exit the Jukebox.");
     }
 }

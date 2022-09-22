@@ -108,6 +108,15 @@ public class Main {
                             List<Song> searchedSongsByArtist = songRepository.searchSongsByArtist(allSongs, artistName);
                             songRepository.displayAllSongs(searchedSongsByArtist);
                             break;
+                        case 9:
+                            System.out.println("Playlists are -");
+                            playlistsName.forEach(System.out::println);
+                            System.out.println("Enter the playlist name - ");
+                            scanner.nextLine();
+                            String playlistToView = scanner.nextLine();
+                            Playlist playlistToDisplay = playlistRepository.getPlaylistByName(connection, playlistToView);
+                            playlistRepository.displayPlaylist(playlistToDisplay);
+                            break;
                         default:
                             System.out.println("Invalid Input");
                     }
@@ -119,6 +128,6 @@ public class Main {
                 exception.printStackTrace();
                 choice = 0;
             }
-        } while (choice != 9);
+        } while (choice != 10);
     }
 }

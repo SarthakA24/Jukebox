@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added a check in the methods for null xongsList or songsId">
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="edited the addSongToPlaylist() method to identify if songs in playlist is null">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,14 +173,7 @@
       <workItem from="1663837030497" duration="333000" />
       <workItem from="1663837411932" duration="6624000" />
       <workItem from="1663845182692" duration="2684000" />
-      <workItem from="1663852948430" duration="1833000" />
-    </task>
-    <task id="LOCAL-00096" summary="edited the displayMenu() menu">
-      <created>1663773768156</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1663773768156</updated>
+      <workItem from="1663852948430" duration="2257000" />
     </task>
     <task id="LOCAL-00097" summary="added the if else for choice 4">
       <created>1663776039516</created>
@@ -519,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663853905379</updated>
     </task>
-    <option name="localTasksCounter" value="145" />
+    <task id="LOCAL-00145" summary="edited the addSongToPlaylist() method to identify if songs in playlist is null">
+      <created>1663854973625</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1663854973625</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -537,7 +536,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added test case for checking database connection" />
     <MESSAGE value="completed the test cases for getSongById success and failure" />
     <MESSAGE value="added test case for searching songs by name with different case" />
     <MESSAGE value="added test case for getAllSongs() method" />
@@ -562,7 +560,8 @@
     <MESSAGE value="updated the java docs for JukeboxService.java class" />
     <MESSAGE value="reformatted the code" />
     <MESSAGE value="added a check in the methods for null xongsList or songsId" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a check in the methods for null xongsList or songsId" />
+    <MESSAGE value="edited the addSongToPlaylist() method to identify if songs in playlist is null" />
+    <option name="LAST_COMMIT_MESSAGE" value="edited the addSongToPlaylist() method to identify if songs in playlist is null" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -578,15 +577,6 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java</url>
-          <line>106</line>
-          <properties class="com.niit.jdp.repository.PlaylistRepository" method="addSongToPlaylist">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java</url>
