@@ -41,6 +41,8 @@ public class JukeboxService {
         new SongRepository().displayAllSongs(songList);
         // Call the shuffledSongsList() method to shuffle the songs list
         List<Song> shuffledSongsList = shufflePlaylist(songList);
+        System.out.println("Shuffled Playlist - " + playlist.getPlaylistName());
+        new SongRepository().displayAllSongs(songList);
         // Display the songs in the playlist
         // Start a for each loop to iterate though the array and play the songs
         for (Song song : shuffledSongsList) {

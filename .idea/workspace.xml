@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="combined the catch clauses">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/Repository.java" afterDir="false" />
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="made the SongRepository and PlaylistRepository implement Repository interface and renamed the methods to match the abstract method">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,21 +172,7 @@
       <workItem from="1663817822370" duration="1052000" />
       <workItem from="1663819547494" duration="16280000" />
       <workItem from="1663837030497" duration="333000" />
-      <workItem from="1663837411932" duration="4275000" />
-    </task>
-    <task id="LOCAL-00086" summary="updated the displayMenu() method">
-      <created>1663761975590</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1663761975590</updated>
-    </task>
-    <task id="LOCAL-00087" summary="commented the if else in main">
-      <created>1663762110662</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1663762110662</updated>
+      <workItem from="1663837411932" duration="5269000" />
     </task>
     <task id="LOCAL-00088" summary="removed the add song and remove song from catalog methods">
       <created>1663762379331</created>
@@ -517,7 +503,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663841539080</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="added the interface Repository.java">
+      <created>1663841718590</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1663841718590</updated>
+    </task>
+    <task id="LOCAL-00136" summary="made the SongRepository and PlaylistRepository implement Repository interface and renamed the methods to match the abstract method">
+      <created>1663841922468</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1663841922468</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -535,8 +535,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="edited the toString and displayAllSongs() method to print in the desired format" />
-    <MESSAGE value="printed the playlist before playing in the method playPlaylist()" />
     <MESSAGE value="added the pauseSong() and resumeSong() methods and printed a menu while playing the song in if else" />
     <MESSAGE value="added junit 5.9.0 dependency" />
     <MESSAGE value="clubbed the resume and pause methods" />
@@ -560,7 +558,9 @@
     <MESSAGE value="added the exception IncorrectSongNameException()" />
     <MESSAGE value="thrown the IncorrectSongNameException to addSongToPlaylist() and added catch clause in main method" />
     <MESSAGE value="combined the catch clauses" />
-    <option name="LAST_COMMIT_MESSAGE" value="combined the catch clauses" />
+    <MESSAGE value="added the interface Repository.java" />
+    <MESSAGE value="made the SongRepository and PlaylistRepository implement Repository interface and renamed the methods to match the abstract method" />
+    <option name="LAST_COMMIT_MESSAGE" value="made the SongRepository and PlaylistRepository implement Repository interface and renamed the methods to match the abstract method" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
