@@ -37,10 +37,6 @@ public class Playlist {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -56,10 +52,6 @@ public class Playlist {
 
     @Override
     public String toString() {
-        return "Playlist{" +
-                "id=" + id +
-                ", playlistName='" + playlistName + '\'' +
-                ", songsId='" + songList + '\'' +
-                '}';
+        return "Playlist{" + "id=" + id + ", playlistName='" + playlistName + '\'' + ", songsId='" + songList + '\'' + '}';
     }
 }

@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="updated the java docs for SongRepository.java class">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" afterDir="false" />
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="updated the java docs for JukeboxService.java class">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Playlist.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,21 +173,7 @@
       <workItem from="1663819547494" duration="16280000" />
       <workItem from="1663837030497" duration="333000" />
       <workItem from="1663837411932" duration="6624000" />
-      <workItem from="1663845182692" duration="506000" />
-    </task>
-    <task id="LOCAL-00091" summary="edited the getPlaylistByName() method">
-      <created>1663769542019</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1663769542020</updated>
-    </task>
-    <task id="LOCAL-00092" summary="edited the addSongToPlaylist() method">
-      <created>1663769932404</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1663769932404</updated>
+      <workItem from="1663845182692" duration="931000" />
     </task>
     <task id="LOCAL-00093" summary="edited the playPlaylist() method">
       <created>1663770779005</created>
@@ -519,7 +504,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663845459910</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="updated the java docs for PlaylistRepository.java class">
+      <created>1663845705311</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1663845705311</updated>
+    </task>
+    <task id="LOCAL-00141" summary="updated the java docs for JukeboxService.java class">
+      <created>1663845988177</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1663845988177</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -537,8 +536,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="clubbed the resume and pause methods" />
-    <MESSAGE value="corrected the logic for pauseResumeSong() method and added a field for microsecondPosition" />
     <MESSAGE value="added the return type for connect() method and added an if else condition in main for database connection" />
     <MESSAGE value="added the test case for DatabaseService class" />
     <MESSAGE value="added test case for checking database connection" />
@@ -562,7 +559,9 @@
     <MESSAGE value="made the SongRepository and PlaylistRepository implement Repository interface and renamed the methods to match the abstract method" />
     <MESSAGE value="added the display for shuffled playlist" />
     <MESSAGE value="updated the java docs for SongRepository.java class" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated the java docs for SongRepository.java class" />
+    <MESSAGE value="updated the java docs for PlaylistRepository.java class" />
+    <MESSAGE value="updated the java docs for JukeboxService.java class" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated the java docs for JukeboxService.java class" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
