@@ -12,8 +12,9 @@ import java.util.List;
 import java.util.Scanner;
 
 public class JukeboxService {
-    private long microsecondPosition;
     private static final String PRINT_LINES = "===============================";
+    private long microsecondPosition;
+
     /**
      * This method is used to display details of a particular song
      *
@@ -91,6 +92,13 @@ public class JukeboxService {
         }
     }
 
+    /**
+     * This method pauses or resumes a song
+     *
+     * @param clip          The clip object for song
+     * @param isSongPlaying The current status of the song
+     * @return The status of the song as false if the song is paused, true if the song is resumed
+     */
     public boolean pauseResumeSong(Clip clip, boolean isSongPlaying) {
         if (isSongPlaying) {
             this.microsecondPosition = clip.getMicrosecondPosition();
@@ -109,13 +117,16 @@ public class JukeboxService {
      * This method is used to shuffle the given playlist by songs id and return the shuffled songs id
      *
      * @param songList List of song objects to shuffle
-     * @return shuffledSongsId The shuffled array of songs id playlist
+     * @return The shuffled array of songs id playlist
      */
     public List<Song> shufflePlaylist(List<Song> songList) {
         Collections.shuffle(songList);
         return songList;
     }
 
+    /**
+     * This method displays a simple menu for the music player
+     */
     void displayPlayerMenu() {
         System.out.println("Press 1 to Resume/Pause the song");
         System.out.println("Press 2 to go to next song");
