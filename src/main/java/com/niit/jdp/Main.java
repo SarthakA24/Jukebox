@@ -119,11 +119,9 @@ public class Main {
                 } else {
                     System.err.println("!!Database Not Connected!!");
                 }
-            } catch (PlaylistAlreadyExistsException | IncorrectSongNameException exception) {
+            } catch (PlaylistAlreadyExistsException | IncorrectSongNameException | SQLException exception) {
                 System.err.println(exception.getMessage());
                 choice = 0;
-            } catch (SQLException exception) {
-                exception.printStackTrace();
             }
         } while (choice != 9);
     }
