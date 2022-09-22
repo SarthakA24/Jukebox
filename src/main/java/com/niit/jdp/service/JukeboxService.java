@@ -2,13 +2,13 @@ package com.niit.jdp.service;
 
 import com.niit.jdp.model.Playlist;
 import com.niit.jdp.model.Song;
+import com.niit.jdp.repository.SongRepository;
 
 import javax.sound.sampled.*;
 import java.io.File;
 import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
-import java.util.Scanner;
 
 public class JukeboxService {
     /**
@@ -35,6 +35,9 @@ public class JukeboxService {
     public void playPlaylist(Playlist playlist) {
         // Call the shufflePlaylist() method to shuffle the songs list
         List<Song> shufflePlaylist = shufflePlaylist(playlist.getSongList());
+        // Display the songs in the playlist
+        System.out.println("Songs in the Playlist - " + playlist.getPlaylistName());
+        new SongRepository().displayAllSongs(shufflePlaylist);
         // Start a for each loop to iterate though the array and play the songs
         for (Song song : shufflePlaylist) {
             // pass the song object to playSong() method
@@ -63,8 +66,6 @@ public class JukeboxService {
             displaySongDetails(song);
             // start the sound file
             clip.start();
-            Scanner scanner = new Scanner(System.in);
-            scanner.nextLine();
             // pause the current thread for the time the song is being played
             // Thread.sleep(clip.getMicrosecondLength() / 1000L);
         } catch (UnsupportedAudioFileException | IOException | LineUnavailableException exception) {
