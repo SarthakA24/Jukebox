@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added the method displayPlaylist()">
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added the if condition for choice 5 to remove a song from playlist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Song.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,14 +103,9 @@
       <workItem from="1663759094807" duration="3753000" />
       <workItem from="1663763129015" duration="4328000" />
       <workItem from="1663772004680" duration="3846000" />
-      <workItem from="1663776211572" duration="6240000" />
-    </task>
-    <task id="LOCAL-00056" summary="completed the method getPlaylistsName()">
-      <created>1663737492359</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1663737492360</updated>
+      <workItem from="1663776211572" duration="6896000" />
+      <workItem from="1663817822370" duration="1052000" />
+      <workItem from="1663819547494" duration="957000" />
     </task>
     <task id="LOCAL-00057" summary="changed the field for List&lt;Song&gt; with String of songs id and modified the constructors, getter and setters methods, hashCode and equals methods and the toString method">
       <created>1663738425392</created>
@@ -450,7 +443,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663780230232</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="added the if condition for choice 5 to remove a song from playlist">
+      <created>1663785595516</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1663785595516</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -468,7 +468,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="completed the method displayMenu()" />
     <MESSAGE value="created an object for DatabaseService and called the method to connect to the database" />
     <MESSAGE value="called the getter method to get the connection object" />
     <MESSAGE value="displayed the jukebox menu and started the switch cases for the input" />
@@ -493,7 +492,8 @@
     <MESSAGE value="removed redundant use of variables" />
     <MESSAGE value="completed the method removeSongFromPlaylist()" />
     <MESSAGE value="added the method displayPlaylist()" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the method displayPlaylist()" />
+    <MESSAGE value="added the if condition for choice 5 to remove a song from playlist" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the if condition for choice 5 to remove a song from playlist" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

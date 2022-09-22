@@ -95,6 +95,6 @@ public class Song {
 
     @Override
     public String toString() {
-        return String.format("%1s | %31s | %5s | %15s | %20s", "| " + name, durationInSeconds, artistName, albumName, genre + " |\n");
+        return String.format("| %1$-45s| %2$-25s| %3$-20s| %4$-25s| %5$-15s|", name, durationInSeconds, artistName, albumName, genre);
     }
 }
