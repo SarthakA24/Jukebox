@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class JukeboxService {
+    private long microsecondLength;
     /**
      * This method is used to display details of a particular song
      *
@@ -34,13 +35,14 @@ public class JukeboxService {
      * @param playlist The playlist from which the song is to be played.
      */
     public void playPlaylist(Playlist playlist) {
-        // Call the shufflePlaylist() method to shuffle the songs list
-        List<Song> shufflePlaylist = shufflePlaylist(playlist.getSongList());
-        // Display the songs in the playlist
+        List<Song> songList = playlist.getSongList();
         System.out.println("Songs in the Playlist - " + playlist.getPlaylistName());
-        new SongRepository().displayAllSongs(shufflePlaylist);
+        new SongRepository().displayAllSongs(songList);
+        // Call the shuffledSongsList() method to shuffle the songs list
+        List<Song> shuffledSongsList = shufflePlaylist(songList);
+        // Display the songs in the playlist
         // Start a for each loop to iterate though the array and play the songs
-        for (Song song : shufflePlaylist) {
+        for (Song song : shuffledSongsList) {
             // pass the song object to playSong() method
             playSong(song);
         }
@@ -69,49 +71,38 @@ public class JukeboxService {
             clip.start();
             boolean isSongPlaying = true;
             int choice;
-            long microsecondLength = 0;
             do {
                 displayPlayerMenu();
                 Scanner scanner = new Scanner(System.in);
                 choice = scanner.nextInt();
                 if (choice == 1) {
-                    if (isSongPlaying) {
-                        microsecondLength = pauseSong(clip);
-                        isSongPlaying = false;
-                    } else {
-                        System.err.println("Song is already playing!!");
-                    }
-                } else if (choice == 2) {
-                    if (!isSongPlaying) {
-                        resumeSong(clip, microsecondLength, audioInputStream);
-                        isSongPlaying = true;
-                    } else {
-                        System.err.println("Song is already paused!!");
-                    }
+                    isSongPlaying = pauseResumeSong(clip, isSongPlaying, audioInputStream);
                 } else {
                     clip.stop();
                     clip.close();
                 }
-            } while (choice != 3);
+            } while (choice != 2);
         } catch (UnsupportedAudioFileException | IOException | LineUnavailableException exception) {
             System.err.println(exception.getMessage());
             exception.printStackTrace();
         }
     }
 
-    public long pauseSong(Clip clip) {
-        long microsecondLength = clip.getMicrosecondLength();
-        clip.stop();
-        return microsecondLength;
-    }
-
-    public void resumeSong(Clip clip, long microsecondLength, AudioInputStream audioInputStream) throws LineUnavailableException, IOException {
-        // Close and restart the clip
-        clip.close();
-        clip.open(audioInputStream);
-        clip.loop(Clip.LOOP_CONTINUOUSLY);
-        clip.setMicrosecondPosition(microsecondLength);
-        clip.start();
+    public boolean pauseResumeSong(Clip clip, boolean isSongPlaying, AudioInputStream audioInputStream) throws LineUnavailableException, IOException {
+        if (isSongPlaying) {
+            this.microsecondLength = clip.getMicrosecondLength();
+            clip.stop();
+            return false;
+        } else {
+            clip.stop();
+            clip.close();
+            clip.loop(Clip.LOOP_CONTINUOUSLY);
+            System.out.println("microsecondLength = " + microsecondLength);
+            clip.open(audioInputStream);
+            clip.setMicrosecondPosition(this.microsecondLength);
+            clip.start();
+            return true;
+        }
     }
 
     /**
@@ -126,9 +117,8 @@ public class JukeboxService {
     }
 
     void displayPlayerMenu() {
-        System.out.println("Press 1 to pause the song");
-        System.out.println("Press 2 to resume the song.");
-        System.out.println("Press 3 to go to next song");
+        System.out.println("Press 1 to Resume/Pause the song");
+        System.out.println("Press 2 to go to next song");
     }
 
     /**

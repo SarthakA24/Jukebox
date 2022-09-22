@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added the pauseSong() and resumeSong() methods and printed a menu while playing the song in if else">
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added junit 5.9.0 dependency">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,14 +104,7 @@
       <workItem from="1663772004680" duration="3846000" />
       <workItem from="1663776211572" duration="6896000" />
       <workItem from="1663817822370" duration="1052000" />
-      <workItem from="1663819547494" duration="6553000" />
-    </task>
-    <task id="LOCAL-00061" summary="completed the method getPlaylistByName()">
-      <created>1663738741010</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1663738741011</updated>
+      <workItem from="1663819547494" duration="9335000" />
     </task>
     <task id="LOCAL-00062" summary="completed the method getPlaylistByName()">
       <created>1663740412750</created>
@@ -449,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663823854717</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="added junit 5.9.0 dependency">
+      <created>1663826646055</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1663826646055</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,7 +467,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added case 1 to display all songs" />
     <MESSAGE value="completed the displayAllSongs() method" />
     <MESSAGE value="replaced switch with if conditions" />
     <MESSAGE value="updated the displayMenu() method" />
@@ -492,7 +491,8 @@
     <MESSAGE value="edited the toString and displayAllSongs() method to print in the desired format" />
     <MESSAGE value="printed the playlist before playing in the method playPlaylist()" />
     <MESSAGE value="added the pauseSong() and resumeSong() methods and printed a menu while playing the song in if else" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the pauseSong() and resumeSong() methods and printed a menu while playing the song in if else" />
+    <MESSAGE value="added junit 5.9.0 dependency" />
+    <option name="LAST_COMMIT_MESSAGE" value="added junit 5.9.0 dependency" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
