@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added the private static final string for printing lines">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" afterDir="false" />
-    </list>
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added if conditions to check of playlist creation is success or not" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -173,28 +169,7 @@
       <workItem from="1663817822370" duration="1052000" />
       <workItem from="1663819547494" duration="16280000" />
       <workItem from="1663837030497" duration="333000" />
-      <workItem from="1663837411932" duration="2315000" />
-    </task>
-    <task id="LOCAL-00076" summary="added a sql file playlist_sql_queries.sql for the sql queries for playlist table">
-      <created>1663754024050</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1663754024050</updated>
-    </task>
-    <task id="LOCAL-00077" summary="added the method signature for displayMenu() method">
-      <created>1663754383677</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1663754383677</updated>
-    </task>
-    <task id="LOCAL-00078" summary="completed the method displayMenu()">
-      <created>1663755038702</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1663755038702</updated>
+      <workItem from="1663837411932" duration="2810000" />
     </task>
     <task id="LOCAL-00079" summary="created an object for DatabaseService and called the method to connect to the database">
       <created>1663755090319</created>
@@ -518,7 +493,28 @@
       <option name="project" value="LOCAL" />
       <updated>1663837962198</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="removed the unnecessary if conditions from the main method">
+      <created>1663839756574</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1663839756575</updated>
+    </task>
+    <task id="LOCAL-00126" summary="added if conditions to check of playlist creation is success or not">
+      <created>1663839862134</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1663839862135</updated>
+    </task>
+    <task id="LOCAL-00127" summary="added if conditions to check of playlist creation is success or not">
+      <created>1663840012941</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1663840012941</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -536,8 +532,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed the parameters of search methods in SongRepository and updated the method calls" />
-    <MESSAGE value="added choice 5 for editing playlist name" />
     <MESSAGE value="added if else cases for searching based on artist and genre" />
     <MESSAGE value="removed redundant use of variables" />
     <MESSAGE value="completed the method removeSongFromPlaylist()" />
@@ -561,7 +555,9 @@
     <MESSAGE value="edited the assertNotNull" />
     <MESSAGE value="added sql_export_dump.sql file" />
     <MESSAGE value="added the private static final string for printing lines" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the private static final string for printing lines" />
+    <MESSAGE value="removed the unnecessary if conditions from the main method" />
+    <MESSAGE value="added if conditions to check of playlist creation is success or not" />
+    <option name="LAST_COMMIT_MESSAGE" value="added if conditions to check of playlist creation is success or not" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
