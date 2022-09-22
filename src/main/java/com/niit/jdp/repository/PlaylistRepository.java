@@ -1,5 +1,6 @@
 package com.niit.jdp.repository;
 
+import com.niit.jdp.exception.IncorrectSongNameException;
 import com.niit.jdp.exception.PlaylistAlreadyExistsException;
 import com.niit.jdp.model.Playlist;
 import com.niit.jdp.model.Song;
@@ -98,7 +99,7 @@ public class PlaylistRepository {
      * @param songToAdd    The song to add to the playlist.
      * @param playlistName The name of the playlist to which the song needs to be added
      */
-    public void addSongToPlaylist(Connection connection, Song songToAdd, String playlistName) throws SQLException {
+    public void addSongToPlaylist(Connection connection, Song songToAdd, String playlistName) throws SQLException, IncorrectSongNameException {
         // Call the method to get the playlist by name
         Playlist playlistByName = getPlaylistByName(connection, playlistName);
         // Create a string of songs id to update in the table
@@ -120,7 +121,7 @@ public class PlaylistRepository {
         if (isSuccess) {
             System.out.println("Song added to the playlist successfully!");
         } else {
-            System.err.println("Incorrect song name!");
+            throw new IncorrectSongNameException("Incorrect song name entered!!");
         }
     }
 
@@ -131,7 +132,7 @@ public class PlaylistRepository {
      * @param songToRemove The song to remove from the playlist.
      * @param playlistName The name of the playlist from which the song needs to be removed
      */
-    public void removeSongFromPlaylist(Connection connection, Song songToRemove, String playlistName) throws SQLException {
+    public void removeSongFromPlaylist(Connection connection, Song songToRemove, String playlistName) throws SQLException, IncorrectSongNameException {
         // Call the method to get the playlist by name
         Playlist playlistByName = getPlaylistByName(connection, playlistName);
         // Create a string of songs id to update in the table
@@ -154,7 +155,7 @@ public class PlaylistRepository {
         if (isSuccess) {
             System.out.println("Song removed from the playlist successfully!");
         } else {
-            System.err.println("Incorrect song name!");
+            throw new IncorrectSongNameException("Incorrect song name entered!!");
         }
     }
 

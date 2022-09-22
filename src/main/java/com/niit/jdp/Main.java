@@ -1,5 +1,6 @@
 package com.niit.jdp;
 
+import com.niit.jdp.exception.IncorrectSongNameException;
 import com.niit.jdp.exception.PlaylistAlreadyExistsException;
 import com.niit.jdp.model.Playlist;
 import com.niit.jdp.model.Song;
@@ -118,7 +119,7 @@ public class Main {
                 } else {
                     System.err.println("!!Database Not Connected!!");
                 }
-            } catch (PlaylistAlreadyExistsException exception) {
+            } catch (PlaylistAlreadyExistsException | IncorrectSongNameException exception) {
                 System.err.println(exception.getMessage());
                 choice = 0;
             } catch (SQLException exception) {
