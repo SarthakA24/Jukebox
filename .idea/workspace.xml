@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added test case for getPlaylistsName() method with correct and incorrect case">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jdp/repository/PlaylistRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jdp/repository/PlaylistRepositoryTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added test case for checking the method to getPlaylistsName()" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -177,14 +174,7 @@
       <workItem from="1663772004680" duration="3846000" />
       <workItem from="1663776211572" duration="6896000" />
       <workItem from="1663817822370" duration="1052000" />
-      <workItem from="1663819547494" duration="15646000" />
-    </task>
-    <task id="LOCAL-00072" summary="edited the method playPlaylist() to call shuffle playlist method and get the shuffled array">
-      <created>1663751220677</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1663751220679</updated>
+      <workItem from="1663819547494" duration="15951000" />
     </task>
     <task id="LOCAL-00073" summary="moved the method displayAllSongs() from JukeboxService to SongRepository">
       <created>1663751370603</created>
@@ -522,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663835496491</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="added test case for checking the method to getPlaylistsName()">
+      <created>1663836530167</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1663836530167</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,7 +537,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated the if else conditions according to changes in the methods" />
     <MESSAGE value="added while loop in result set for getPlaylistByName()" />
     <MESSAGE value="edited the displayMenu() menu" />
     <MESSAGE value="added the if else for choice 4" />
@@ -565,7 +561,8 @@
     <MESSAGE value="added test case for getAllSongs() method" />
     <MESSAGE value="added test cases for PlaylistRepository" />
     <MESSAGE value="added test case for getPlaylistsName() method with correct and incorrect case" />
-    <option name="LAST_COMMIT_MESSAGE" value="added test case for getPlaylistsName() method with correct and incorrect case" />
+    <MESSAGE value="added test case for checking the method to getPlaylistsName()" />
+    <option name="LAST_COMMIT_MESSAGE" value="added test case for checking the method to getPlaylistsName()" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
