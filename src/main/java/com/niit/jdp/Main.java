@@ -1,5 +1,6 @@
 package com.niit.jdp;
 
+import com.niit.jdp.exception.PlaylistAlreadyExistsException;
 import com.niit.jdp.model.Playlist;
 import com.niit.jdp.model.Song;
 import com.niit.jdp.repository.PlaylistRepository;
@@ -15,24 +16,24 @@ import java.util.stream.IntStream;
 
 public class Main {
     public static void main(String[] args) {
-        try {
-            // Create an object for the DatabaseService class
-            DatabaseService databaseService = new DatabaseService();
-            // Connect to the database
-            boolean isDatabaseConnected = databaseService.connect();
-            if (isDatabaseConnected) {
-                // Print the connection status
-                databaseService.printConnectionStatus();
-                // Get the connection
-                Connection connection = databaseService.getConnection();
-                // declare the objects for the JukeboxService, SongRepository and PlaylistRepository classes
-                JukeboxService jukeboxService = new JukeboxService();
-                SongRepository songRepository = new SongRepository();
-                PlaylistRepository playlistRepository = new PlaylistRepository();
-                // initialise the scanner
-                Scanner scanner = new Scanner(System.in);
-                int choice;
-                do {
+        int choice = 0;
+        do {
+            try {
+                // Create an object for the DatabaseService class
+                DatabaseService databaseService = new DatabaseService();
+                // Connect to the database
+                boolean isDatabaseConnected = databaseService.connect();
+                if (isDatabaseConnected) {
+                    // Print the connection status
+                    databaseService.printConnectionStatus();
+                    // Get the connection
+                    Connection connection = databaseService.getConnection();
+                    // declare the objects for the JukeboxService, SongRepository and PlaylistRepository classes
+                    JukeboxService jukeboxService = new JukeboxService();
+                    SongRepository songRepository = new SongRepository();
+                    PlaylistRepository playlistRepository = new PlaylistRepository();
+                    // initialise the scanner
+                    Scanner scanner = new Scanner(System.in);
                     // display the jukebox menu
                     jukeboxService.displayMenu();
                     choice = scanner.nextInt();
@@ -114,13 +115,15 @@ public class Main {
                         default:
                             System.out.println("Invalid Input");
                     }
-                } while (choice != 9);
-            } else {
-                System.err.println("!!Database Not Connected!!");
+                } else {
+                    System.err.println("!!Database Not Connected!!");
+                }
+            } catch (PlaylistAlreadyExistsException exception) {
+                System.err.println(exception.getMessage());
+                choice = 0;
+            } catch (SQLException exception) {
+                exception.printStackTrace();
             }
-        } catch (SQLException e) {
-            System.err.println(e.getMessage());
-            e.printStackTrace();
-        }
+        } while (choice != 9);
     }
 }

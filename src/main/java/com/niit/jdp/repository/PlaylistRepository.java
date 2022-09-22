@@ -1,5 +1,6 @@
 package com.niit.jdp.repository;
 
+import com.niit.jdp.exception.PlaylistAlreadyExistsException;
 import com.niit.jdp.model.Playlist;
 import com.niit.jdp.model.Song;
 
@@ -74,7 +75,7 @@ public class PlaylistRepository {
      * @param connection   The connection to the database.
      * @param playlistName The name of the playlist.
      */
-    public void createNewPlaylist(Connection connection, String playlistName) throws SQLException {
+    public void createNewPlaylist(Connection connection, String playlistName) throws SQLException, PlaylistAlreadyExistsException {
         // Create a string insert query to add a row in the database
         String insertQuery = "INSERT INTO `jukebox`.`playlist` (`playlist_name`) VALUES (?);";
         // Create a prepared statement object to set the playlist name and execute the query
@@ -86,7 +87,7 @@ public class PlaylistRepository {
         if (isSuccess) {
             System.out.println("Playlist Created Successfully!");
         } else {
-            System.err.println("Playlist with the name " + playlistName + " already exists!");
+            throw new PlaylistAlreadyExistsException("Playlist with the name" + playlistName + "already exists");
         }
     }
 
