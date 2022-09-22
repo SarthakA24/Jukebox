@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class JukeboxService {
-    private long microsecondLength;
+    private long microsecondPosition;
     /**
      * This method is used to display details of a particular song
      *
@@ -76,7 +76,7 @@ public class JukeboxService {
                 Scanner scanner = new Scanner(System.in);
                 choice = scanner.nextInt();
                 if (choice == 1) {
-                    isSongPlaying = pauseResumeSong(clip, isSongPlaying, audioInputStream);
+                    isSongPlaying = pauseResumeSong(clip, isSongPlaying);
                 } else {
                     clip.stop();
                     clip.close();
@@ -88,19 +88,16 @@ public class JukeboxService {
         }
     }
 
-    public boolean pauseResumeSong(Clip clip, boolean isSongPlaying, AudioInputStream audioInputStream) throws LineUnavailableException, IOException {
+    public boolean pauseResumeSong(Clip clip, boolean isSongPlaying) throws LineUnavailableException, IOException {
         if (isSongPlaying) {
-            this.microsecondLength = clip.getMicrosecondLength();
+            this.microsecondPosition = clip.getMicrosecondPosition();
             clip.stop();
+            System.out.println("Song Paused!");
             return false;
         } else {
-            clip.stop();
-            clip.close();
-            clip.loop(Clip.LOOP_CONTINUOUSLY);
-            System.out.println("microsecondLength = " + microsecondLength);
-            clip.open(audioInputStream);
-            clip.setMicrosecondPosition(this.microsecondLength);
+            clip.setMicrosecondPosition(this.microsecondPosition);
             clip.start();
+            System.out.println("Song Resumed!");
             return true;
         }
     }
