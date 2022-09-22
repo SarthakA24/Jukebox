@@ -116,6 +116,7 @@ public class Main {
                 }
             } catch (PlaylistAlreadyExistsException | IncorrectSongNameException | SQLException exception) {
                 System.err.println(exception.getMessage());
+                exception.printStackTrace();
                 choice = 0;
             }
         } while (choice != 9);

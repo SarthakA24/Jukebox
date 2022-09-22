@@ -54,7 +54,7 @@ public class PlaylistRepository implements Repository<String> {
             preparedStatement.setString(1, playlistName);
             // Execute the query and get the result set
             ResultSet resultSet = preparedStatement.executeQuery();
-            String songsId = "";
+            String songsId = null;
             while (resultSet.next()) {
                 //Set the values to the playlist object
                 playlistByName.setPlaylistName(resultSet.getString("playlist_name"));
@@ -111,8 +111,12 @@ public class PlaylistRepository implements Repository<String> {
         String songIdToUpdate = "";
         // Add the already present songs id to the string and then append the song id to be added
         List<Song> songsInList = playlistByName.getSongList();
-        for (Song song : songsInList) {
-            songIdToUpdate = song.getId() + "," + songToAdd.getId() + ",";
+        if (songsInList == null) {
+            songIdToUpdate = songToAdd.getId() + ",";
+        } else {
+            for (Song song : songsInList) {
+                songIdToUpdate = song.getId() + "," + songToAdd.getId() + ",";
+            }
         }
         boolean isSuccess;
         // Create an update query to update the songs id in the database
