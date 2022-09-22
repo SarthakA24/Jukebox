@@ -45,7 +45,7 @@ public class SongRepository implements Repository<Song> {
     }
 
     /**
-     * This method finds the song by the song id in the songs list
+     * This method finds the song by the song id in the provided songs list
      *
      * @param songList The list of songs that you want to search through
      * @param songId   The id of the song you want to get
