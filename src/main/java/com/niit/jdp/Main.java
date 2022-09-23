@@ -36,9 +36,12 @@ public class Main {
                     Scanner scanner = new Scanner(System.in);
                     // display the jukebox menu
                     jukeboxService.displayMenu();
+                    // take the choice input from the user
                     choice = scanner.nextInt();
+                    // get all the songs list and the playlists names from the database
                     List<Song> allSongs = songRepository.getAll(connection);
                     List<String> playlistsName = playlistRepository.getAll(connection);
+                    // start switch cases
                     switch (choice) {
                         case 1:
                             songRepository.displayAllSongs(allSongs);
@@ -133,6 +136,6 @@ public class Main {
                 exception.printStackTrace();
                 choice = 0;
             }
-        } while (choice != 10);
+        } while (choice != 11);
     }
 }

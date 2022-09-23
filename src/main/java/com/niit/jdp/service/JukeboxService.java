@@ -45,9 +45,10 @@ public class JukeboxService {
             new Scanner(System.in).nextLine();
             // Call the shuffledSongsList() method to shuffle the songs list
             List<Song> shuffledSongsList = shufflePlaylist(songList);
-            System.out.println("Shuffled Playlist - " + playlist.getPlaylistName());
-            new SongRepository().displayAllSongs(songList);
             // Display the songs in the playlist
+            System.out.println("Shuffled Playlist - " + playlist.getPlaylistName());
+            // display the shuffled songs
+            new SongRepository().displayAllSongs(songList);
             // Start a for each loop to iterate though the array and play the songs
             for (Song song : shuffledSongsList) {
                 // pass the song object to playSong() method
@@ -84,9 +85,12 @@ public class JukeboxService {
             clip.start();
             int choice;
             do {
+                // display the player menu to resume/pause/forward/stop song
                 displayPlayerMenu();
+                // take the input
                 Scanner scanner = new Scanner(System.in);
                 choice = scanner.nextInt();
+                // start the if condition on the input
                 if (choice == 1) {
                     isSongPlaying = pauseResumeSong(clip, isSongPlaying);
                 } else if (choice == 2) {
