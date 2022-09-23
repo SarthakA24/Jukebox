@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added comments in the code for newly added cases">
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="fixed the searchSongsByGenre() method to correctly search the songs by genre">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +67,7 @@
       <recent name="com.niit.jdp.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in capstone-project-jukebox">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.niit.jdp.Main" />
       <module name="capstone-project-jukebox" />
@@ -139,8 +138,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in capstone-project-jukebox" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.All in capstone-project-jukebox" />
         <item itemvalue="JUnit.PlaylistRepositoryTest" />
         <item itemvalue="JUnit.PlaylistRepositoryTest.getPlaylistsName" />
         <item itemvalue="JUnit.PlaylistRepositoryTest.getPlaylistsNameIncorrectCase" />
@@ -177,14 +176,7 @@
       <workItem from="1663858818783" duration="1110000" />
       <workItem from="1663863452281" duration="270000" />
       <workItem from="1663864458452" duration="114000" />
-      <workItem from="1663904068493" duration="6296000" />
-    </task>
-    <task id="LOCAL-00104" summary="added the method displayPlaylist()">
-      <created>1663780230232</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1663780230232</updated>
+      <workItem from="1663904068493" duration="6635000" />
     </task>
     <task id="LOCAL-00105" summary="added the if condition for choice 5 to remove a song from playlist">
       <created>1663785595516</created>
@@ -522,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663924305134</updated>
     </task>
-    <option name="localTasksCounter" value="153" />
+    <task id="LOCAL-00153" summary="fixed the searchSongsByGenre() method to correctly search the songs by genre">
+      <created>1663929414673</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1663929414673</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,7 +539,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added sql_export_dump.sql file" />
     <MESSAGE value="added the private static final string for printing lines" />
     <MESSAGE value="removed the unnecessary if conditions from the main method" />
     <MESSAGE value="added if conditions to check of playlist creation is success or not" />
@@ -565,7 +563,8 @@
     <MESSAGE value="edited the toString() method to print duration in minutes and seconds" />
     <MESSAGE value="added the case 2 to play all songs and modified the rest case numbers accordingly" />
     <MESSAGE value="added comments in the code for newly added cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="added comments in the code for newly added cases" />
+    <MESSAGE value="fixed the searchSongsByGenre() method to correctly search the songs by genre" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed the searchSongsByGenre() method to correctly search the songs by genre" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -58,15 +58,6 @@ public class Main {
                         case 4:
                             System.out.println("Your Playlists are -");
                             playlistsName.forEach(System.out::println);
-                            System.out.println("Please enter the playlist name that you need to play - ");
-                            scanner.nextLine();
-                            String selectedPlaylist = scanner.nextLine().toLowerCase();
-                            Playlist playlistByName = playlistRepository.getPlaylistByName(connection, selectedPlaylist);
-                            jukeboxService.playPlaylist(playlistByName);
-                            break;
-                        case 5:
-                            System.out.println("Your Playlists are -");
-                            playlistsName.forEach(System.out::println);
                             System.out.println("Enter the playlist name in which song is to be added - ");
                             scanner.nextLine();
                             String addSongToPlaylistName = scanner.nextLine();
@@ -80,6 +71,15 @@ public class Main {
                             } else {
                                 System.err.println("Playlist does not exist!");
                             }
+                            break;
+                        case 5:
+                            System.out.println("Your Playlists are -");
+                            playlistsName.forEach(System.out::println);
+                            System.out.println("Please enter the playlist name that you need to play - ");
+                            scanner.nextLine();
+                            String selectedPlaylist = scanner.nextLine().toLowerCase();
+                            Playlist playlistByName = playlistRepository.getPlaylistByName(connection, selectedPlaylist);
+                            jukeboxService.playPlaylist(playlistByName);
                             break;
                         case 6:
                             System.out.println("Enter the playlist name - ");
