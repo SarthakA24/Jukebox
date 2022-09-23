@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="updated the addSongToPlaylist() and removeSongFromPlaylist() methods to correctly make the string query using StringBuilder">
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="edited the toString() method to print duration in minutes and seconds">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Song.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,14 +179,7 @@
       <workItem from="1663858818783" duration="1110000" />
       <workItem from="1663863452281" duration="270000" />
       <workItem from="1663864458452" duration="114000" />
-      <workItem from="1663904068493" duration="3508000" />
-    </task>
-    <task id="LOCAL-00101" summary="added if else cases for searching based on artist and genre">
-      <created>1663779308289</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1663779308289</updated>
+      <workItem from="1663904068493" duration="4284000" />
     </task>
     <task id="LOCAL-00102" summary="removed redundant use of variables">
       <created>1663779394127</created>
@@ -523,7 +517,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663906546777</updated>
     </task>
-    <option name="localTasksCounter" value="150" />
+    <task id="LOCAL-00150" summary="edited the toString() method to print duration in minutes and seconds">
+      <created>1663916554182</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1663916554183</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -541,7 +542,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added test case for getPlaylistsName() method with correct and incorrect case" />
     <MESSAGE value="added test case for checking the method to getPlaylistsName()" />
     <MESSAGE value="edited the assertNotNull" />
     <MESSAGE value="added sql_export_dump.sql file" />
@@ -566,7 +566,8 @@
     <MESSAGE value="edited the displayPlaylist() to check if the playlist is empty" />
     <MESSAGE value="added the condition to stop playing the playlist" />
     <MESSAGE value="updated the addSongToPlaylist() and removeSongFromPlaylist() methods to correctly make the string query using StringBuilder" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated the addSongToPlaylist() and removeSongFromPlaylist() methods to correctly make the string query using StringBuilder" />
+    <MESSAGE value="edited the toString() method to print duration in minutes and seconds" />
+    <option name="LAST_COMMIT_MESSAGE" value="edited the toString() method to print duration in minutes and seconds" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

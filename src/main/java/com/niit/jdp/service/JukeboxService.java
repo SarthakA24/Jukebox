@@ -155,14 +155,15 @@ public class JukeboxService {
         System.out.println(PRINT_LINES);
         System.out.println("Please select from the options below - ");
         System.out.println("1. Display all Songs in the Jukebox.");
-        System.out.println("2. Create a Playlist.");
-        System.out.println("3. Play your playlists.");
-        System.out.println("4. Add songs to a playlist.");
-        System.out.println("5. Remove songs to a playlist.");
-        System.out.println("6. Edit Playlist name.");
-        System.out.println("7. View songs by Genre.");
-        System.out.println("8. View songs by Artist.");
-        System.out.println("9. View songs in playlist.");
-        System.out.println("10. Exit the Jukebox.");
+        System.out.println("2. Play all songs from the Jukebox. (Shuffled)");
+        System.out.println("3. Create a Playlist.");
+        System.out.println("4. Play your playlists.");
+        System.out.println("5. Add songs to a playlist.");
+        System.out.println("6. Remove songs to a playlist.");
+        System.out.println("7. Edit Playlist name.");
+        System.out.println("8. View songs by Genre.");
+        System.out.println("9. View songs by Artist.");
+        System.out.println("10. View songs in playlist.");
+        System.out.println("11. Exit the Jukebox.");
     }
 }
