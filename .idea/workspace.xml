@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="edited the displayPlaylist() to check if the playlist is empty">
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added the condition to stop playing the playlist">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,14 +178,7 @@
       <workItem from="1663858818783" duration="1110000" />
       <workItem from="1663863452281" duration="270000" />
       <workItem from="1663864458452" duration="114000" />
-      <workItem from="1663904068493" duration="737000" />
-    </task>
-    <task id="LOCAL-00099" summary="changed the parameters of search methods in SongRepository and updated the method calls">
-      <created>1663778159429</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1663778159430</updated>
+      <workItem from="1663904068493" duration="2127000" />
     </task>
     <task id="LOCAL-00100" summary="added choice 5 for editing playlist name">
       <created>1663778588681</created>
@@ -523,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663855511958</updated>
     </task>
-    <option name="localTasksCounter" value="148" />
+    <task id="LOCAL-00148" summary="added the condition to stop playing the playlist">
+      <created>1663904955653</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1663904955655</updated>
+    </task>
+    <option name="localTasksCounter" value="149" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -541,7 +541,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added test case for getAllSongs() method" />
     <MESSAGE value="added test cases for PlaylistRepository" />
     <MESSAGE value="added test case for getPlaylistsName() method with correct and incorrect case" />
     <MESSAGE value="added test case for checking the method to getPlaylistsName()" />
@@ -566,7 +565,8 @@
     <MESSAGE value="edited the addSongToPlaylist() method to identify if songs in playlist is null" />
     <MESSAGE value="added case 9 to display playlists" />
     <MESSAGE value="edited the displayPlaylist() to check if the playlist is empty" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited the displayPlaylist() to check if the playlist is empty" />
+    <MESSAGE value="added the condition to stop playing the playlist" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the condition to stop playing the playlist" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -108,22 +108,23 @@ public class PlaylistRepository implements Repository<String> {
         // Call the method to get the playlist by name
         Playlist playlistByName = getPlaylistByName(connection, playlistName);
         // Create a string of songs id to update in the table
-        String songIdToUpdate = "";
+        StringBuilder songIdToUpdate = new StringBuilder();
         // Add the already present songs id to the string and then append the song id to be added
         List<Song> songsInList = playlistByName.getSongList();
         if (songsInList == null) {
-            songIdToUpdate = songToAdd.getId() + ",";
+            songIdToUpdate = new StringBuilder(songToAdd.getId() + ",");
         } else {
             for (Song song : songsInList) {
-                songIdToUpdate = song.getId() + "," + songToAdd.getId() + ",";
+                songIdToUpdate.append(song.getId()).append(",");
             }
+            songIdToUpdate.append(songToAdd.getId()).append(",");
         }
         boolean isSuccess;
         // Create an update query to update the songs id in the database
         String updateQuery = "UPDATE `jukebox`.`playlist` SET `songs_id` = ? WHERE (`playlist_name` = ?);";
         // Create a prepared statement to execute the query
         try (PreparedStatement preparedStatement = connection.prepareStatement(updateQuery)) {
-            preparedStatement.setString(1, songIdToUpdate);
+            preparedStatement.setString(1, songIdToUpdate.toString());
             preparedStatement.setString(2, playlistName);
             isSuccess = preparedStatement.executeUpdate() > 0;
         }
@@ -145,11 +146,11 @@ public class PlaylistRepository implements Repository<String> {
         // Call the method to get the playlist by name
         Playlist playlistByName = getPlaylistByName(connection, playlistName);
         // Create a string of songs id to update in the table
-        String songIdToUpdate = "";
+        StringBuilder songIdToUpdate = new StringBuilder();
         List<Song> songsInList = playlistByName.getSongList();
         for (Song song : songsInList) {
             if (song.getId() != songToRemove.getId()) {
-                songIdToUpdate = song.getId() + ",";
+                songIdToUpdate.append(song.getId()).append(",");
             }
         }
         // Create an update query to update the songs id in the database
@@ -157,7 +158,7 @@ public class PlaylistRepository implements Repository<String> {
         boolean isSuccess;
         // Create a prepared statement to execute the query
         try (PreparedStatement preparedStatement = connection.prepareStatement(updateQuery)) {
-            preparedStatement.setString(1, songIdToUpdate);
+            preparedStatement.setString(1, songIdToUpdate.toString());
             preparedStatement.setString(2, playlistName);
             isSuccess = preparedStatement.executeUpdate() > 0;
         }
