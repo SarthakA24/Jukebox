@@ -98,7 +98,7 @@ public class SongRepository implements Repository<Song> {
      */
     public void displayAllSongs(List<Song> songsList) {
         System.out.println("+-------------------------------------------------------------------------------------------------------------------------------------------+");
-        System.out.format("| %1$-45s| %2$-25s| %3$-20s| %4$-25s| %5$-15s|", "Song", "Duration (in Seconds)", "Artist Name", "Album Name", "Genre");
+        System.out.format("| %1$-45s| %2$-25s| %3$-20s| %4$-25s| %5$-15s|", "Song", "Song Duration", "Artist Name", "Album Name", "Genre");
         System.out.println("\n+-------------------------------------------------------------------------------------------------------------------------------------------+");
         songsList.forEach(System.out::println);
         System.out.println("+-------------------------------------------------------------------------------------------------------------------------------------------+");

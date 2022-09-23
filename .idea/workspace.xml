@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added the condition to stop playing the playlist">
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="updated the addSongToPlaylist() and removeSongFromPlaylist() methods to correctly make the string query using StringBuilder">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Song.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,14 +178,7 @@
       <workItem from="1663858818783" duration="1110000" />
       <workItem from="1663863452281" duration="270000" />
       <workItem from="1663864458452" duration="114000" />
-      <workItem from="1663904068493" duration="2127000" />
-    </task>
-    <task id="LOCAL-00100" summary="added choice 5 for editing playlist name">
-      <created>1663778588681</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1663778588681</updated>
+      <workItem from="1663904068493" duration="3508000" />
     </task>
     <task id="LOCAL-00101" summary="added if else cases for searching based on artist and genre">
       <created>1663779308289</created>
@@ -523,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663904955655</updated>
     </task>
-    <option name="localTasksCounter" value="149" />
+    <task id="LOCAL-00149" summary="updated the addSongToPlaylist() and removeSongFromPlaylist() methods to correctly make the string query using StringBuilder">
+      <created>1663906546777</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1663906546777</updated>
+    </task>
+    <option name="localTasksCounter" value="150" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -541,7 +541,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added test cases for PlaylistRepository" />
     <MESSAGE value="added test case for getPlaylistsName() method with correct and incorrect case" />
     <MESSAGE value="added test case for checking the method to getPlaylistsName()" />
     <MESSAGE value="edited the assertNotNull" />
@@ -566,7 +565,8 @@
     <MESSAGE value="added case 9 to display playlists" />
     <MESSAGE value="edited the displayPlaylist() to check if the playlist is empty" />
     <MESSAGE value="added the condition to stop playing the playlist" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the condition to stop playing the playlist" />
+    <MESSAGE value="updated the addSongToPlaylist() and removeSongFromPlaylist() methods to correctly make the string query using StringBuilder" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated the addSongToPlaylist() and removeSongFromPlaylist() methods to correctly make the string query using StringBuilder" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
