@@ -77,7 +77,7 @@ public class SongRepository implements Repository<Song> {
      */
     public List<Song> searchSongsByGenre(List<Song> songList, String genre) {
         // Filter the songs and add the song with the given genre name to list and return the list
-        return songList.stream().filter(song -> song.getArtistName().equalsIgnoreCase(genre)).collect(Collectors.toList());
+        return songList.stream().filter(song -> song.getGenre().equalsIgnoreCase(genre)).collect(Collectors.toList());
     }
 
     /**

@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added the case 2 to play all songs and modified the rest case numbers accordingly">
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added comments in the code for newly added cases">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +68,7 @@
       <recent name="com.niit.jdp.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.All in capstone-project-jukebox">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.niit.jdp.Main" />
       <module name="capstone-project-jukebox" />
@@ -141,8 +139,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.All in capstone-project-jukebox" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.PlaylistRepositoryTest" />
         <item itemvalue="JUnit.PlaylistRepositoryTest.getPlaylistsName" />
         <item itemvalue="JUnit.PlaylistRepositoryTest.getPlaylistsNameIncorrectCase" />
@@ -179,14 +177,7 @@
       <workItem from="1663858818783" duration="1110000" />
       <workItem from="1663863452281" duration="270000" />
       <workItem from="1663864458452" duration="114000" />
-      <workItem from="1663904068493" duration="4993000" />
-    </task>
-    <task id="LOCAL-00103" summary="completed the method removeSongFromPlaylist()">
-      <created>1663780027006</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1663780027006</updated>
+      <workItem from="1663904068493" duration="6296000" />
     </task>
     <task id="LOCAL-00104" summary="added the method displayPlaylist()">
       <created>1663780230232</created>
@@ -524,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663923524778</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <task id="LOCAL-00152" summary="added comments in the code for newly added cases">
+      <created>1663924305134</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1663924305134</updated>
+    </task>
+    <option name="localTasksCounter" value="153" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -542,7 +540,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="edited the assertNotNull" />
     <MESSAGE value="added sql_export_dump.sql file" />
     <MESSAGE value="added the private static final string for printing lines" />
     <MESSAGE value="removed the unnecessary if conditions from the main method" />
@@ -567,7 +564,8 @@
     <MESSAGE value="updated the addSongToPlaylist() and removeSongFromPlaylist() methods to correctly make the string query using StringBuilder" />
     <MESSAGE value="edited the toString() method to print duration in minutes and seconds" />
     <MESSAGE value="added the case 2 to play all songs and modified the rest case numbers accordingly" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the case 2 to play all songs and modified the rest case numbers accordingly" />
+    <MESSAGE value="added comments in the code for newly added cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="added comments in the code for newly added cases" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
