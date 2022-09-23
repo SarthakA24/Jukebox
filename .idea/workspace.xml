@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="edited the addSongToPlaylist() method to identify if songs in playlist is null">
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="edited the displayPlaylist() to check if the playlist is empty">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,21 +173,12 @@
       <workItem from="1663837030497" duration="333000" />
       <workItem from="1663837411932" duration="6624000" />
       <workItem from="1663845182692" duration="2684000" />
-      <workItem from="1663852948430" duration="2257000" />
-    </task>
-    <task id="LOCAL-00097" summary="added the if else for choice 4">
-      <created>1663776039516</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1663776039516</updated>
-    </task>
-    <task id="LOCAL-00098" summary="added the if else for choice 4">
-      <created>1663776053440</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1663776053440</updated>
+      <workItem from="1663852948430" duration="2634000" />
+      <workItem from="1663855626676" duration="658000" />
+      <workItem from="1663858818783" duration="1110000" />
+      <workItem from="1663863452281" duration="270000" />
+      <workItem from="1663864458452" duration="114000" />
+      <workItem from="1663904068493" duration="737000" />
     </task>
     <task id="LOCAL-00099" summary="changed the parameters of search methods in SongRepository and updated the method calls">
       <created>1663778159429</created>
@@ -518,7 +509,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663854973625</updated>
     </task>
-    <option name="localTasksCounter" value="146" />
+    <task id="LOCAL-00146" summary="added case 9 to display playlists">
+      <created>1663855242389</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1663855242389</updated>
+    </task>
+    <task id="LOCAL-00147" summary="edited the displayPlaylist() to check if the playlist is empty">
+      <created>1663855511958</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1663855511958</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -536,8 +541,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="completed the test cases for getSongById success and failure" />
-    <MESSAGE value="added test case for searching songs by name with different case" />
     <MESSAGE value="added test case for getAllSongs() method" />
     <MESSAGE value="added test cases for PlaylistRepository" />
     <MESSAGE value="added test case for getPlaylistsName() method with correct and incorrect case" />
@@ -561,40 +564,12 @@
     <MESSAGE value="reformatted the code" />
     <MESSAGE value="added a check in the methods for null xongsList or songsId" />
     <MESSAGE value="edited the addSongToPlaylist() method to identify if songs in playlist is null" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited the addSongToPlaylist() method to identify if songs in playlist is null" />
+    <MESSAGE value="added case 9 to display playlists" />
+    <MESSAGE value="edited the displayPlaylist() to check if the playlist is empty" />
+    <option name="LAST_COMMIT_MESSAGE" value="edited the displayPlaylist() to check if the playlist is empty" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java</url>
-          <line>43</line>
-          <properties class="com.niit.jdp.repository.PlaylistRepository" method="getPlaylistByName">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java</url>
-          <line>71</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java</url>
-          <line>72</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/The_Jukebox$All_in_capstone_project_jukebox.ic" NAME="All in capstone-project-jukebox Coverage Results" MODIFIED="1663845164391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

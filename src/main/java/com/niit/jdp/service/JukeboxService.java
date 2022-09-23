@@ -41,6 +41,8 @@ public class JukeboxService {
             List<Song> songList = playlist.getSongList();
             System.out.println("Songs in the Playlist - " + playlist.getPlaylistName());
             new SongRepository().displayAllSongs(songList);
+            System.out.println("Press enter to shuffle and play the playlist " + playlist.getPlaylistName());
+            new Scanner(System.in).nextLine();
             // Call the shuffledSongsList() method to shuffle the songs list
             List<Song> shuffledSongsList = shufflePlaylist(songList);
             System.out.println("Shuffled Playlist - " + playlist.getPlaylistName());
@@ -49,7 +51,10 @@ public class JukeboxService {
             // Start a for each loop to iterate though the array and play the songs
             for (Song song : shuffledSongsList) {
                 // pass the song object to playSong() method
-                playSong(song);
+                boolean continuePlaying = playSong(song);
+                if (!continuePlaying) {
+                    break;
+                }
             }
         } else {
             System.err.println("Playlist is empty!!");
@@ -60,24 +65,23 @@ public class JukeboxService {
      * This method is used to play a song
      *
      * @param song The song object that needs to be played
+     * @return False if the playlist is to be stopped, true otherwise
      */
-    public void playSong(Song song) {
+    public boolean playSong(Song song) {
         // Create a file object that contains the song path
         File songFile = new File(song.getUrl());
+        boolean isSongPlaying = true;
+        boolean continuePlaying = true;
         try {
-            // Create an object for AudioInputStream class
+            // Create an instance for AudioInputStream and Clip to play the song
             AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(songFile);
-            // Get a clip object form audio system
             Clip clip = AudioSystem.getClip();
-            // use the clip object to open the audio input stream
             clip.open(audioInputStream);
-            // set a loop for the sound file
             clip.loop(Clip.LOOP_CONTINUOUSLY);
             // Display the song details by calling displaySongDetails() method
             displaySongDetails(song);
             // start the sound file
             clip.start();
-            boolean isSongPlaying = true;
             int choice;
             do {
                 displayPlayerMenu();
@@ -85,15 +89,20 @@ public class JukeboxService {
                 choice = scanner.nextInt();
                 if (choice == 1) {
                     isSongPlaying = pauseResumeSong(clip, isSongPlaying);
+                } else if (choice == 2) {
+                    clip.stop();
+                    clip.close();
                 } else {
                     clip.stop();
                     clip.close();
+                    continuePlaying = false;
                 }
-            } while (choice != 2);
+            } while (choice == 1);
         } catch (UnsupportedAudioFileException | IOException | LineUnavailableException exception) {
             System.err.println(exception.getMessage());
             exception.printStackTrace();
         }
+        return continuePlaying;
     }
 
     /**
@@ -134,6 +143,7 @@ public class JukeboxService {
     void displayPlayerMenu() {
         System.out.println("Press 1 to Resume/Pause the song");
         System.out.println("Press 2 to go to next song");
+        System.out.println("Press 3 to stop the playlist");
     }
 
     /**
