@@ -47,15 +47,23 @@ public class Main {
                             songRepository.displayAllSongs(allSongs);
                             break;
                         case 2:
-                            jukeboxService.playPlaylist(new Playlist(1, "Play All Songs", allSongs));
+                            songRepository.displayAllSongs(allSongs);
+                            System.out.println("Enter the song name to play - ");
+                            scanner.nextLine();
+                            String songNameToPlay = scanner.nextLine();
+                            Song songToPlay = songRepository.searchSongsByName(allSongs, songNameToPlay);
+                            jukeboxService.playSong(songToPlay);
                             break;
                         case 3:
+                            jukeboxService.playPlaylist(new Playlist(1, "Play All Songs", allSongs));
+                            break;
+                        case 4:
                             System.out.println("Enter the playlist name you want to create - ");
                             scanner.nextLine();
                             String playlistName = scanner.nextLine();
                             playlistRepository.createNewPlaylist(connection, playlistName);
                             break;
-                        case 4:
+                        case 5:
                             System.out.println("Your Playlists are -");
                             playlistsName.forEach(System.out::println);
                             System.out.println("Enter the playlist name in which song is to be added - ");
@@ -72,7 +80,7 @@ public class Main {
                                 System.err.println("Playlist does not exist!");
                             }
                             break;
-                        case 5:
+                        case 6:
                             System.out.println("Your Playlists are -");
                             playlistsName.forEach(System.out::println);
                             System.out.println("Please enter the playlist name that you need to play - ");
@@ -81,7 +89,7 @@ public class Main {
                             Playlist playlistByName = playlistRepository.getPlaylistByName(connection, selectedPlaylist);
                             jukeboxService.playPlaylist(playlistByName);
                             break;
-                        case 6:
+                        case 7:
                             System.out.println("Enter the playlist name - ");
                             scanner.nextLine();
                             String removeSongFromPlaylistName = scanner.nextLine();
@@ -92,7 +100,7 @@ public class Main {
                             Song songToRemove = songRepository.searchSongsByName(allSongs, songName);
                             playlistRepository.removeSongFromPlaylist(connection, songToRemove, removeSongFromPlaylistName);
                             break;
-                        case 7:
+                        case 8:
                             System.out.println("Enter the playlist name you want to edit - ");
                             scanner.nextLine();
                             String oldPlaylistName = scanner.nextLine();
@@ -100,21 +108,21 @@ public class Main {
                             String newPlaylistName = scanner.nextLine();
                             playlistRepository.editPlaylistName(connection, oldPlaylistName, newPlaylistName);
                             break;
-                        case 8:
+                        case 9:
                             System.out.println("Enter the Genre - ");
                             scanner.nextLine();
                             String genreName = scanner.nextLine();
                             List<Song> searchedSongsByGenre = songRepository.searchSongsByGenre(allSongs, genreName);
                             songRepository.displayAllSongs(searchedSongsByGenre);
                             break;
-                        case 9:
+                        case 10:
                             System.out.println("Enter the Artist Name - ");
                             scanner.nextLine();
                             String artistName = scanner.nextLine();
                             List<Song> searchedSongsByArtist = songRepository.searchSongsByArtist(allSongs, artistName);
                             songRepository.displayAllSongs(searchedSongsByArtist);
                             break;
-                        case 10:
+                        case 11:
                             System.out.println("Playlists are -");
                             playlistsName.forEach(System.out::println);
                             System.out.println("Enter the playlist name - ");
@@ -123,7 +131,7 @@ public class Main {
                             Playlist playlistToDisplay = playlistRepository.getPlaylistByName(connection, playlistToView);
                             playlistRepository.displayPlaylist(playlistToDisplay);
                             break;
-                        case 11:
+                        case 12:
                             break;
                         default:
                             System.out.println("Invalid Input");
