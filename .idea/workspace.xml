@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="fixed the searchSongsByGenre() method to correctly search the songs by genre">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added a case to play a selected song from the jukebox">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -182,13 +181,6 @@
       <workItem from="1663863452281" duration="270000" />
       <workItem from="1663864458452" duration="114000" />
       <workItem from="1663904068493" duration="6635000" />
-    </task>
-    <task id="LOCAL-00105" summary="added the if condition for choice 5 to remove a song from playlist">
-      <created>1663785595516</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1663785595516</updated>
     </task>
     <task id="LOCAL-00106" summary="edited the toString and displayAllSongs() method to print in the desired format">
       <created>1663820606959</created>
@@ -526,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663929414673</updated>
     </task>
-    <option name="localTasksCounter" value="154" />
+    <task id="LOCAL-00154" summary="added a case to play a selected song from the jukebox">
+      <created>1664099145192</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1664099145192</updated>
+    </task>
+    <option name="localTasksCounter" value="155" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -544,7 +543,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added the private static final string for printing lines" />
     <MESSAGE value="removed the unnecessary if conditions from the main method" />
     <MESSAGE value="added if conditions to check of playlist creation is success or not" />
     <MESSAGE value="added the exception class PlaylistAlreadyExistsException" />
@@ -569,7 +567,8 @@
     <MESSAGE value="added the case 2 to play all songs and modified the rest case numbers accordingly" />
     <MESSAGE value="added comments in the code for newly added cases" />
     <MESSAGE value="fixed the searchSongsByGenre() method to correctly search the songs by genre" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed the searchSongsByGenre() method to correctly search the songs by genre" />
+    <MESSAGE value="added a case to play a selected song from the jukebox" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a case to play a selected song from the jukebox" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
