@@ -69,42 +69,46 @@ public class JukeboxService {
      * @return False if the playlist is to be stopped, true otherwise
      */
     public boolean playSong(Song song) {
-        // Create a file object that contains the song path
-        File songFile = new File(song.getUrl());
-        boolean isSongPlaying = true;
         boolean continuePlaying = true;
-        try {
-            // Create an instance for AudioInputStream and Clip to play the song
-            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(songFile);
-            Clip clip = AudioSystem.getClip();
-            clip.open(audioInputStream);
-            clip.loop(Clip.LOOP_CONTINUOUSLY);
-            // Display the song details by calling displaySongDetails() method
-            displaySongDetails(song);
-            // start the sound file
-            clip.start();
-            int choice;
-            do {
-                // display the player menu to resume/pause/forward/stop song
-                displayPlayerMenu();
-                // take the input
-                Scanner scanner = new Scanner(System.in);
-                choice = scanner.nextInt();
-                // start the if condition on the input
-                if (choice == 1) {
-                    isSongPlaying = pauseResumeSong(clip, isSongPlaying);
-                } else if (choice == 2) {
-                    clip.stop();
-                    clip.close();
-                } else {
-                    clip.stop();
-                    clip.close();
-                    continuePlaying = false;
-                }
-            } while (choice == 1);
-        } catch (UnsupportedAudioFileException | IOException | LineUnavailableException exception) {
-            System.err.println(exception.getMessage());
-            exception.printStackTrace();
+        boolean isSongPlaying = true;
+        if (song.getUrl() != null) {
+            // Create a file object that contains the song path
+            File songFile = new File(song.getUrl());
+            try {
+                // Create an instance for AudioInputStream and Clip to play the song
+                AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(songFile);
+                Clip clip = AudioSystem.getClip();
+                clip.open(audioInputStream);
+                clip.loop(Clip.LOOP_CONTINUOUSLY);
+                // Display the song details by calling displaySongDetails() method
+                displaySongDetails(song);
+                // start the sound file
+                clip.start();
+                int choice;
+                do {
+                    // display the player menu to resume/pause/forward/stop song
+                    displayPlayerMenu();
+                    // take the input
+                    Scanner scanner = new Scanner(System.in);
+                    choice = scanner.nextInt();
+                    // start the if condition on the input
+                    if (choice == 1) {
+                        isSongPlaying = pauseResumeSong(clip, isSongPlaying);
+                    } else if (choice == 2) {
+                        clip.stop();
+                        clip.close();
+                    } else {
+                        clip.stop();
+                        clip.close();
+                        continuePlaying = false;
+                    }
+                } while (choice == 1);
+            } catch (UnsupportedAudioFileException | IOException | LineUnavailableException exception) {
+                System.err.println(exception.getMessage());
+                exception.printStackTrace();
+            }
+        } else {
+            System.err.println("Invalid song name!!");
         }
         return continuePlaying;
     }
