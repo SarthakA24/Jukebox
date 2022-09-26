@@ -145,24 +145,26 @@ public class PlaylistRepository implements Repository<String> {
      * @param playlistName The name of the playlist from which the song needs to be removed
      */
     public void removeSongFromPlaylist(Connection connection, Song songToRemove, String playlistName) throws SQLException, IncorrectSongNameException {
-        // Call the method to get the playlist by name
-        Playlist playlistByName = getPlaylistByName(connection, playlistName);
-        // Create a string of songs id to update in the table
-        StringBuilder songIdToUpdate = new StringBuilder();
-        List<Song> songsInList = playlistByName.getSongList();
-        for (Song song : songsInList) {
-            if (song.getId() != songToRemove.getId()) {
-                songIdToUpdate.append(song.getId()).append(",");
+        boolean isSuccess = false;
+        if (songToRemove.getId() != 0) {
+            // Call the method to get the playlist by name
+            Playlist playlistByName = getPlaylistByName(connection, playlistName);
+            // Create a string of songs id to update in the table
+            StringBuilder songIdToUpdate = new StringBuilder();
+            List<Song> songsInList = playlistByName.getSongList();
+            for (Song song : songsInList) {
+                if (song.getId() != songToRemove.getId()) {
+                    songIdToUpdate.append(song.getId()).append(",");
+                }
             }
-        }
-        // Create an update query to update the songs id in the database
-        String updateQuery = "UPDATE `jukebox`.`playlist` SET `songs_id` = ? WHERE (`playlist_name` = ?);";
-        boolean isSuccess;
-        // Create a prepared statement to execute the query
-        try (PreparedStatement preparedStatement = connection.prepareStatement(updateQuery)) {
-            preparedStatement.setString(1, songIdToUpdate.toString());
-            preparedStatement.setString(2, playlistName);
-            isSuccess = preparedStatement.executeUpdate() > 0;
+            // Create an update query to update the songs id in the database
+            String updateQuery = "UPDATE `jukebox`.`playlist` SET `songs_id` = ? WHERE (`playlist_name` = ?);";
+            // Create a prepared statement to execute the query
+            try (PreparedStatement preparedStatement = connection.prepareStatement(updateQuery)) {
+                preparedStatement.setString(1, songIdToUpdate.toString());
+                preparedStatement.setString(2, playlistName);
+                isSuccess = preparedStatement.executeUpdate() > 0;
+            }
         }
         if (isSuccess) {
             System.out.println("Song removed from the playlist successfully!");
