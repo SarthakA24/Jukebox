@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added a case to play random song from the jukebox">
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added a condition to check if the song url is null">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/JukeboxService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +28,7 @@
     <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -182,20 +184,8 @@
       <workItem from="1663863452281" duration="270000" />
       <workItem from="1663864458452" duration="114000" />
       <workItem from="1663904068493" duration="6635000" />
-    </task>
-    <task id="LOCAL-00107" summary="printed the playlist before playing in the method playPlaylist()">
-      <created>1663820860424</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1663820860424</updated>
-    </task>
-    <task id="LOCAL-00108" summary="added the pauseSong() and resumeSong() methods and printed a menu while playing the song in if else">
-      <created>1663822474458</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1663822474459</updated>
+      <workItem from="1664102414140" duration="170000" />
+      <workItem from="1664162776838" duration="738000" />
     </task>
     <task id="LOCAL-00109" summary="added the pauseSong() and resumeSong() methods and printed a menu while playing the song in if else">
       <created>1663823854717</created>
@@ -526,7 +516,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664099537375</updated>
     </task>
-    <option name="localTasksCounter" value="156" />
+    <task id="LOCAL-00156" summary="added a condition to check if the song u is null">
+      <created>1664100348489</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1664100348490</updated>
+    </task>
+    <task id="LOCAL-00157" summary="added a condition to check if the song url is null">
+      <created>1664100356835</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1664100356835</updated>
+    </task>
+    <option name="localTasksCounter" value="158" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -544,8 +548,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added if conditions to check of playlist creation is success or not" />
-    <MESSAGE value="added the exception class PlaylistAlreadyExistsException" />
     <MESSAGE value="thrown the PlaylistAlreadyExistsException in createNewPlaylist() and added the catch clause in main" />
     <MESSAGE value="added the exception IncorrectSongNameException()" />
     <MESSAGE value="thrown the IncorrectSongNameException to addSongToPlaylist() and added catch clause in main method" />
@@ -569,12 +571,14 @@
     <MESSAGE value="fixed the searchSongsByGenre() method to correctly search the songs by genre" />
     <MESSAGE value="added a case to play a selected song from the jukebox" />
     <MESSAGE value="added a case to play random song from the jukebox" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a case to play random song from the jukebox" />
+    <MESSAGE value="added a condition to check if the song ulr is null" />
+    <MESSAGE value="added a condition to check if the song url is null" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a condition to check if the song url is null" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/The_Jukebox$All_in_capstone_project_jukebox.ic" NAME="All in capstone-project-jukebox Coverage Results" MODIFIED="1663845164391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/The_Jukebox$All_in_capstone_project_jukebox.ic" NAME="All in capstone-project-jukebox Coverage Results" MODIFIED="1664101412143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
