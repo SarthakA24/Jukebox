@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="added a condition to check if the song url is null">
+    <list default="true" id="b2cd2ba1-15d4-486f-8cac-23ce09c9e220" name="Changes" comment="removed the exception print stack trace line in catch block">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,18 +126,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlaylistRepositoryTest.getPlaylistsNameIncorrectCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="capstone-project-jukebox" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.niit.jdp.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.niit.jdp.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.niit.jdp.repository.PlaylistRepositoryTest" />
-      <option name="METHOD_NAME" value="getPlaylistsNameIncorrectCase" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scratch" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,10 +136,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="JUnit.All in capstone-project-jukebox" />
         <item itemvalue="JUnit.PlaylistRepositoryTest" />
         <item itemvalue="JUnit.PlaylistRepositoryTest.getPlaylistsName" />
-        <item itemvalue="JUnit.PlaylistRepositoryTest.getPlaylistsNameIncorrectCase" />
       </list>
     </recent_temporary>
   </component>
@@ -185,14 +175,7 @@
       <workItem from="1663864458452" duration="114000" />
       <workItem from="1663904068493" duration="6635000" />
       <workItem from="1664102414140" duration="170000" />
-      <workItem from="1664162776838" duration="738000" />
-    </task>
-    <task id="LOCAL-00109" summary="added the pauseSong() and resumeSong() methods and printed a menu while playing the song in if else">
-      <created>1663823854717</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1663823854717</updated>
+      <workItem from="1664162776838" duration="1062000" />
     </task>
     <task id="LOCAL-00110" summary="added junit 5.9.0 dependency">
       <created>1663826646055</created>
@@ -530,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664100356835</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="removed the exception print stack trace line in catch block">
+      <created>1664165858080</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1664165858081</updated>
+    </task>
+    <option name="localTasksCounter" value="159" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,7 +538,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="thrown the PlaylistAlreadyExistsException in createNewPlaylist() and added the catch clause in main" />
     <MESSAGE value="added the exception IncorrectSongNameException()" />
     <MESSAGE value="thrown the IncorrectSongNameException to addSongToPlaylist() and added catch clause in main method" />
     <MESSAGE value="combined the catch clauses" />
@@ -573,7 +562,8 @@
     <MESSAGE value="added a case to play random song from the jukebox" />
     <MESSAGE value="added a condition to check if the song ulr is null" />
     <MESSAGE value="added a condition to check if the song url is null" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a condition to check if the song url is null" />
+    <MESSAGE value="removed the exception print stack trace line in catch block" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed the exception print stack trace line in catch block" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

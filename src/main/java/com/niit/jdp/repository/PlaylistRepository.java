@@ -105,28 +105,30 @@ public class PlaylistRepository implements Repository<String> {
      * @param playlistName The name of the playlist to which the song needs to be added
      */
     public void addSongToPlaylist(Connection connection, Song songToAdd, String playlistName) throws SQLException, IncorrectSongNameException {
-        // Call the method to get the playlist by name
-        Playlist playlistByName = getPlaylistByName(connection, playlistName);
-        // Create a string of songs id to update in the table
-        StringBuilder songIdToUpdate = new StringBuilder();
-        // Add the already present songs id to the string and then append the song id to be added
-        List<Song> songsInList = playlistByName.getSongList();
-        if (songsInList == null) {
-            songIdToUpdate = new StringBuilder(songToAdd.getId() + ",");
-        } else {
-            for (Song song : songsInList) {
-                songIdToUpdate.append(song.getId()).append(",");
+        boolean isSuccess = false;
+        if (songToAdd.getId() != 0) {
+            // Call the method to get the playlist by name
+            Playlist playlistByName = getPlaylistByName(connection, playlistName);
+            // Create a string of songs id to update in the table
+            StringBuilder songIdToUpdate = new StringBuilder();
+            // Add the already present songs id to the string and then append the song id to be added
+            List<Song> songsInList = playlistByName.getSongList();
+            if (songsInList == null) {
+                songIdToUpdate = new StringBuilder(songToAdd.getId() + ",");
+            } else {
+                for (Song song : songsInList) {
+                    songIdToUpdate.append(song.getId()).append(",");
+                }
+                songIdToUpdate.append(songToAdd.getId()).append(",");
             }
-            songIdToUpdate.append(songToAdd.getId()).append(",");
-        }
-        boolean isSuccess;
-        // Create an update query to update the songs id in the database
-        String updateQuery = "UPDATE `jukebox`.`playlist` SET `songs_id` = ? WHERE (`playlist_name` = ?);";
-        // Create a prepared statement to execute the query
-        try (PreparedStatement preparedStatement = connection.prepareStatement(updateQuery)) {
-            preparedStatement.setString(1, songIdToUpdate.toString());
-            preparedStatement.setString(2, playlistName);
-            isSuccess = preparedStatement.executeUpdate() > 0;
+            // Create an update query to update the songs id in the database
+            String updateQuery = "UPDATE `jukebox`.`playlist` SET `songs_id` = ? WHERE (`playlist_name` = ?);";
+            // Create a prepared statement to execute the query
+            try (PreparedStatement preparedStatement = connection.prepareStatement(updateQuery)) {
+                preparedStatement.setString(1, songIdToUpdate.toString());
+                preparedStatement.setString(2, playlistName);
+                isSuccess = preparedStatement.executeUpdate() > 0;
+            }
         }
         if (isSuccess) {
             System.out.println("Song added to the playlist successfully!");
